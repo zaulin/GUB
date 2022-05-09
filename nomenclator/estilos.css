@@ -85,7 +85,9 @@
 #myTable th {
   background-color: #f1f1f1;
   text-align: left;
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
 }
 
 #myTable td {
