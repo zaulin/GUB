@@ -1,3 +1,10 @@
+const version = "0.9";
+const fecha = "23/04/2022";
+
+function clickBack() {
+    window.open('../index.html', "_self")
+}
+
 function keyupInput1(){
   document.getElementById("myInputCodi").value = "";
   buscar();
@@ -22,8 +29,8 @@ function buscar() {
   inputCodi = document.getElementById("myInputCodi");
   filterCodi = normalice(inputCodi.value.toUpperCase());
 
-  logic = document.getElementById("button");
-  operator = logic.innerText;
+  //logic = document.getElementById("button");
+  //operator = logic.innerText;
 
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
@@ -76,7 +83,13 @@ function buscar() {
             }  
           } else {
           
+              if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
+                hit = 1
+              } else {
+                hit = 0;
+              } 
             //miramos el operador
+            /*
             if (operator == "i") {
               //operador AND
               if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
@@ -93,6 +106,8 @@ function buscar() {
                 hit = 0;
               }  
             }
+            */
+
           }
 
         if (hit==1) {
@@ -128,7 +143,7 @@ function changeButton(){
 }
 
 function reset(){
-  document.getElementById("button").innerText = "i";
+  //document.getElementById("button").innerText = "i";
 
   
   document.getElementById("myInput").value = "";
@@ -219,10 +234,6 @@ function tableClick(el) {
 }
 
 function pageonload() {
-  var version, fecha;
-  version = "0.9"
-  fecha = "23/04/2022"
-  //document.getElementById("version").innerText = "v.0.9"
   document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
   esconde();
 }

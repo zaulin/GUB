@@ -13,6 +13,7 @@
   font-weight: bold;
   font-size: 16px;
   padding: 5px; 
+  color:  #ffffff;
 
 }
 
@@ -21,7 +22,7 @@
   padding-left: 5px;
   width: 30%;
   font-size: 10px;
-  vertical-align: bottom;
+    color:  #ffffff;
 }
 
 #fecha {
@@ -31,6 +32,7 @@
   font-size: 10px;
   vertical-align: bottom;
   margin-right: 2px;
+    color:  #ffffff;
 }
 
 .myLabel {

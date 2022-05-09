@@ -1,4 +1,3 @@
-
 #cabecera {
   background-color: #064a9d;
   font-family: calibri;
@@ -33,38 +32,29 @@
   margin-right: 2px;
 }
 
-.botonMain {
-  align-self: center;
-  box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-  background-color:#007dc1;
-  border-radius:3px;
-  border:1px solid #124d77;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:13px;
-  padding:8px 22px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #154682;
-  margin-top: 20px;
+.tableBoton {
+  border: solid;
+  border-width: 3px;
+  border-color: #064a9d;
+  border-radius: 8px;
+  width: 100px;
+  height: 90px;
 }
 
-.botonMain2 {
-  box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-  background-color:#007dc1;
-  border-radius:3px;
-  border:1px solid #124d77;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
+
+
+.ButtonText {
   font-family:Arial;
-  font-size:13px;
-  padding:8px 22px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #154682;
+  font-size:14px;
+  font-weight: bold;
+  color: #064a9d;
+}
+
+.trImagen {
+  height: 50px;
+}
+
+.trTexto {
 }
 
 }
