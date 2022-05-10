@@ -59,17 +59,23 @@
 
 <div style="margin-left: 5px; margin-right: 5px;">
   
+<label for="inputCodi" class="myLabel">Codi:</label>
+<input name="inputCodi" type="text" id="myInputCodi" onkeyup="keyupInputCodi()" placeholder="codi.." class="myInputCodi" >
+
+<br>
+
 <label for="input1" class="myLabel">Que contingui:</label>
 <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
 <!--button id="button" onClick="changeButton()" class="myButton">i</button--> i 
 <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula.." class="myInput" >
+
 <br>
-<label for="inputCodi" class="myLabel">Codi:</label>
-<input name="inputCodi" type="text" id="myInputCodi" onkeyup="keyupInputCodi()" placeholder="codi.." class="myInputCodi" >
+
 <label for="dropdownSituacion" class="myLabel">Situació:</label>
 <select id = "dropdownSituacion" onchange = "dropdownChange()" >
   <option></option>
 </select>  
+
 <table>
   <tr><td><p id="hitCounter" class="hitCounter"></p></td><td><button onClick="reset()" class="myButton">netejar</button></td></tr>
 </table>
