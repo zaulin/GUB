@@ -17,8 +17,6 @@ function buscar() {
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
-  if (filterCodi != "") {
-
     for (i = 0; i < tr.length; i++) {
       hit = 0;
       tdCodi = tr[i].getElementsByTagName("td")[0];
@@ -36,8 +34,6 @@ function buscar() {
         }
       }
     }
-
-  }
   
 }
 
