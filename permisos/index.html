@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    type="text/javascript"></script>
+    <script src="codigo.js"></script>
+    <script src="situacions.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+<meta charset="UTF-16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="Cache-Control" content="no-store" /> 
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+
+</head>
+<body onload="pageonload()" style="margin: 0;padding: 0">
+
+
+<table id="cabecera">
+  <tr>
+    <td id="version"onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo">PERMISOS DE CONDUIR</td>
+    <td id="fecha"></td>
+  </tr>
+</table>
+
+<div style="margin-left: 5px; margin-right: 5px;">
+  
+<label for="inputCodi" class="myLabel">Pais:</label>
+<input name="inputCodi" type="text" id="myInputCodi" onkeyup="onkeyupInputCodi()" placeholder="pais.." class="myInputCodi" >
+
+<br>
+
+
+<!----------------------------------------------------------->
+<!------------------ DIV Main ------------------------------->
+<!----------------------------------------------------------->
+<div id="divTaulaMain">
+<table id="tableMain">
+<thead><tr><th>Pais</th>
+<th>Tipus</th>
+</tr></thead>
+<tbody><tr onClick="tableClick(this)">
+<td>Alemanya (D)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Algèria (DZ)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Andorra (AND)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Argentina (RA)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Àustria (A)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bèlgica (B)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bolívia (BOL)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bulgària (BG)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Colòmbia (CO)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Corea (ROK)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Croàcia (HR)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Dinamarca (DK)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Equador (EC)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Eslovàquia (SK)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Eslovènia (SLO)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Espanya (E)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Estònia (EST)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Filipines (RP)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Finlàndia (FIN)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>França (F)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Gran Bretanya (GB)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Grècia (GR)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guatemala (GCA)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Holanda (NL)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Hongria (H)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Irlanda (IRL)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Itàlia (I)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Japó (J)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Letònia(LV)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Lituània (LT)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Luxemburg (L)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Macedònia del Nord (MK)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Malta (M)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Marroc (MA)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Paraguai (PY)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Perú (PE)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Polònia (PL)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Portugal (P)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Principat de Mònaco (MC)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Rep. de Panamà (PAN)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República de Nicaragua (NIC)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República de Sèrbia (YU)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República del Salvador (ES)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República Dominicana (DOM)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República Federativa de Brasil (BR)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República Txeca (CZ)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Romania (RO)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Suècia (S)</td>
+<td>Europa</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Suïssa (CH)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tunísia (TN)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Turquia (TR)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Ucraïna (UA)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Uruguai (ROU)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Veneçuela (YV)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Xile (RCH)</td>
+<td>Bilateral</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Xipre (CY)</td>
+<td>Europa</td>
+</tr>
+</tbody></table>
+<div>
+
+<!----------------------------------------------------------->
+<!------------------ DIV EXTRA INFO ------------------------->
+<!----------------------------------------------------------->
+  <div id="divExtraInfo" >
+    <table class="tableExtraInfo" align="center">
+      <tr><td>
+        <p id="labelExtra">
+            <b>Europa:</b>
+              <ul>
+                <li>Quan es tracti d’un permís de conducció no subjecte a un període de vigència determinat, el titular haurà de renovar-lo una vegada hagin transcorregut dos anys des que hagi establert la seva residència normal a Espanya,</li>
+                <li>Els titulars de permisos de conduir comunitaris que són residents a Espanya, tenen l'obligació de renovar el seu permís de conduir en el país de residència, és a dir, a l'Estat espanyol i no al seu país d'origen.</li>
+              </ul>
+        </p>
+        <p id="labelExtra">
+            <b>Bilateral:</b>
+            <ul>
+                <li>Que no hagi transcorregut el termini de sis mesos, com a màxim, comptat des que els seus titulars adquireixin la residència normal a Espanya.</li>
+              </ul>
+        </p>
+        <p id="labelExtra">
+            <b>Si no apareix a la llista:</b>
+            <ul>
+                <li>Caldrà tenir el carnet de conduir internacional en vigor.</li>
+              </ul>
+        </p>
+      </td></tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>

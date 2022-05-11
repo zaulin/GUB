@@ -10,6 +10,11 @@ function clickTrixis(){
     window.open("trixis/index.html","_self")
 }
 
+function clickPermisos(){
+    window.open("permisos/index.html","_self")
+}
+
+
 function pageonload() {
 
 }
