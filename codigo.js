@@ -14,6 +14,9 @@ function clickPermisos(){
     window.open("permisos/index.html","_self")
 }
 
+function clickVTC(){
+    window.open("VTC/index.html","_self")
+}
 
 function pageonload() {
 
