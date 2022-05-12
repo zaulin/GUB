@@ -142,16 +142,19 @@ function changeButton(){
   buscar();
 }
 
-function reset(){
-  //document.getElementById("button").innerText = "i";
-
+function reset(param1, param2){
   
-  document.getElementById("myInput").value = "";
-
-  document.getElementById("myInput2").value = "";
-
-  document.getElementById("myInputCodi").value = "";
+  if (param1) {
+    document.getElementById("myInput").value = param1;
+  } else {
+    document.getElementById("myInput").value = "";
+  }
   
+  if (param2) {
+    document.getElementById("myInput2").value = param2;
+  } else {
+    document.getElementById("myInput2").value = "";
+  }
 
   buscar();
 }
@@ -187,7 +190,14 @@ function esconde() {
     
   }
 
-  reset();
+  const queryString = window.location.search;
+  console.log(queryString)
+  const urlParams = new URLSearchParams(queryString);
+  console.log(urlParams)
+  const paramFilter1 = urlParams.get('filter1')
+  const paramFilter2 = urlParams.get('filter2')
+
+  reset(paramFilter1, paramFilter2);
 }
 
 function off() {
@@ -235,5 +245,6 @@ function tableClick(el) {
 
 function pageonload() {
   document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
+
   esconde();
 }
