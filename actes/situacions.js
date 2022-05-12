@@ -195,6 +195,14 @@ const jsonData = {
  {
   "grup": "Persones",
   "situacio": "Lesions",
+  "actes autor": "N01,A108,A109",
+  "actes perjudicat": "N02,A17",
+  "actes resta": "G30",
+  "extra": "Adjuntar copia del parte mèdic"
+ },
+  {
+  "grup": "Persones",
+  "situacio": "Lesions lleus",
   "actes autor": "N09,N10,A35",
   "actes perjudicat": "N02,A18,N10",
   "actes resta": "N10",
