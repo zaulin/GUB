@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    type="text/javascript"></script>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+<meta charset="UTF-16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="Cache-Control" content="no-store" /> 
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+
+</head>
+<body onload="pageonload()" style="margin: 0;padding: 0">
+
+<div id="overlay" onclick="off()">
+  <div id="textOverlay">
+    <table id="overlayTable">
+      <tr><td colspan="2" id="popUpDesc">1234</td>
+      </tr><tr><td width="30"><b>Import:</b></td><td id="popUpImporte">1234</td></tr>
+      </tr><tr><td><b>Normativa:</b></td><td id="popUpNormativa">1234</td></tr>
+      </tr><tr><td colspan="2">
+        <table>
+          <tr>
+            <td>
+              <label><input type="checkbox" id="cboxRetirada" value="Retirada">Retirada carnet</label><br>
+            </td>
+            <td>
+              <label><input type="checkbox" id="cboxPunts" value="Punts">Retirada punts</label><br>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <label><input type="checkbox" id="cboxCondicional" value="Condicional">Condicional</label><br>
+          </td>
+          <td>  
+            <label><input type="checkbox" id="cboxIntervencio" value="Intervencio">Intervenció material</label><br>
+          </td>
+        </tr>
+      </table>
+      </td></tr>
+      </tr><tr><td colspan="2" id="popUpAbits">1234</td></tr>
+    </table>
+  </div>
+</div>
+
+<table id="cabecera">
+  <tr>
+    <td id="version"onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo">VTC</td>
+    <td id="fecha"></td>
+  </tr>
+</table>
+
+
+<div style="margin-left: 5px; margin-right: 5px;">
+
+<p class="txtSeccioSancions">LLICÈNCIA</p>
+<div class="texto">
+Pàgina de foment per comprobar la llicència: <a href="https://apps.fomento.gob.es/crgt" target="_blank">enllaç</a>
+</div>
+
+<div id="divTaulaMain">
+<table id="tableMain">
+<thead><tr><th>Descans</th>
+<th>Llicència acabada en</th>
+</tr></thead>
+<tbody><tr>
+<td>Dilluns</td>
+<td>0-1</td>
+</tr>
+<tr>
+<td>Dimarts</td>
+<td>2-4</td>
+</tr>
+<tr>
+<td>Dimecres</td>
+<td>3-5</td>
+</tr>
+<tr>
+<td>Dijous</td>
+<td>6-8</td>
+</tr>
+<tr>
+<td>Divendres</td>
+<td>7-9</td>
+</tr>
+<tr>
+<td>Dissabte</td>
+<td>Imparells (enganxina vermella)</td>
+</tr>
+<tr>
+<td>Diumenge</td>
+<td>Parells (enganxina verda)</td>
+</tr>
+</tbody></table>
+</div>
+
+<p class="txtSeccioSancions">DENÚNCIES</p>
+<div class="texto">
+Pàgina de denúncies: <a href="../nomenclator/index.html?filter1=VTC" target="_blank">enllaç</a>
+</div>
+
+<!----------------------------------------------------------->
+<!------------------ DIV EXTRA INFO ------------------------->
+<!----------------------------------------------------------->
+  <!--div id="divExtraInfo" >
+    <table class="tableExtraInfo" align="center">
+      <tr><td>
+        <p id="labelExtra">
+            <b>Europa:</b>
+              <ul>
+                <li>Quan es tracti d’un permís de conducció no subjecte a un període de vigència determinat, el titular haurà de renovar-lo una vegada hagin transcorregut dos anys des que hagi establert la seva residència normal a Espanya,</li>
+                <li>Els titulars de permisos de conduir comunitaris que són residents a Espanya, tenen l'obligació de renovar el seu permís de conduir en el país de residència, és a dir, a l'Estat espanyol i no al seu país d'origen.</li>
+                <br>
+                <li>Persona amb més de 6 mesos de residència amb permís espanyol i del seu pais:</li>
+                  <ul>
+                    <li>S'intervé el del seu pais a disposició de DGT.</li>
+                  </ul>
+                <li>Persona amb MÉS de 2 anys de residència i permís del seu pais amb caducitat indefinida, +15 anys de caducitat (A i B) o +5 anys de caducitat (D i E):</li>
+                  <ul>
+                    <li>Denùncia 3189 i A140PL.</li>
+                  </ul>
+                <li>Persona amb MENYS de 2 anys de residència  i permís del seu pais amb caducitat indefinida, +15 anys de caducitat (A i B) o +5 anys de caducitat (D i E):</li>
+                  <ul>
+                    <li>T111 sense denùncia.</li>
+                  </ul>
+              </ul>
+        </p>
+        <p id="labelExtra">
+            <b>Bilateral:</b>
+            <ul>
+                <li>Si la persona fa MÉS de 6 mesos de residència i no ha efectuat el canvi:</li>
+                <ul><li>Denùncia 3152-3-4 indicant a observacions el motiu (NO s'inmovilitza).</li></ul>
+              </ul>
+        </p>
+        <p id="labelExtra">
+            <b>Si no apareix a la llista:</b>
+            <ul>
+                <li>Si no presenta el carnet de conduir internacional i el del pais d'origen en vigor:</li>
+                <ul>
+                  <li>Si és resident de MÉS de 6 mesos:</li>
+                  <ul>
+                    <li>Denùncia 3154 indicant a observacions el motiu i s'<b>inmovilitza</b>.</li>
+                  </ul>
+                  <li>Si és turista:</li>
+                  <ul>
+                    <li>Denùncia 3154 (NO s'inmovilitza).</li>
+                  </ul>
+                </ul>
+              </ul>
+        </p>
+      </td></tr>
+    </table>
+  </div-->
+
+</div>
+
+</body>
+</html>
