@@ -31,7 +31,9 @@
 <p>Pàgina web del Consell de l'Unió Europea per a la validació de documentació: <a href="https://www.consilium.europa.eu/prado/es/search-by-document-country.html" target="_blank">enllaç</a></p>
 <label for="inputCodi" class="myLabel">Pais:</label>
 <input name="inputCodi" type="text" id="myInputCodi" onkeyup="onkeyupInputCodi()" placeholder="pais.." class="myInputCodi" >
-
+<label for="dropdownConveni" class="myLabel">Conveni:</label>
+<select id = "dropdownConveni" onchange = "dropdownChange()">
+</select>  
 <br>
 
 
@@ -41,227 +43,1253 @@
 <div id="divTaulaMain">
 <table id="tableMain">
 <thead><tr><th>Pais</th>
-<th>Tipus</th>
+<th>Conveni</th>
+<th>Codi</th>
 </tr></thead>
 <tbody><tr onClick="tableClick(this)">
-<td>Alemanya (D)</td>
+<td>Afganistan</td>
+<td> </td>
+<td>AFG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Aland</td>
+<td> </td>
+<td>ALA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Albània</td>
+<td> </td>
+<td>ALB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Alemanya</td>
 <td>Europa</td>
+<td>DEU</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Algèria (DZ)</td>
+<td>Algèria</td>
 <td>Bilateral</td>
+<td>DZA</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Andorra (AND)</td>
+<td>Andorra</td>
 <td>Bilateral</td>
+<td>AND</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Argentina (RA)</td>
+<td>Angola</td>
+<td> </td>
+<td>AGO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Anguilla</td>
+<td> </td>
+<td>AIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Antàrtida</td>
+<td> </td>
+<td>ATA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Antigua i Barbuda</td>
+<td> </td>
+<td>ATG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Aràbia Saudí</td>
+<td> </td>
+<td>SAU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Argentina</td>
 <td>Bilateral</td>
+<td>ARG</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Àustria (A)</td>
+<td>Armènia</td>
+<td> </td>
+<td>ARM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Aruba</td>
+<td> </td>
+<td>ABW</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Austràlia</td>
+<td> </td>
+<td>AUS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Àustria</td>
 <td>Europa</td>
+<td>AUT</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Bèlgica (B)</td>
+<td>Azerbaidjan</td>
+<td> </td>
+<td>AZE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bahames, les</td>
+<td> </td>
+<td>BHS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bahrain</td>
+<td> </td>
+<td>BHR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bangladesh</td>
+<td> </td>
+<td>BGD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Barbados</td>
+<td> </td>
+<td>BRB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Belarús</td>
+<td> </td>
+<td>BLR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bèlgica</td>
 <td>Europa</td>
+<td>BEL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Bolívia (BOL)</td>
+<td>Belize</td>
+<td> </td>
+<td>BLZ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Benín</td>
+<td> </td>
+<td>BEN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bermudes</td>
+<td> </td>
+<td>BMU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bhutan</td>
+<td> </td>
+<td>BTN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bolívia</td>
 <td>Bilateral</td>
+<td>BOL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Bulgària (BG)</td>
+<td>Bonaire, Sint Eustatius i Saba</td>
+<td> </td>
+<td>BES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bòsnia i Hercegovina</td>
+<td> </td>
+<td>BIH</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Botswana</td>
+<td> </td>
+<td>BWA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Brasil</td>
+<td> </td>
+<td>BRA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Brunei</td>
+<td> </td>
+<td>BRN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Bulgària</td>
 <td>Europa</td>
+<td>BGR</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Colòmbia (CO)</td>
+<td>Burkina Faso</td>
+<td> </td>
+<td>BFA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Burundi</td>
+<td> </td>
+<td>BDI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Cambodja</td>
+<td> </td>
+<td>KHM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Camerun</td>
+<td> </td>
+<td>CMR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Canadà</td>
+<td> </td>
+<td>CAN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Cap Verd</td>
+<td> </td>
+<td>CPV</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Colòmbia</td>
 <td>Bilateral</td>
+<td>COL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Corea (ROK)</td>
-<td>Bilateral</td>
+<td>Comores, les</td>
+<td> </td>
+<td>COM</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Croàcia (HR)</td>
+<td>Congo</td>
+<td> </td>
+<td>COG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Corea del Nord</td>
+<td> </td>
+<td>PRK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Corea del Sud</td>
+<td> </td>
+<td>KOR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Costa d&#39;Ivori</td>
+<td> </td>
+<td>CIV</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Costa Rica</td>
+<td> </td>
+<td>CRI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Croàcia</td>
 <td>Europa</td>
+<td>HRV</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Dinamarca (DK)</td>
+<td>Cuba</td>
+<td> </td>
+<td>CUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Curaçao</td>
+<td> </td>
+<td>CUW</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Dinamarca</td>
 <td>Europa</td>
+<td>DNK</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Equador (EC)</td>
+<td>Djibouti</td>
+<td> </td>
+<td>DJI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Dominica</td>
+<td> </td>
+<td>DMA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Egipte</td>
+<td> </td>
+<td>EGY</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>El Salvador</td>
+<td> </td>
+<td>SLV</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Emirats Àrabs Units, els</td>
+<td> </td>
+<td>ARE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Equador</td>
 <td>Bilateral</td>
+<td>ECU</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Eslovàquia (SK)</td>
+<td>Eritrea</td>
+<td> </td>
+<td>ERI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Eslovàquia</td>
 <td>Europa</td>
+<td>SVK</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Eslovènia (SLO)</td>
+<td>Eslovènia</td>
 <td>Europa</td>
+<td>SVN</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Espanya (E)</td>
+<td>Espanya</td>
 <td>Europa</td>
+<td>ESP</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Estònia (EST)</td>
+<td>Estats Units, els</td>
+<td> </td>
+<td>USA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Estònia</td>
 <td>Europa</td>
+<td>EST</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Filipines (RP)</td>
+<td>Eswatini</td>
+<td> </td>
+<td>SWZ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Etiòpia</td>
+<td> </td>
+<td>ETH</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Fèroe</td>
+<td> </td>
+<td>FRO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Fiji</td>
+<td> </td>
+<td>FJI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Filipines</td>
 <td>Bilateral</td>
+<td>PHL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Finlàndia (FIN)</td>
+<td>Finlàndia</td>
 <td>Europa</td>
+<td>FIN</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>França (F)</td>
+<td>França</td>
 <td>Europa</td>
+<td>FRA</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Grècia (GR)</td>
+<td>Gabon</td>
+<td> </td>
+<td>GAB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Gàmbia</td>
+<td> </td>
+<td>GMB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Geòrgia</td>
+<td> </td>
+<td>GEO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Ghana</td>
+<td> </td>
+<td>GHA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Gibraltar</td>
+<td> </td>
+<td>GIB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Grècia</td>
 <td>Europa</td>
+<td>GRC</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Guatemala (GCA)</td>
+<td>Grenada</td>
+<td> </td>
+<td>GRD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Groenlàndia</td>
+<td> </td>
+<td>GRL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guadalupe</td>
+<td> </td>
+<td>GLP</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guaiana Francesa</td>
+<td> </td>
+<td>GUF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guam</td>
+<td> </td>
+<td>GUM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guatemala</td>
 <td>Bilateral</td>
+<td>GTM</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Holanda (NL)</td>
+<td>Guernsey</td>
+<td> </td>
+<td>GGY</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guinea</td>
+<td> </td>
+<td>GIN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guinea Equatorial</td>
+<td> </td>
+<td>GNQ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guinea-Bissau</td>
+<td> </td>
+<td>GNB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Guyana</td>
+<td> </td>
+<td>GUY</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Haití</td>
+<td> </td>
+<td>HTI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Hondures</td>
+<td> </td>
+<td>HND</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Hong Kong, Xina</td>
+<td> </td>
+<td>HKG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Hongria</td>
 <td>Europa</td>
+<td>HUN</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Hongria (H)</td>
+<td>Iemen, el</td>
+<td> </td>
+<td>YEM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illa Bouvet</td>
+<td> </td>
+<td>BVT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illa Christmas</td>
+<td> </td>
+<td>CXR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illa de Man</td>
+<td> </td>
+<td>IMN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illa Norfolk</td>
+<td> </td>
+<td>NFK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Caiman</td>
+<td> </td>
+<td>CYM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Cocos (Keeling)</td>
+<td> </td>
+<td>CCK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Cook</td>
+<td> </td>
+<td>COK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Falkland (Malvines)</td>
+<td> </td>
+<td>FLK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Geòrgia del Sud i Sandwich del Sud</td>
+<td> </td>
+<td>SGS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Heard i McDonald</td>
+<td> </td>
+<td>HMD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Marianes del Nord</td>
+<td> </td>
+<td>MNP</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Marshall</td>
+<td> </td>
+<td>MHL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Menors Allunyades dels Estats Units</td>
+<td> </td>
+<td>UMI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Salomó</td>
+<td> </td>
+<td>SLB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Turks i Caicos</td>
+<td> </td>
+<td>TCA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Verges Britàniques</td>
+<td> </td>
+<td>VGB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Illes Verges dels Estats Units</td>
+<td> </td>
+<td>VIR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Índia</td>
+<td> </td>
+<td>IND</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Indonèsia</td>
+<td> </td>
+<td>IDN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Iran</td>
+<td> </td>
+<td>IRN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Iraq, l&#39;</td>
+<td> </td>
+<td>IRQ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Irlanda</td>
 <td>Europa</td>
+<td>IRL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Irlanda (IRL)</td>
+<td>Islàndia</td>
+<td> </td>
+<td>ISL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Israel</td>
+<td> </td>
+<td>ISR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Itàlia</td>
 <td>Europa</td>
+<td>ITA</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Itàlia (I)</td>
+<td>Jamaica</td>
+<td> </td>
+<td>JAM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Japó</td>
+<td>Bilateral</td>
+<td>JPN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Jersey</td>
+<td> </td>
+<td>JEY</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Jordània</td>
+<td> </td>
+<td>JOR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Kazakhstan</td>
+<td> </td>
+<td>KAZ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Kenya</td>
+<td> </td>
+<td>KEN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Kirguizstan</td>
+<td> </td>
+<td>KGZ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Kiribati</td>
+<td> </td>
+<td>KIR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Kuwait</td>
+<td> </td>
+<td>KWT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Lao</td>
+<td> </td>
+<td>LAO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Lesotho</td>
+<td> </td>
+<td>LSO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Letònia</td>
+<td> </td>
+<td>LVA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Líban</td>
+<td> </td>
+<td>LBN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Libèria</td>
+<td> </td>
+<td>LBR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Líbia</td>
+<td> </td>
+<td>LBY</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Liechtenstein</td>
+<td> </td>
+<td>LIE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Lituània</td>
 <td>Europa</td>
+<td>LTU</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Japó (J)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Letònia(LV)</td>
+<td>Luxemburg</td>
 <td>Europa</td>
+<td>LUX</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Lituània (LT)</td>
+<td>Macao, Xina</td>
+<td> </td>
+<td>MAC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Macedònia del Nord</td>
+<td>Bilateral</td>
+<td>MKD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Madagascar</td>
+<td> </td>
+<td>MDG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Malàisia</td>
+<td> </td>
+<td>MYS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Malawi</td>
+<td> </td>
+<td>MWI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Maldives</td>
+<td> </td>
+<td>MDV</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Mali</td>
+<td> </td>
+<td>MLI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Malta</td>
 <td>Europa</td>
+<td>MLT</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Luxemburg (L)</td>
+<td>Marroc, el</td>
+<td> </td>
+<td>MAR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Martinica</td>
+<td> </td>
+<td>MTQ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Maurici</td>
+<td> </td>
+<td>MUS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Mauritània</td>
+<td> </td>
+<td>MRT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Mayotte</td>
+<td> </td>
+<td>MYT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Mèxic</td>
+<td> </td>
+<td>MEX</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Micronèsia</td>
+<td> </td>
+<td>FSM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Moçambic</td>
+<td> </td>
+<td>MOZ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Moldàvia</td>
+<td> </td>
+<td>MDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Mònaco</td>
+<td> </td>
+<td>MCO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Mongòlia</td>
+<td> </td>
+<td>MNG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Montenegro</td>
+<td> </td>
+<td>MNE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Montserrat</td>
+<td> </td>
+<td>MSR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Myanmar</td>
+<td> </td>
+<td>MMR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Namíbia</td>
+<td> </td>
+<td>NAM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Nauru</td>
+<td> </td>
+<td>NRU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Nepal</td>
+<td> </td>
+<td>NPL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Nicaragua</td>
+<td> </td>
+<td>NIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Níger</td>
+<td> </td>
+<td>NER</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Nigèria</td>
+<td> </td>
+<td>NGA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Niue</td>
+<td> </td>
+<td>NIU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Noruega</td>
+<td> </td>
+<td>NOR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Nova Caledònia</td>
+<td> </td>
+<td>NCL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Nova Zelanda</td>
+<td> </td>
+<td>NZL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Oman</td>
+<td> </td>
+<td>OMN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Països Baixos</td>
+<td> </td>
+<td>NLD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Pakistan</td>
+<td> </td>
+<td>PAK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Palau</td>
+<td> </td>
+<td>PLW</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Palestina</td>
+<td> </td>
+<td>PSE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Panamà</td>
+<td> </td>
+<td>PAN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Papua Nova Guinea</td>
+<td> </td>
+<td>PNG</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Paraguai</td>
+<td>Bilateral</td>
+<td>PRY</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Perú</td>
+<td>Bilateral</td>
+<td>PER</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Pitcairn</td>
+<td> </td>
+<td>PCN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Polinèsia Francesa</td>
+<td> </td>
+<td>PYF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Polònia</td>
 <td>Europa</td>
+<td>POL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Macedònia del Nord (MK)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Malta (M)</td>
+<td>Portugal</td>
 <td>Europa</td>
+<td>PRT</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Marroc (MA)</td>
+<td>Puerto Rico</td>
+<td> </td>
+<td>PRI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Qatar</td>
+<td> </td>
+<td>QAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Regne Unit</td>
+<td> </td>
+<td>GBR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República Centreafricana</td>
+<td> </td>
+<td>CAF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República Democràtica del Congo</td>
+<td> </td>
+<td>COD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>República Dominicana</td>
 <td>Bilateral</td>
+<td>DOM</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Paraguai (PY)</td>
-<td>Bilateral</td>
+<td>Reunió, la</td>
+<td> </td>
+<td>REU</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Perú (PE)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Polònia (PL)</td>
+<td>Romania</td>
 <td>Europa</td>
+<td>ROU</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Portugal (P)</td>
+<td>Ruanda</td>
+<td> </td>
+<td>RWA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Rússia</td>
+<td> </td>
+<td>RUS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sàhara Occidental</td>
+<td> </td>
+<td>ESH</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint Helena, Ascenció i Tristan da Cunha</td>
+<td> </td>
+<td>SHN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint Kitts i Nevis</td>
+<td> </td>
+<td>KNA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint Lucia</td>
+<td> </td>
+<td>LCA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint Vincent i les Grenadines</td>
+<td> </td>
+<td>VCT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint-Barthélemy</td>
+<td> </td>
+<td>BLM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint-Martin</td>
+<td> </td>
+<td>MAF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Saint-Pierre-et-Miquelon</td>
+<td> </td>
+<td>SPM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Samoa</td>
+<td> </td>
+<td>WSM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Samoa Americana</td>
+<td> </td>
+<td>ASM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>San Marino</td>
+<td> </td>
+<td>SMR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Santa Seu</td>
+<td> </td>
+<td>VAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>São Tomé i Príncipe</td>
+<td> </td>
+<td>STP</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Senegal</td>
+<td> </td>
+<td>SEN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sèrbia</td>
+<td> </td>
+<td>SRB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Seychelles</td>
+<td> </td>
+<td>SYC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sierra Leone</td>
+<td> </td>
+<td>SLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Singapur</td>
+<td> </td>
+<td>SGP</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sint Maarten</td>
+<td> </td>
+<td>SXM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Síria</td>
+<td> </td>
+<td>SYR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Somàlia</td>
+<td> </td>
+<td>SOM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sri Lanka</td>
+<td> </td>
+<td>LKA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sud-àfrica</td>
+<td> </td>
+<td>ZAF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sudan del Sud, el</td>
+<td> </td>
+<td>SSD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Sudan, el</td>
+<td> </td>
+<td>SDN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Suècia</td>
 <td>Europa</td>
+<td>SWE</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Principat de Mònaco (MC)</td>
+<td>Suïssa</td>
 <td>Bilateral</td>
+<td>CHE</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República de Panamà (PAN)</td>
+<td>Surinam</td>
+<td> </td>
+<td>SUR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Svalbard i Jan Mayen</td>
+<td> </td>
+<td>SJM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tadjikistan</td>
+<td> </td>
+<td>TJK</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tailàndia</td>
+<td> </td>
+<td>THA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Taiwan</td>
+<td> </td>
+<td>TWN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tanzània</td>
+<td> </td>
+<td>TZA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Terres Australs i Antàrtiques Franceses</td>
+<td> </td>
+<td>ATF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Territori Britànic de l&#39;Oceà Índic</td>
+<td> </td>
+<td>IOT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Timor-Leste</td>
+<td> </td>
+<td>TLS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Togo</td>
+<td> </td>
+<td>TGO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tokelau</td>
+<td> </td>
+<td>TKL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tonga</td>
+<td> </td>
+<td>TON</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Trinidad i Tobago</td>
+<td> </td>
+<td>TTO</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Tunísia</td>
 <td>Bilateral</td>
+<td>TUN</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República de Nicaragua (NIC)</td>
+<td>Turkmenistan</td>
+<td> </td>
+<td>TKM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Turquia</td>
 <td>Bilateral</td>
+<td>TUR</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República de Sèrbia (YU)</td>
+<td>Tuvalu</td>
+<td> </td>
+<td>TUV</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Txad</td>
+<td> </td>
+<td>TCD</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Txèquia</td>
+<td> </td>
+<td>CZE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Ucraïna</td>
 <td>Bilateral</td>
+<td>UKR</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República del Salvador (ES)</td>
+<td>Uganda</td>
+<td> </td>
+<td>UGA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Uruguai</td>
 <td>Bilateral</td>
+<td>URY</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República Dominicana (DOM)</td>
+<td>Uzbekistan</td>
+<td> </td>
+<td>UZB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Vanuatu</td>
+<td> </td>
+<td>VUT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Veneçuela</td>
 <td>Bilateral</td>
+<td>VEN</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República Federativa de Brasil (BR)</td>
+<td>Vietnam</td>
+<td> </td>
+<td>VNM</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Wallis i Futuna</td>
+<td> </td>
+<td>WLF</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Xile</td>
 <td>Bilateral</td>
+<td>CHL</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>República Txeca (CZ)</td>
+<td>Xina</td>
+<td> </td>
+<td>CHN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>Xipre</td>
 <td>Europa</td>
+<td>CYP</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Romania (RO)</td>
-<td>Europa</td>
+<td>Zàmbia</td>
+<td> </td>
+<td>ZMB</td>
 </tr>
 <tr onClick="tableClick(this)">
-<td>Suècia (S)</td>
-<td>Europa</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Suïssa (CH)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Tunísia (TN)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Turquia (TR)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Ucraïna (UA)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Uruguai (ROU)</td>
-<td>Bilateral</td>
-</tr>
-<!--tr onClick="tableClick(this)">
-<td>Veneçuela (YV)</td>
-<td>Bilateral</td>
-</tr-->
-<tr onClick="tableClick(this)">
-<td>Xile (RCH)</td>
-<td>Bilateral</td>
-</tr>
-<tr onClick="tableClick(this)">
-<td>Xipre (CY)</td>
-<td>Europa</td>
+<td>Zimbàbue</td>
+<td> </td>
+<td>ZWE</td>
 </tr>
 </tbody></table>
 <div>
