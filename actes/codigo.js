@@ -419,6 +419,12 @@ function decoraTablas() {
 function loadSituaciones() {
 
   jsonData.situacions.sort(function (a, b) {
+      if (!a.grup) {
+        a.grup = "Resta"
+      }
+      if (!b.grup) {
+        b.grup = "Resta"
+      }
       return a.grup.localeCompare(b.grup) || a.situacio.localeCompare(b.situacio)
   });
 
