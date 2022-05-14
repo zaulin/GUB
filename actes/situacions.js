@@ -83,7 +83,7 @@ const jsonData = {
  {
   "grup": "Patrimoni",
   "situacio": "Apropiació indeguda",
-  "actes autor": "N01,A108",
+  "actes autor": "N09,A108",
   "actes perjudicat": "N02,A56",
   "actes resta": null,
   "extra": null
@@ -91,9 +91,9 @@ const jsonData = {
  {
   "grup": "Patrimoni",
   "situacio": "Apropiació indeguda +400€",
-  "actes autor": "N09,A108",
+  "actes autor": "N01,A108",
   "actes perjudicat": "N02,A56",
-  "actes resta": "N01,A108,A109",
+  "actes resta": "A109",
   "extra": "Si l'autor s'ha trobat l'objecte sempre serà un delicte lleu independentment del valor de l'objecte."
  },
  {
