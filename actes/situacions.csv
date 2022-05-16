@@ -1,0 +1,83 @@
+﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
+Persones;Abús sexual;N01,A108,A109;N02,A17,G30;A106;
+Persones;Agresió sexual;N01,A108,A110;N02,A17,G31;;"Ha d'existir violència o intimidació.
+
+Agreujant:
+
+Accès carnal"
+Persones;ViGe;N01,A108,A109;N02,N101,A17,G30;A106;"Home (parella o ex) agredeix a la víctima (amb o sense convivència)
+
+Agreujants:
+
+- Fer servir armes
+- Al domicili familiar
+- En presència de menors"
+Persones;Maltractament d'obra;N09;N02,A18;N10;Requereix denúncia de la víctima
+Patrimoni;Robatori amb força;N01,A108,A109;N02,A31,A56,G30;;Es considera també robatori amb força si la força s'exerceix per abandonar el lloc
+Patrimoni;Usurpació (okupes);N09;N02;G133,A31;"Si es tracta d'un edifici públic: GUB - UI
+Si es tracta d'un edifici privat: CME"
+SC;Falsetat documental;N01,A108,A109,I55;;;És falsetat documental fer servir un document verdader per una persona que no es la titular
+SC;Salud pública;N01,A108,A109;A108,A17,G30;A20;"Dues A108 pel venedor: Una pels diners i l'altre per la droga
+Si el comprador te droga se li fa una altra A108
+El comprador és testimoni del delicte: A17
+El mateix agent signa A108 i A20
+
+DOSIS SUPERIOR A CONSUM PROPI:
+
+- Marihuana: 100g
+- Haixix: 50g
+- Cocaina: 12-15g
+- Heroina: 6-8g
+- MDMA: 3g
+- Èxtasi: 3g
+- Metamfetamina: 0,7g
+- Pastilles de síntesis: 20 unitats"
+Patrimoni;Furt;N09,N10,A108,A35;N02,A56,A57,N10;A18,N10,G31,D24;Si es a establiment: adjuntar el tiquet de caixa.
+Patrimoni;Furt +400€;N01,A108,A109;N02,A56,G30,A17;;"Si es a establiment: adjuntar el tiquet de caixa.
+
+Agreujants:
+
+- Furtar cables amb greu perjudici
+- Productes agraris amb greu perjudici
+- Valor artístic/històric
+- Objectes de 1ª necesitat (desabastiment)
+- Desamparament de la víctima
+- Aprofitant-se d'un accident
+- Fer servir menors"
+Patrimoni;Apropiació indeguda;N09,A108;N02,A56;;
+Patrimoni;Apropiació indeguda +400€;N01,A108;N02,A56;A109;Si l'autor s'ha trobat l'objecte sempre serà un delicte lleu independentment del valor de l'objecte.
+Patrimoni;Robatori/furt ús de vehícle;N08,G30,A108;N02,G30;A33;Ingresar el vehícle a disposició judicial.
+Persones;Amenaces lleus;N09,A108;N02,A18;;"Requereix denúncia de la víctima
+Amb o sense armes (si hi ha arma s'intervé amb A108)
+Mostrar arma en baralla
+Amenaça lleu"
+Persones;Amenaces;N09,A108;N02,A17,G30;;"En ViGe és amb o sense arma
+En ViDo és AMB arma
+Resta de delictes: amb o sense arma
+L'amenaça ha de ser directe i creïble
+La diferència amb el delicte lleu es la por que es produeix en la víctima"
+Agents;Atemptat;N01,A108,A109;N02;;"S'ha de fer document per la mutua laboral
+S'han de tipificar també les lesions
+S'ha de trucar a Molins advocats
+
+Agreujants:
+- Fer ús armes/objectes perillosos
+- Potencial perill per la vida"
+Agents;Resistència;N01,A108,A109;N02;;Ha d'impedir les funcions dels agents.
+Agents;Desobediéncia greu;N01,A108,A109;N02;;Ha d'impedir les funcions dels agents.
+Patrimoni;Receptació;N01,A108,A109;;;"Ha d'haver previament un delicte contra el patrimoni.
+El comet la persona que compra o es beneficia SENSE haver participat en el delicte precedent.
+L'autor ha de saber o sospitar de la procedència il·licita de l'objecte."
+SC;Vermell;N01,A55,A109;;;"Fer copia del requeriment de detenció
+Omplir el llibre de detinguts"
+Patrimoni;Estafa;N09,A108;N02,A17;;"Ha d'haver: ànim de lucre i engany suficient.
+Es considera estafa fer servir targetes de crèdit o dèbit."
+Patrimoni;Estafa +400€;N01,A108,A109;N02,A17,G30;;"Ha d'haver: ànim de lucre i engany suficient.
+Es considera estafa fer servir targetes de crèdit o dèbit."
+Patrimoni;Danys;N09,A108;N02,A17;A33,A31;
+Patrimoni;Danys +400€;N01,A108,A109;N02,A17;A33,A31;
+Persones;Lesions;N01,A108,A109;N02,A17;G30;
+Persones;Lesions lleus;N09,N10,A35;N02,A18,N10;N10;
+Trànsit;Conduir sota influència alcohol;T100;;;Taxa > 0,43
+Trànsit;Alcoholèmia penal;T101,A21,T102,T100,A13,T104;;;
+Trànsit;Negativa proves alcohol/drogues;A101,A21,T102,N01,T100,T104;;;
