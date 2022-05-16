@@ -191,9 +191,7 @@ function esconde() {
   }
 
   const queryString = window.location.search;
-  console.log(queryString)
   const urlParams = new URLSearchParams(queryString);
-  console.log(urlParams)
   const paramFilter1 = urlParams.get('filter1')
   const paramFilter2 = urlParams.get('filter2')
 
