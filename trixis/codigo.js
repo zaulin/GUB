@@ -97,4 +97,5 @@ function normalice(text){
 function pageonload() {
   document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
   esconde();
+  document.getElementById("loading").style.display = "none";
 }
