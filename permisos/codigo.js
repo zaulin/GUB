@@ -171,5 +171,6 @@ function pageonload() {
 
   esconde();
   buscar();
+  document.getElementById("loading").style.display = "none";
 }
 
