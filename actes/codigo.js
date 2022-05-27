@@ -357,6 +357,8 @@ function pageonload() {
   decoraTablas();
 
   buscar();
+
+  document.getElementById("loading").style.display = "none";
 }
 
 function decoraTablas() {

@@ -80,9 +80,29 @@ Persones;Lesions;N01,A108,A109;N02,A17;G30;
 Persones;Lesions lleus;N09,N10,A35;N02,A18,N10;N10;
 Trànsit;Conduir sota influència alcohol;T100;;;Taxa > 0,43
 Trànsit;Alcoholèmia penal;T101,A21,T102,T100,A13,T104;;;
-Trànsit;Negativa proves alcohol/drogues;T101,A21,T102,N01,T100,T104;;;"Art. 383: Està obligat a fer les proves qualsevol conductor (no importa el tipus de vehicle: inclou bicis) que:
+Trànsit;Negativa proves alcohol/drogues;A101,A21,T102,N01,T100,T104;;;
+Trànsit;Drogotest positiu;T101,A13,A125;;T110;"S'ha de fer previament la prova d'alcohoèmia.
 
-- Estigui implicat directament com a possible responsable d'un accident de circulació.
-- Quan presenti símptomes que facin presumir que condueix sota la influència d'alcohol o drogues.
-- Si és denunciat per la comissió d'una infracció de trànsit.
-- Quan es fa en un control preventiu"
+A125 nomès per penal i l'ha de fer un EAS.
+
+Etiquetes a totes les actes.
+
+A13:
+- Indicar num. denúncia a les diligencies.
+
+T110: 
+- Indicar a diligències el num. de denúncia.
+- Als agents actuants indicar l'unitat.
+- Omplir la cadena de custodia.
+
+Al tub:
+- Número de denúncia.
+
+A la nevera de la unitat (dintre de la bossa del drogotest):
+- Bossa precintada.
+- T110
+- Etiquetes sobrants
+
+Per la unitat:
+- T101
+- Original denúncia"
