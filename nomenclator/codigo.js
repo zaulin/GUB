@@ -243,6 +243,6 @@ function tableClick(el) {
 
 function pageonload() {
   document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
-
   esconde();
+  document.getElementById("loading").style.display = "none";
 }
