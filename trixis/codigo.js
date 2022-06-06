@@ -60,7 +60,7 @@ function esconde() {
 
   for (i = 0; i < tr.length; i++) {
 
-    for (j = 2; j < 4; j++) {
+    for (j = 2; j < 5; j++) {
       td = tr[i].getElementsByTagName("td")[j];
       th = tr[i].getElementsByTagName("th")[j];
       if (td) {
@@ -93,7 +93,7 @@ function tableClick(el) {
   document.getElementById("popUpSerie").innerHTML = td[1].innerText;
   document.getElementById("popUpDataAlta").innerText = td[2].innerText; 
   document.getElementById("popUpTipus").innerText = td[3].innerText;
-
+  document.getElementById("popUpEmpresa").innerText = td[4].innerText;  
   document.getElementById("overlay").style.display = "block";
 }
 
