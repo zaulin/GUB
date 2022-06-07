@@ -18,6 +18,10 @@ function clickVTC(){
     window.open("VTC/index.html","_self")
 }
 
+function clickNegra(){
+    window.open("negra/index.html","_self")
+}
+
 function pageonload() {
 
 }
