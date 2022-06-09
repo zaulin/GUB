@@ -496,15 +496,23 @@ function loadSituaciones() {
           var grupAnterior = "";
           var group;
           $.each(csvData, function() {
-            if (grupAnterior == this.grup) {
+            if (this.grup) {
+              if (this.grup != "") {
 
-            } else {
-              group = $('<optgroup label="' + this.grup + '" />');
+                if (grupAnterior == this.grup) {
+
+                } else {
+                  group = $('<optgroup label="' + this.grup + '" />');
+                }
+
+                if (group) {
+                  $('<option />').html(this.situacio).appendTo(group);
+                  group.appendTo($select);
+                }
+                
+                grupAnterior = this.grup;
+              }
             }
-
-            $('<option />').html(this.situacio).appendTo(group);
-            group.appendTo($select);
-            grupAnterior = this.grup;
           });
 
         });
