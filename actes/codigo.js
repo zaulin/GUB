@@ -469,12 +469,16 @@ function loadSituaciones() {
       }
 
       csvData.sort(function(a, b) {
+        /*
         if (!a.grup) {
+          console.log("a: " + a.situacio)
           a.grup = "Resta"
         }
         if (!b.grup) {
+          console.log("b: " + b.situacio)
           b.grup = "Resta"
         }
+        */
         return a.grup.localeCompare(b.grup) || a.situacio.localeCompare(b.situacio)
       });
 
