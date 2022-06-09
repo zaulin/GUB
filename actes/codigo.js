@@ -479,7 +479,11 @@ function loadSituaciones() {
           b.grup = "Resta"
         }
         */
-        return a.grup.localeCompare(b.grup) || a.situacio.localeCompare(b.situacio)
+        if (a.grup) {
+          if (b.grup) {
+            return a.grup.localeCompare(b.grup) || a.situacio.localeCompare(b.situacio)
+          }
+        }
       });
 
 
