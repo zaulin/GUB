@@ -14,6 +14,7 @@
       gtag('config', 'G-MYXV6ZJSGC');
     </script>
 
+    <script type="text/javascript" src="papaparse.min.js"></script>
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
 
@@ -31,8 +32,10 @@
 <body onload="pageonload()" style="margin: 0;padding: 0">
 
     <div id="loading">
-      <div class="loader">
-      
+      <div id="loadingIn">
+        <div class="loader">
+        
+        </div>
       </div>
     </div>
     
@@ -82,8 +85,13 @@
 <!--button id="button" onClick="changeButton()" class="myButton">i</button--> i
 <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula.." class="myInput" >
 <br>
+<label for="dropdownDenuncies" class="myLabel">Filtrar:</label>
+<select id = "dropdownDenuncies" onchange = "dropdownChange()" >
+  <option></option>
+</select>  
+<br>
 <label for="inputCodi" class="myLabel">Codi:</label>
-<input name="inputCodi" type="text" id="myInputCodi" onkeyup="buscar()" placeholder="codi.." class="myInputCodi" >
+<input name="inputCodi" type="text" id="myInputCodi" onkeyup="keyupInputCodi()" placeholder="codi.." class="myInputCodi" >
 <table>
   <tr><td><p id="hitCounter" class="hitCounter"></p></td><td><button onClick="reset()" class="myButton">netejar</button></td></tr>
 </table>
