@@ -25,6 +25,11 @@
     color:  #ffffff;
 }
 
+#dropdownSituacion {
+  font-size: 14px;
+  font-family: calibri;
+}
+
 #fecha {
   text-align: right;
   padding-right: 5px;
@@ -62,6 +67,16 @@
   font-family: calibri;
 }
 
+#dropdownSituacion {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding:  2px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  font-family: calibri;
+}
+
 .myInputCodi {
   background-position: 10px 10px;
   background-repeat: no-repeat;
@@ -75,15 +90,15 @@
 }
 
 
-#myTable {
+#tableResta, #tablePerjudicat, #tableAutor {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
-#myTable th {
+
+#tableResta th, #tablePerjudicat th, #tableAutor th {
   background-color: #f1f1f1;
   text-align: left;
   padding-top: 5px;
@@ -92,25 +107,26 @@
   padding-right: 10px;
 
   font: calibri;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
 }
 
-#myTable td {
+
+#tableResta td, #tablePerjudicat td, #tableAutor td {
+  font: calibri;
+  font-size: 17px;
+  
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-
-  font: calibri;
-  font-size: 18px;
 }
 
-#myTable tr {
+#tableResta tr, #tablePerjudicat tr, #tableAutor tr {
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+#tableResta tr.header, #tableResta tr:hover, #tablePerjudicat tr.header, #tablePerjudicat tr:hover , #tableAutor tr.header, #tableAutor tr:hover {
   background-color: #f9f9f9;
 }
 
@@ -147,6 +163,42 @@
   padding: 8px;
 }
 
+#divExtraInfo {
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.tableExtraInfo {
+  margin: auto;
+  width: 95%;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+#labelExtra {
+    font-family: calibri;
+    margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#labelMesInfo {
+  line-height: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-family: calibri;
+}
+
+#divTaules {
+  margin-bottom: 20px;
+}
+
+#divTaulaResta, #divTaulaPerjudicat {
+  margin-top: 20px;
+}
+
+
 #loading {
   margin-top: 32px;
   position: fixed;
@@ -159,17 +211,6 @@
   bottom: 0;
   background-color: white;
   z-index: 2;
-  cursor: pointer;
-}
-
-#loadingIn {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: -28px;
-  top: 0;
-  right: 0;
-  bottom: 0;
   cursor: pointer;
 }
 
