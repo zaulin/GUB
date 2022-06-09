@@ -55,12 +55,22 @@ function reset(){
 }
 
 function esconde() {
+  
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
 
-    for (j = 2; j < 5; j++) {
+    //COLOREA
+    tdEstat = tr[i].getElementsByTagName("td")[2];
+
+    if (tdEstat) {
+      if (tdEstat.innerHTML != "ACTIU") {
+        tr[i].style.backgroundColor = "#ffc9d6";
+      }
+    }
+
+    for (j = 3; j < 10; j++) {
       td = tr[i].getElementsByTagName("td")[j];
       th = tr[i].getElementsByTagName("th")[j];
       if (td) {
@@ -70,10 +80,10 @@ function esconde() {
             th.style.display = "none";
       }  
     }
-    
   }
 
   reset();
+  
 }
 
 
@@ -91,9 +101,23 @@ function tableClick(el) {
 
   document.getElementById("popUpRegistre").innerHTML = "<strong>" + td[0].innerText + "</strong>"
   document.getElementById("popUpSerie").innerHTML = td[1].innerText;
-  document.getElementById("popUpDataAlta").innerText = td[2].innerText; 
-  document.getElementById("popUpTipus").innerText = td[3].innerText;
-  document.getElementById("popUpEmpresa").innerText = td[4].innerText;  
+  document.getElementById("popUpEstat").innerHTML = td[2].innerText;
+
+  if (td[2].innerText == "ACTIU") {
+    rowEstat.style.backgroundColor = "transparent";
+  } else {
+    rowEstat.style.backgroundColor = "#ffc9d6";
+  }
+
+  document.getElementById("popUpEmpCIF").innerText = td[3].innerText;
+  document.getElementById("popUpEmpNombre").innerText = td[4].innerText;  
+  document.getElementById("popUpEmpDireccion").innerText = td[5].innerText;  
+  document.getElementById("popUpEmpPoblacion").innerText = td[6].innerText;  
+
+  document.getElementById("popUpTipus").innerText = td[7].innerText;  
+  document.getElementById("popUpMarca").innerText = td[8].innerText;  
+  document.getElementById("popUpModel").innerText = td[9].innerText;  
+
   document.getElementById("overlay").style.display = "block";
 }
 

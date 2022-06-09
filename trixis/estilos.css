@@ -81,6 +81,8 @@
   border: 1px solid #ddd;
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  max-width:100%;
 }
 
 #myTable th {
@@ -129,6 +131,26 @@
   cursor: pointer;
 }
 
+#divExtraInfo {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-content: center;
+}
+
+.tableExtraInfo {
+  margin: auto;
+  width: 95%;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+#labelExtra {
+    font-family: calibri;
+    margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #overlay {
   position: fixed;
   display: none;
@@ -154,7 +176,6 @@
   margin-right: auto;
   
 }
-
 
 #overlayTable td {
   text-align: left;
