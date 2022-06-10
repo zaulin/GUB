@@ -14,8 +14,12 @@
     </script>
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/taules.css">
+    <link rel="stylesheet" href="../css/textos.css">
 
-<meta charset="UTF-16">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="theme-color" content="#064a9d">
@@ -28,42 +32,11 @@
 </head>
 <body onload="pageonload()" style="margin: 0;padding: 0">
 
-<div id="overlay" onclick="off()">
-  <div id="textOverlay">
-    <table id="overlayTable">
-      <tr><td colspan="2" id="popUpDesc">1234</td>
-      </tr><tr><td width="30"><b>Import:</b></td><td id="popUpImporte">1234</td></tr>
-      </tr><tr><td><b>Normativa:</b></td><td id="popUpNormativa">1234</td></tr>
-      </tr><tr><td colspan="2">
-        <table>
-          <tr>
-            <td>
-              <label><input type="checkbox" id="cboxRetirada" value="Retirada">Retirada carnet</label><br>
-            </td>
-            <td>
-              <label><input type="checkbox" id="cboxPunts" value="Punts">Retirada punts</label><br>
-            </td>
-        </tr>
-        <tr>
-          <td>
-            <label><input type="checkbox" id="cboxCondicional" value="Condicional">Condicional</label><br>
-          </td>
-          <td>  
-            <label><input type="checkbox" id="cboxIntervencio" value="Intervencio">Intervenció material</label><br>
-          </td>
-        </tr>
-      </table>
-      </td></tr>
-      </tr><tr><td colspan="2" id="popUpAbits">1234</td></tr>
-    </table>
-  </div>
-</div>
-
-<table id="cabecera">
+<table class="cabecera">
   <tr>
-    <td id="version"onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
-    <td id="titulo">VTC</td>
-    <td id="fecha"></td>
+    <td id="version"onclick="clickBack()" class="back"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo" class="titulo">VTC</td>
+    <td id="fecha" class="fecha"></td>
   </tr>
 </table>
 
@@ -75,8 +48,8 @@
 Pàgina de foment per comprobar la llicència: <a href="https://apps.fomento.gob.es/crgt" target="_blank">enllaç</a>
 </div>
 
-<div id="divTaulaMain">
-<table id="tableMain">
+<div class="divTaulaMain">
+<table id="tableMain" class="taulaMain">
 <thead><tr><th>Descans</th>
 <th>Llicència acabada en</th>
 </tr></thead>
