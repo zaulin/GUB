@@ -13,7 +13,12 @@
     </script>
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
-    <meta charset="UTF-16">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/taules.css">
+    <link rel="stylesheet" href="../css/textos.css">
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#064a9d">
     <meta http-equiv="Cache-Control" content="no-store" />
@@ -30,27 +35,20 @@
       </div>
     </div>
 
-    <div id="overlay" onclick="off()">
-      <div id="textOverlay">
-        <table id="overlayTable">
-          <tr><td><b>Registre:</b></td><td id="popUpRegistre">1234</td></tr>
-
-        </table>
-      </div>
-    </div>
-    <table id="cabecera">
+    <table class="cabecera">
       <tr>
-        <td id="version"onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
-        <td id="titulo">LLISTA NEGRA</td>
-        <td id="fecha"></td>
+        <td id="version"onclick="clickBack()" class="back"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+        <td id="titulo" class="titulo">LLISTA NEGRA</td>
+        <td id="fecha" class="fecha"></td>
       </tr>
     </table>
     <div style="margin-left: 5px; margin-right: 5px;">
       <p>Llistat de tarjetes de PMR donades de baixa per l'ajuntament.</p>
       <p>Actualitzat: <b>02/2022</b> </p>
       <label for="inputCodi" class="myLabel">Tarjeta:</label>
-      <input name="inputCodi" type="text" id="myInputCodi" onkeyup="buscar()" placeholder="codi.." class="myInputCodi" >
-      <table id="myTable">
+      <input name="inputCodi" type="text" id="myInputCodi" onkeyup="buscar()" placeholder="codi.." class="myInput" >
+      <div class="divTaulaMain">
+      <table id="myTable" class="taulaMain">
         <thead>
           <tr>
             <th>Núm. Tarjeta</th>
@@ -48593,6 +48591,7 @@
 </tr>
         </tbody>
       </table>
+    </div>
   </div>
 </body>
 </html>
