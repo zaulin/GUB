@@ -15,8 +15,12 @@
 
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/css/loader.css">
+    <link rel="stylesheet" href="/css/cabecera.css">
+    <link rel="stylesheet" href="/css/taules.css">
+    <link rel="stylesheet" href="/css/textos.css">
 
-<meta charset="UTF-16">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="theme-color" content="#064a9d">
@@ -35,11 +39,11 @@
       </div>
     </div>
 
-<table id="cabecera">
+<table class="cabecera">
   <tr>
-    <td id="version"onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
-    <td id="titulo">DOCUMENTS</td>
-    <td id="fecha"></td>
+    <td id="version" onclick="clickBack()" class="back"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo" class="titulo">DOCUMENTS</td>
+    <td id="fecha" class="fecha"></td>
   </tr>
 </table>
 
@@ -47,9 +51,9 @@
   
 <p>Pàgina web del Consell de l'Unió Europea per a la validació de documentació: <a href="https://www.consilium.europa.eu/prado/es/search-by-document-country.html" target="_blank">enllaç</a> (pitjant sobre un pais a la llista obre directament la documentació del pais)</p>
 <label for="inputCodi" class="myLabel">Pais:</label>
-<input name="inputCodi" type="text" id="myInputCodi" onkeyup="onkeyupInputCodi()" placeholder="pais.." class="myInputCodi" >
+<input name="inputCodi" type="text" id="myInputCodi" onkeyup="onkeyupInputCodi()" placeholder="pais.." class="myInput" >
 <label for="dropdownConveni" class="myLabel">Conveni:</label>
-<select id = "dropdownConveni" onchange = "dropdownChange()">
+<select id = "dropdownConveni" onchange = "dropdownChange()" class="dropdown">
 </select>  
 <br>
 
@@ -57,8 +61,8 @@
 <!----------------------------------------------------------->
 <!------------------ DIV Main ------------------------------->
 <!----------------------------------------------------------->
-<div id="divTaulaMain">
-<table id="tableMain">
+<div id="divTaulaMain" class="divTaulaMain">
+<table id="tableMain" class="taulaMain">
 <thead><tr><th>Pais</th>
 <th>Conveni</th>
 <th>Codi</th>
@@ -1314,10 +1318,10 @@
 <!----------------------------------------------------------->
 <!------------------ DIV EXTRA INFO ------------------------->
 <!----------------------------------------------------------->
-  <div id="divExtraInfo" >
+  <div class="divExtraInfo" >
     <table class="tableExtraInfo" align="center">
       <tr><td>
-        <p id="labelExtra">
+        <p class="labelExtra">
             <b>Europa:</b>
               <ul>
                 <li>Quan es tracti d’un permís de conducció no subjecte a un període de vigència determinat, el titular haurà de renovar-lo una vegada hagin transcorregut dos anys des que hagi establert la seva residència normal a Espanya.</li>
@@ -1336,14 +1340,14 @@
                   </ul>
               </ul>
         </p>
-        <p id="labelExtra">
+        <p class="labelExtra">
             <b>Bilateral:</b>
             <ul>
                 <li>Si la persona fa <b>més</b> de 6 mesos de residència i no ha efectuat el canvi:</li>
                 <ul><li>Denùncia 3152-3-4 indicant a observacions el motiu (<b>NO</b> s'inmovilitza).</li></ul>
               </ul>
         </p>
-        <p id="labelExtra">
+        <p class="labelExtra">
             <b>Si no hi ha conveni:</b>
             <ul>
               <li>Si presenta el carnet de conduir internacional i el del pais d'origen i un o tots dos estàn caducats:</li>
