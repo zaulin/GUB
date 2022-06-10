@@ -169,10 +169,13 @@ function normalice(text){
 }
 
 function esconde() {
+  iHits = 0;
+
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
+    iHits = iHits + 1;
     td = tr[i].getElementsByTagName("td")[0];
     th = tr[i].getElementsByTagName("th")[0];
     if (td) {
@@ -193,6 +196,12 @@ function esconde() {
       }  
     }
     
+  }
+
+  if (iHits == 1) {
+    document.getElementById("hitCounter").innerHTML = iHits + " coincidència." 
+  } else {
+    document.getElementById("hitCounter").innerHTML = numberWithCommas(iHits) + " coincidències." 
   }
 
 /*
