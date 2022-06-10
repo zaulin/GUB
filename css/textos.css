@@ -1,0 +1,44 @@
+
+.dropdown {
+  font-size: 16px;
+  font-family: calibri;
+}
+
+.myLabel {
+  font-size: 16px;
+  font-family: calibri;
+}
+
+.myButton {
+  font-size: 16px;
+  font-family: calibri;
+}
+
+.hitCounter {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: calibri;
+}
+
+.myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding:  2px;
+  width: 90px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  font-family: calibri;
+}
+
+.myInputCodi {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding:  2px;
+  width: 45px;
+  height: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  font-family: calibri;
+}

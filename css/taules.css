@@ -1,0 +1,71 @@
+
+.divTaulaMain {
+  margin-top: 20px;
+}
+
+.taulaMain {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.taulaMain th {
+  background-color: #f1f1f1;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font: calibri;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.taulaMain td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  font: calibri;
+  font-size: 18px;
+}
+
+.taulaMain tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.taulaMain tr.header, .taulaMain tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+.divExtraInfo {
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.tableExtraInfo {
+  margin: auto;
+  width: 95%;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.labelExtra {
+    font-family: calibri;
+    margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.labelMesInfo {
+  line-height: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-family: calibri;
+}
