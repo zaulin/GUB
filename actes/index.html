@@ -17,8 +17,12 @@
     <script type="text/javascript" src="papaparse.min.js"></script>
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/taules.css">
+    <link rel="stylesheet" href="../css/textos.css">
 
-<meta charset="UTF-16">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="theme-color" content="#064a9d">
@@ -32,47 +36,19 @@
 <body onload="pageonload()" style="margin: 0;padding: 0">
 
     <div id="loading">
-      <div class="loader">
-      
+      <div id="loadingIn">
+        <div class="loader">
+        
+        </div>
       </div>
     </div>
     
-<div id="overlay" onclick="off()">
-  <div id="textOverlay">
-    <table id="overlayTable">
-      <tr><td colspan="2" id="popUpDesc">1234</td>
-      </tr><tr><td width="30"><b>Import:</b></td><td id="popUpImporte">1234</td></tr>
-      </tr><tr><td><b>Normativa:</b></td><td id="popUpNormativa">1234</td></tr>
-      </tr><tr><td colspan="2">
-        <table>
-          <tr>
-            <td>
-              <label><input type="checkbox" id="cboxRetirada" value="Retirada">Retirada carnet</label><br>
-            </td>
-            <td>
-              <label><input type="checkbox" id="cboxPunts" value="Punts">Retirada punts</label><br>
-            </td>
-        </tr>
-        <tr>
-          <td>
-            <label><input type="checkbox" id="cboxCondicional" value="Condicional">Condicional</label><br>
-          </td>
-          <td>  
-            <label><input type="checkbox" id="cboxIntervencio" value="Intervencio">Intervenció material</label><br>
-          </td>
-        </tr>
-      </table>
-      </td></tr>
-      </tr><tr><td colspan="2" id="popUpAbits">1234</td></tr>
-    </table>
-  </div>
-</div>
 
-<table id="cabecera">
+<table class="cabecera">
   <tr>
-    <td id="version"onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
-    <td id="titulo">ACTES</td>
-    <td id="fecha"></td>
+    <td id="version" onclick="clickBack()" class="back"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo" class="titulo">ACTES</td>
+    <td id="fecha" class="fecha"></td>
   </tr>
 </table>
 
@@ -91,7 +67,7 @@
 <br>
 
 <label for="dropdownSituacion" class="myLabel">Situació:</label>
-<select id = "dropdownSituacion" onchange = "dropdownChange()" >
+<select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
   <option></option>
 </select>  
 
@@ -105,7 +81,7 @@
 <!----------------------------------------------------------->
 <div id="divTaulaAutor">
   <p class="hitCounter">Actes per l'autor:</p>
-  <table id="tableAutor">
+  <table id="tableAutor" class="taulaMain">
   <thead><tr><th>Codi</th>
 <th>Descripció</th>
 </tr></thead>
@@ -622,7 +598,7 @@
 <!----------------------------------------------------------->
 <div id="divTaulaPerjudicat">
   <p class="hitCounter">Actes per al perjudicat:</p>
-  <table id="tablePerjudicat">
+  <table id="tablePerjudicat" class="taulaMain">
   <thead><tr><th>Codi</th>
 <th>Descripció</th>
 </tr></thead>
@@ -1139,7 +1115,7 @@
 <!----------------------------------------------------------->
 <div id="divTaulaResta">
   <p class="hitCounter" id="textResta">Resta d'actes:</p>
-  <table id="tableResta">
+  <table id="tableResta" class="taulaMain">
   <thead><tr><th>Codi</th>
 <th>Descripció</th>
 </tr></thead>
@@ -1655,11 +1631,11 @@
 <!----------------------------------------------------------->
 <!------------------ DIV EXTRA INFO ------------------------->
 <!----------------------------------------------------------->
-  <div id="divExtraInfo" >
+  <div id="divExtraInfo" class="divExtraInfo">
     <table class="tableExtraInfo" align="center">
       <tr><td>
-        <p id="labelMesInfo">Més informació:</p>
-        <p id="labelExtra"></p>
+        <p id="labelMesInfo" class="labelMesInfo">Més informació:</p>
+        <p id="labelExtra" class="labelExtra"></p>
       </td></tr>
     </table>
   </div>
