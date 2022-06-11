@@ -1,3 +1,11 @@
+.checked {
+  color: orange;
+}
+
+.unchecked {
+  color: white;
+}
+
 #overlay {
   position: fixed;
   display: none;
@@ -12,11 +20,20 @@
   cursor: pointer;
 }
 
+#overlayHeader {
+  background-color:  #064a9d;
+  width: 100%;
+  font-size: 18px;
+  font-family: Calibri;
+  font-weight: bold;
+}
+
+
 #overlayTable {
   background-color:  white;
   border-collapse: collapse;
   width: 95%;
-  border: 1px solid #ddd;
+  border: 1px solid #064a9d;
   font-size: 18px;
   margin-top: 5%;
   margin-left: auto;

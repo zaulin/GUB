@@ -17,6 +17,7 @@
     <script type="text/javascript" src="papaparse.min.js"></script>
     <script src="codigo.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="../css/loader.css">
     <link rel="stylesheet" href="../css/cabecera.css">
@@ -44,33 +45,31 @@
       </div>
     </div>
     
-<div id="overlay" onclick="off()">
+<div id="overlay">
   <div id="textOverlay">
     <table id="overlayTable">
-      <tr><td colspan="2" id="popUpDesc">1234</td>
-      </tr><tr><td width="30"><b>Import:</b></td><td id="popUpImporte">1234</td></tr>
-      </tr><tr><td><b>Normativa:</b></td><td id="popUpNormativa">1234</td></tr>
-      </tr><tr><td colspan="2">
+      <tr style="background-color: #064a9d;">
+        <td onClick="bookmarkClick()" width="20px"><span id="estrella" class="fa fa-star checked" width="20px"></span></td>
+        <td style="text-align:center; color: white; font-weight: bold;" id="popUpNum">TEST</td>
+        <td onClick="off()" width="20px" style="text-align:center; color: white"><img src="..\img\close.png" height="15px"></td>
+      </tr>
+      
+      <tr><td colspan="3">
         <table>
-          <tr>
-            <td>
-              <label><input type="checkbox" id="cboxRetirada" value="Retirada">Retirada carnet</label><br>
-            </td>
-            <td>
-              <label><input type="checkbox" id="cboxPunts" value="Punts">Retirada punts</label><br>
-            </td>
-        </tr>
-        <tr>
-          <td>
-            <label><input type="checkbox" id="cboxCondicional" value="Condicional">Condicional</label><br>
-          </td>
-          <td>  
-            <label><input type="checkbox" id="cboxIntervencio" value="Intervencio">Intervenció material</label><br>
-          </td>
-        </tr>
-      </table>
-      </td></tr>
-      </tr><tr><td colspan="2" id="popUpAbits">1234</td></tr>
+          <tr><td colspan="2" id="popUpDesc">1234</td></tr>
+          <tr><td width="30"><b>Import:</b></td><td id="popUpImporte">1234</td></tr>
+          <tr><td><b>Normativa:</b></td><td id="popUpNormativa">1234</td></tr>
+          <tr><td colspan="2">
+              <input type="checkbox" id="cboxRetirada" value="Retirada" onclick="return false;">Retirada carnet
+              <br>
+              <input type="checkbox" id="cboxPunts" value="Punts" onclick="return false;">Retirada punts
+              <br>
+              <input type="checkbox" id="cboxCondicional" value="Condicional" onclick="return false;">Condicional
+              <br>
+              <input type="checkbox" id="cboxIntervencio" value="Intervencio" onclick="return false;">Intervenció material
+          </td></tr>
+          <tr><td colspan="2" id="popUpAbits">1234</td></tr>
+        </table>
     </table>
   </div>
 </div>
@@ -93,6 +92,7 @@
 <label for="dropdownDenuncies" class="myLabel">Filtrar:</label>
 <select id = "dropdownDenuncies" onchange = "dropdownChange()" class="dropdown">
   <option></option>
+  <option>Els meus favorits</option>
 </select>  
 <br>
 <label for="inputCodi" class="myLabel">Codi:</label>
@@ -100,7 +100,6 @@
 <table>
   <tr><td><p id="hitCounter" class="hitCounter"></p></td><td><button onClick="reset()" class="myButton">netejar</button></td></tr>
 </table>
-
 
 <table id="myTable" class="taulaMain">
     <thead><tr><th>FAMILIA</th>
@@ -42327,7 +42326,6 @@
     <td>S</td>
     </tr>
 </tbody></table>
-
 </div>
 
 </body>

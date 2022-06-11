@@ -2,6 +2,10 @@ const version = "0.9";
 const fecha = "23/04/2022";
 const arrayDenuncies = [];
 const csvData = [];
+const colorBookmark = "#fffee6";
+
+var selectedNum = "";
+var selectedTr = -1;
 
 function clickBack() {
     window.open('../index.html', "_self")
@@ -12,7 +16,6 @@ function reset(){
   document.getElementById("myInput").value = "";
   document.getElementById("myInput2").value = "";
   document.getElementById("dropdownDenuncies").value = "";
-
   buscar();
 }
 
@@ -34,7 +37,9 @@ function keyupInputCodi(){
   buscar();
 }
 
-
+//==========================================
+//========== BUSCAR =======================
+//==========================================
 function buscar() {
   var input, filter, table, tr, td, i, txtValue, iHits, arrayFiltreDenuncies;
 
@@ -52,9 +57,13 @@ function buscar() {
   txtFilterDenuncies = inputDenuncies.value;
 
   //Obtener los codigos de denuncia del dropdown
-  if (txtFilterDenuncies) {
-    if (txtFilterDenuncies != "") {
-      arrayFiltreDenuncies = arrayDenuncies[inputDenuncies.selectedIndex - 1].codis.split(",")
+  if (inputDenuncies.selectedIndex > 0) {
+    //si es 1 = bookmarks
+    if (inputDenuncies.selectedIndex == 1) {
+      strBookmark = getCookie("bookmarks")
+      arrayFiltreDenuncies = strBookmark.split(",");
+    } else {
+      arrayFiltreDenuncies = arrayDenuncies[inputDenuncies.selectedIndex - 2].codis.split(",")
     }
   }
 
@@ -168,13 +177,28 @@ function normalice(text){
   return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 }
 
+//==========================================
+//========== ESCONDE =======================
+//==========================================
 function esconde() {
+  //y pintamos bookmarks
+  strBookmark = getCookie("bookmarks")
+  arrayBookmark = strBookmark.split(",");
+
   iHits = 0;
 
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
+    tdNum = tr[i].getElementsByTagName("td")[1];
+    if (tdNum) {
+      if (arrayBookmark.includes(tdNum.innerHTML)) {
+        tr[i].style.backgroundColor = colorBookmark;
+      }  
+    }
+    
+
     iHits = iHits + 1;
     td = tr[i].getElementsByTagName("td")[0];
     th = tr[i].getElementsByTagName("th")[0];
@@ -218,7 +242,27 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 
+function bookmarkClick(){
+
+  estrella = document.getElementById("estrella");
+  if (isBookmark(selectedNum)) {
+    //quitar de bookmark
+    removeBookmark(selectedNum);
+    estrella.className = 'fa fa-star unchecked';
+    tr[selectedTr + 1].style.backgroundColor = "white";
+  } else {
+    //añadir a bookmark
+    addBookmark(selectedNum);
+    estrella.className = 'fa fa-star checked';
+    tr[selectedTr + 1].style.backgroundColor = colorBookmark;
+  }
+  
+}
+
+
 function tableClick(el) {
+
+
   var indice, table, tr, td;
   indice = $(el).closest('tr').index();
 
@@ -227,7 +271,11 @@ function tableClick(el) {
   td = tr[indice + 1].getElementsByTagName("td")
 
   //document.getElementById("popUpCodigo").innerText = td[1].innerText;
-  document.getElementById("popUpDesc").innerHTML = "<strong>" + td[1].innerText + "</strong>: " + td[2].innerText;
+  selectedNum = td[1].innerText;
+  selectedTr = indice;
+
+  document.getElementById("popUpNum").innerHTML = td[1].innerText;
+  document.getElementById("popUpDesc").innerHTML = td[2].innerText;
   document.getElementById("popUpNormativa").innerText = td[3].innerText + " - Article: " + td[4].innerText;
   //document.getElementById("popUpArticle").innerText = td[4].innerText;
   document.getElementById("popUpImporte").innerText = td[5].innerText + "€ / " + td[6].innerText + "€";
@@ -254,11 +302,21 @@ function tableClick(el) {
 
   document.getElementById("popUpAbits").innerText = td[10].innerText;
   
+  //check si es bookmark
+  estrella = document.getElementById("estrella");
+  if (isBookmark(selectedNum)) {
+    estrella.className = 'fa fa-star checked';
+  } else {
+    estrella.className = 'fa fa-star unchecked';
+  }
+  
   document.getElementById("overlay").style.display = "block";
 }
 
+
 function pageonload() {
   document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
+
   esconde();
   loadDenuncias();
 
@@ -338,4 +396,65 @@ function dropdownChange() {
 
   buscar();
 
+}
+
+function isBookmark(num) {
+  strBookmark = getCookie("bookmarks")
+  arrayBookmark = strBookmark.split(",");
+  if (arrayBookmark.includes(num)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function removeBookmark(num) {
+  strBookmark = getCookie("bookmarks")
+  arrayBookmark = strBookmark.split(",");
+  index = arrayBookmark.indexOf(num);
+  if (index > -1) {
+    arrayBookmark.splice(index, 1);
+  }
+  
+  setCookie("bookmarks", arrayBookmark.join(","), 3650);
+
+}
+
+function addBookmark(num) {
+  strBookmark = getCookie("bookmarks")
+  if (strBookmark == "") {
+    strBookmark = num;
+    setCookie("bookmarks", strBookmark, 3650);
+  } else {
+    //Check que no este ya en bookmarks
+    arrayBookmark = strBookmark.split(",");
+    if (arrayBookmark.includes(num)) {
+    } else {
+      strBookmark = strBookmark + "," + num;
+      setCookie("bookmarks", strBookmark, 3650);
+    }
+  }
+}
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
