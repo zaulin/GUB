@@ -42,6 +42,44 @@
 
 </head>
 <body onload="pageonload()" style="margin: 0;padding: 0">
+
+<div id="overlay">
+  <div id="textOverlay">
+    <table id="overlayTable">
+      <tr style="background-color: #064a9d;">
+        <td style="text-align:center; color: white; font-weight: bold;" id="popUpNum">INFORMACIÓ</td>
+      </tr>
+      <tr>
+        <td>
+          <p>La llei obliga a informar-te que aquesta pàgina fa servir galetes (cookies) per funcionar:</p>
+          <p><b>Galetes de tercers:</b></p>
+          <ul>
+            <li>Ens permeten quantificar el nombre d'usuaris i fer l'anàlisis estadístic de la utilització de la web.</li>
+          </ul>
+          <p><b>Galetes tècniques:</b></p>
+          <ul>
+            <li>Es fan servir per a poder guardar els favorits a l'apartat de denúncies.</li>
+          </ul>
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Pots consultar la política de galetes <a href="\galetes">aquí</a>.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <br>
+          <button class="btnPlain" onclick="acceptCookiesClick()">Acceptar les galetes</button>
+          <br><br>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
     <div id="loadingBlack">
       <div id="loadingIn">
         <div class="loader">
@@ -112,8 +150,17 @@
   </td>
 </tr>
 </table>
+<br><br>
 
  </div>
+
+ <table class="cabecera">
+  <tr>
+    <td style="color:#ffffff">
+    <a href="\galetes" style="color:#ffffff; text-decoration: none; margin-left:10px">Política de galetes</a>
+    </td>
+  </tr>
+</table>
 
 </body>
 </html>
