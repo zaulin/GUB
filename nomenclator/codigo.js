@@ -84,20 +84,21 @@ function buscar() {
 
           if (arrayFiltreDenuncies) {
 
-            
             if (arrayFiltreDenuncies.includes(txtCodi)) {
               if (filter2 == "") {
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                   hit = 1
                 } else {
-                  hit = 0;
+                    if (txtCodi.toUpperCase().startsWith(filter)) {
+                      hit = 1
+                    } else {
+                      hit = 0;
+                    }
                 }  
               } else {
               
-                  if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
-                    hit = 1
-                  } else {
-                    if (txtCodi.toUpperCase().indexOf(filter) > -1 && txtCodi.toUpperCase().indexOf(filter2) > -1) {
+                  if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
+                    if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2)) {
                       hit = 1
                     } else {
                       hit = 0;
@@ -112,7 +113,7 @@ function buscar() {
               if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 hit = 1
               } else {
-                    if (txtCodi.toUpperCase().indexOf(filter) > -1 && txtCodi.toUpperCase().indexOf(filter2) > -1) {
+                    if (txtCodi.toUpperCase().startsWith(filter) && txtCodi.toUpperCase().startsWith(filter2) ) {
                       hit = 1
                     } else {
                       hit = 0;
@@ -120,14 +121,14 @@ function buscar() {
               }  
             } else {
             
-                if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
-                  hit = 1
-                } else {
-                    if (txtCodi.toUpperCase().indexOf(filter) > -1 && txtCodi.toUpperCase().indexOf(filter2) > -1) {
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
+                    if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2)) {
                       hit = 1
                     } else {
-                      hit = 0;
+                      hit = 0
                     }
+                } else {     
+                  hit = 0;
                 } 
             }
 
