@@ -79,10 +79,11 @@ function buscar() {
         hit = 0;
 
         txtValue = normalice(td.textContent || td.innerText);
-  
+        tdCodi = tr[i].getElementsByTagName("td")[1];
+        txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
+
           if (arrayFiltreDenuncies) {
-            tdCodi = tr[i].getElementsByTagName("td")[1];
-            txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
+
             
             if (arrayFiltreDenuncies.includes(txtCodi)) {
               if (filter2 == "") {
@@ -96,7 +97,11 @@ function buscar() {
                   if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
                     hit = 1
                   } else {
-                    hit = 0;
+                    if (txtCodi.toUpperCase().indexOf(filter) > -1 && txtCodi.toUpperCase().indexOf(filter2) > -1) {
+                      hit = 1
+                    } else {
+                      hit = 0;
+                    }
                   } 
               }
 
@@ -107,14 +112,22 @@ function buscar() {
               if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 hit = 1
               } else {
-                hit = 0;
+                    if (txtCodi.toUpperCase().indexOf(filter) > -1 && txtCodi.toUpperCase().indexOf(filter2) > -1) {
+                      hit = 1
+                    } else {
+                      hit = 0;
+                    }
               }  
             } else {
             
                 if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
                   hit = 1
                 } else {
-                  hit = 0;
+                    if (txtCodi.toUpperCase().indexOf(filter) > -1 && txtCodi.toUpperCase().indexOf(filter2) > -1) {
+                      hit = 1
+                    } else {
+                      hit = 0;
+                    }
                 } 
             }
 
