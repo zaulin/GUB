@@ -12,7 +12,6 @@ function clickBack() {
 }
 
 function reset(){
-  document.getElementById("myInputCodi").value = "";
   document.getElementById("myInput").value = "";
   document.getElementById("myInput2").value = "";
   document.getElementById("dropdownDenuncies").value = "";
@@ -20,12 +19,10 @@ function reset(){
 }
 
 function keyupInput1(){
-  document.getElementById("myInputCodi").value = "";
   buscar();
 }
 
 function keyupInput2(){
-  document.getElementById("myInputCodi").value = "";
   buscar();
 }
 
@@ -50,9 +47,6 @@ function buscar() {
   input2 = document.getElementById("myInput2");
   filter2 = normalice(input2.value.toUpperCase());
 
-  inputCodi = document.getElementById("myInputCodi");
-  filterCodi = normalice(inputCodi.value.toUpperCase());
-
   inputDenuncies = document.getElementById("dropdownDenuncies");
   txtFilterDenuncies = inputDenuncies.value;
 
@@ -69,30 +63,6 @@ function buscar() {
 
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
-
-  if (filterCodi != "") {
-    document.getElementById("myInput").value = "";
-    document.getElementById("myInput2").value = "";
-
-    for (i = 0; i < tr.length; i++) {
-      hit = 0;
-      tdCodi = tr[i].getElementsByTagName("td")[1];
-      if (tdCodi) {
-        txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
-        if (txtCodi.toUpperCase().indexOf(filterCodi) > -1) {
-          hit = 1;
-        }
-
-        if (hit==1) {
-          tr[i].style.display = "";
-          iHits = iHits + 1;
-        } else {
-          tr[i].style.display = "none";
-        }
-      }
-    }
-
-  } else {
 
     if (filter == "") {
       if (filter2 != "") {
@@ -160,7 +130,7 @@ function buscar() {
         }
       }     
     }
-  }
+  
   if (iHits == 1) {
     document.getElementById("hitCounter").innerHTML = iHits + " coincidència." 
   } else {
@@ -259,6 +229,9 @@ function bookmarkClick(){
   
 }
 
+//==========================================
+//========== TABLE CLICK ===================
+//==========================================
 
 function tableClick(el) {
 
@@ -315,12 +288,14 @@ function tableClick(el) {
 
 
 function pageonload() {
+
   document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
   esconde();
   loadDenuncias();
 
   document.getElementById("loading").style.display = "none";
+
 }
 
 function loadDenuncias() {
@@ -392,7 +367,6 @@ function loadDenuncias() {
 }
 
 function dropdownChange() {
-  document.getElementById("myInputCodi").value = "";
 
   buscar();
 
