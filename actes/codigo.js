@@ -71,7 +71,6 @@ function filterSituacio() {
       }
 
       if (arraySituacion[j]["actes perjudicat"]) {
-        iHitsPerjudicat = iHitsPerjudicat + 1;
         arrayActasPerjudicat = arraySituacion[j]["actes perjudicat"].split(',');
       } else {
         arrayActasPerjudicat = [];
