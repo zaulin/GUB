@@ -26,6 +26,12 @@ function keyupInput2(){
   buscar();
 }
 
+function dropdownChange() {
+  document.getElementById("myInput").value = "";
+  document.getElementById("myInput2").value = "";
+  buscar();
+}
+
 function keyupInputCodi(){
   document.getElementById("myInput").value = "";
   document.getElementById("myInput2").value = "";
@@ -380,11 +386,6 @@ function loadDenuncias() {
 
 }
 
-function dropdownChange() {
-
-  buscar();
-
-}
 
 function isBookmark(num) {
   strBookmark = getCookie("bookmarks")
