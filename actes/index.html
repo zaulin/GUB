@@ -54,26 +54,39 @@
 
 <div style="margin-left: 5px; margin-right: 5px;">
   
-<label for="inputCodi" class="myLabel">Codi:</label>
-<input name="inputCodi" type="text" id="myInputCodi" onkeyup="keyupInputCodi()" placeholder="codi.." class="myInputCodi" >
+      <div>
+            <table>
+                <tr>
+                  <td style="vertical-align: bottom;">
+                    <label class="myLabel" >Filtrar:</label>
+                  </td>
+                  <td style="vertical-align: bottom;">
+                    <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
+                  </td>
+                  
+                </tr>
 
-<br>
+                <tr>
+                  <td style="vertical-align: bottom; text-align: right;">
+                    <label class="myLabel" >i:</label>
+                  </td>
+                  <td>
+                    <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula.." class="myInput" >
+                  </td>
+                  <td style="vertical-align: bottom;">
 
-<label for="input1" class="myLabel">Que contingui:</label>
-<input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
-<!--button id="button" onClick="changeButton()" class="myButton">i</button--> i 
-<input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula.." class="myInput" >
+                    <td style="vertical-align: bottom;"><button onClick="reset()" class="boton">netejar</button></td>
+                  </td>
+                </tr>
+            </table>
+                                
 
-<br>
-
-<label for="dropdownSituacion" class="myLabel">Situació:</label>
-<select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
-  <option></option>
-</select>  
-
-<table>
-  <tr><td><p id="hitCounter" class="hitCounter"></p></td><td><button onClick="reset()" class="myButton">netejar</button></td></tr>
-</table>
+            <label for="dropdownSituacion" class="myLabel">Situació:</label>
+            <select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
+              <option></option>
+            </select>  
+          <p id="hitCounter" class="hitCounter"></p>
+      </div>
 
 <div id="divTaules">
 <!----------------------------------------------------------->

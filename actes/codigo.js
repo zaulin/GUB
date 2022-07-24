@@ -8,7 +8,6 @@ function clickBack() {
 }
 
 function keyupInput1() {
-  document.getElementById("myInputCodi").value = "";
   document.getElementById("dropdownSituacion").value = "";
   document.getElementById("labelExtra").innerText = "";
   document.getElementById("divTaulaPerjudicat").style.display = "none";
@@ -19,7 +18,6 @@ function keyupInput1() {
 }
 
 function keyupInput2() {
-  document.getElementById("myInputCodi").value = "";
   document.getElementById("dropdownSituacion").value = "";
   document.getElementById("labelExtra").innerText = "";
   document.getElementById("divTaulaPerjudicat").style.display = "none";
@@ -29,17 +27,6 @@ function keyupInput2() {
   buscar();
 }
 
-function keyupInputCodi() {
-  document.getElementById("myInput").value = "";
-  document.getElementById("myInput2").value = "";
-  document.getElementById("dropdownSituacion").value = "";
-  document.getElementById("labelExtra").innerText = "";
-  document.getElementById("divTaulaPerjudicat").style.display = "none";
-  document.getElementById("divTaulaAutor").style.display = "none";
-  document.getElementById("textResta").style.display = "none";
-  document.getElementById("divTaulaResta").style.display = "block";
-  buscar();
-}
 
 function filterSituacio() {
   var iHits, iHitsAutor, iHitsPerjudicat, iHitsResta;
@@ -84,7 +71,6 @@ function filterSituacio() {
 
 
       for (var i = 0; i < trResta.length; i++) {
-        hit = 0;
         tdCodi = trResta[i].getElementsByTagName("td")[0];
 
         if (tdCodi) {
@@ -134,6 +120,9 @@ function filterSituacio() {
   } else {
     document.getElementById("divTaulaAutor").style.display = "none";
   }
+console.log("resta: " + iHitsResta);
+console.log("perjudicat: " + iHitsPerjudicat);
+console.log("autor: " + iHitsAutor);
 
   iHits = iHitsResta + iHitsPerjudicat + iHitsAutor;
   return iHits;
@@ -156,9 +145,6 @@ function buscar() {
   input2 = document.getElementById("myInput2");
   filter2 = normalice(input2.value.toUpperCase());
 
-  inputCodi = document.getElementById("myInputCodi");
-  filterCodi = normalice(inputCodi.value.toUpperCase());
-
   inputSituacio = document.getElementById("dropdownSituacion");
   txtFilterSituacio = inputSituacio.value;
 
@@ -168,29 +154,7 @@ function buscar() {
   table = document.getElementById("tableResta");
   tr = table.getElementsByTagName("tr");
 
-  if (filterCodi != "") {
-    document.getElementById("myInput").value = "";
-    document.getElementById("myInput2").value = "";
-
-    for (i = 0; i < tr.length; i++) {
-      hit = 0;
-      tdCodi = tr[i].getElementsByTagName("td")[0];
-      if (tdCodi) {
-        txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
-        if (txtCodi.toUpperCase().indexOf(filterCodi) > -1) {
-          hit = 1;
-        }
-
-        if (hit == 1) {
-          tr[i].style.display = "";
-          iHits = iHits + 1;
-        } else {
-          tr[i].style.display = "none";
-        }
-      }
-    }
-
-  } else if (txtFilterSituacio != "") {
+if (txtFilterSituacio != "") {
 
     iHits = filterSituacio();
 
@@ -206,45 +170,32 @@ function buscar() {
 
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[1];
+      tdCodi = tr[i].getElementsByTagName("td")[0];
       if (td) {
 
         hit = 0;
 
         txtValue = normalice(td.textContent || td.innerText);
+        txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
 
         if (filter2 == "") {
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
             hit = 1
           } else {
             hit = 0;
           }
         } else {
 
-          if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
-            hit = 1
-          } else {
+          if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
+              if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2)) {
+                hit = 1
+              } else {
+                hit = 0
+              }
+          } else {     
             hit = 0;
-          }
+          } 
 
-          //miramos el operador
-          /*
-          if (operator == "i") {
-            //operador AND
-            if (txtValue.toUpperCase().indexOf(filter) > -1 && txtValue.toUpperCase().indexOf(filter2) > -1) {
-              hit = 1
-            } else {
-              hit = 0;
-            }  
-
-          } else {
-            //operador OR
-            if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue.toUpperCase().indexOf(filter2) > -1) {
-              hit = 1
-            } else {
-              hit = 0;
-            }  
-          }
-          */
         }
 
         if (hit == 1) {
@@ -282,14 +233,11 @@ function changeButton() {
 }
 
 function reset() {
-  //document.getElementById("button").innerText = "i";
-
 
   document.getElementById("myInput").value = "";
 
   document.getElementById("myInput2").value = "";
 
-  document.getElementById("myInputCodi").value = "";
   document.getElementById("dropdownSituacion").value = "";
 
   buscar();
@@ -314,7 +262,6 @@ function tableClick(el) {
 function dropdownChange() {
   document.getElementById("myInput").value = "";
   document.getElementById("myInput2").value = "";
-  document.getElementById("myInputCodi").value = "";
 
   inputSituacio = document.getElementById("dropdownSituacion");
   txtFilterSituacio = inputSituacio.value;
@@ -348,8 +295,6 @@ function pageonload() {
   document.getElementById("myInput2").value = "";
   document.getElementById("dropdownSituacion").value = "";
   document.getElementById("labelExtra").innerText = "";
-  document.getElementById("myInputCodi").value = "";
-
 
   loadSituaciones();
 
