@@ -1,7 +1,7 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
 Conduir sota influència alcohol;T100;;;Taxa > 0,43
 Alcoholèmia penal;T101,A21,T102,T100,A13,T104;;;
-Negativa proves alcohol/drogues;A101,A21,T102,N01,T100,T104;;;
+Negativa proves alcohol/drogues;T101,A21,T102,N01,T100,T104;;;
 Drogotest positiu;T101,A13,A125;;T110;"S'ha de fer previament la prova d'alcohoèmia.
 
 A125 nomès per penal i l'ha de fer un EAS.
