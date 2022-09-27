@@ -1,0 +1,19 @@
+﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
+Patrimoni;Robatori amb força;N01,A108,A109;N02,A31,A56,G30;;Es considera també robatori amb força si la força s'exerceix per abandonar el lloc
+Patrimoni;Usurpació (okupes);N09;N02;G133,A31;"Si es tracta d'un edifici públic: GUB - UI
+Si es tracta d'un edifici privat: CME"
+Patrimoni;Furt;N09,N10,A108,A35;N02,A56,A57,N10;A18,N10,G31,D24;Si es a establiment: adjuntar el tiquet de caixa.
+Patrimoni;Furt +400€;N01,A108,A109;N02,A56,G30,A17;;"Si es a establiment: adjuntar el tiquet de caixa.
+
+Agreujants:
+
+- Furtar cables amb greu perjudici
+- Productes agraris amb greu perjudici
+- Valor artístic/històric
+- Objectes de 1ª necesitat (desabastiment)
+- Desamparament de la víctima
+- Aprofitant-se d'un accident
+- Fer servir menors"
+Patrimoni;Apropiació indeguda;N09,A108;N02,A56;;
+Patrimoni;Apropiació indeguda +400€;N01,A108;N02,A56;A109;Si l'autor s'ha trobat l'objecte sempre serà un delicte lleu independentment del valor de l'objecte.
+Patrimoni;Robatori/furt ús de vehícle;N08,G30,A108;N02,G30;A33;Ingresar el vehícle a disposició judicial.

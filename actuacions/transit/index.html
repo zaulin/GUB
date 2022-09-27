@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACTES</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    type="text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYXV6ZJSGC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MYXV6ZJSGC');
+    </script>
+    
+    <script type="text/javascript" src="papaparse.min.js"></script>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/loader.css">
+    <link rel="stylesheet" href="../../css/cabecera.css">
+    <link rel="stylesheet" href="../../css/taules.css">
+    <link rel="stylesheet" href="../../css/textos.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#064a9d">
+
+<meta http-equiv="Cache-Control" content="no-store" /> 
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+
+</head>
+<body onload="pageonload()" style="margin: 0;padding: 0">
+
+    <div id="loading">
+      <div id="loadingIn">
+        <div class="loader">
+        
+        </div>
+      </div>
+    </div>
+    
+
+<table class="cabecera">
+  <tr>
+    <td id="version" onclick="clickBack()" class="back"><img src="../../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo" class="titulo">TRÀNSIT</td>
+    <td id="fecha" class="fecha"></td>
+  </tr>
+</table>
+
+<div style="margin-left: 5px; margin-right: 5px;">
+  
+      <div>
+
+                                
+
+            <label for="dropdownSituacion" class="myLabel">Situació:</label>
+            <select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
+              <option></option>
+            </select>  
+          <p id="hitCounter" class="hitCounter"></p>
+      </div>
+
+<div id="divTaules">
+<!----------------------------------------------------------->
+<!------------------ DIV AUTOR ------------------------------>
+<!----------------------------------------------------------->
+<div id="divTaulaAutor">
+  <p class="hitCounter">Actes per l'autor:</p>
+  <table id="tableAutor" class="taulaMain">
+  <thead><tr><th>Codi</th>
+<th>Descripció</th>
+</tr></thead>
+<tbody><tr onClick="tableClick(this)">
+<td>A10PL</td>
+<td>ACTA GENÈRICA D´INTERVENCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A13PL</td>
+<td>ACTA D´IMMOBILITZACIÓ, INTERVENCIÓ, DIPÒSIT D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A14PL</td>
+<td>ACTA DE PRECINTE D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A15PL</td>
+<td>ACTA DE DESPRECINTE D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A17PL</td>
+<td>ACTA DE MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A17.2PL</td>
+<td>CONTINUACIÓ DE L´ACTA DE MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A18PL</td>
+<td>ACTA DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A18.2PL</td>
+<td>CONTINUACIÓ  ACTA DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A20PL</td>
+<td>ACTA DE PESATGE DE SUBSTÀNCIES ESTUPEFAENTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A21PL</td>
+<td>INFORME PERICIAL D´ALCOHOLÈMIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A29PL</td>
+<td>ACTA PER DEIXAR SENSE EFECTE UNA DETENCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A31PL</td>
+<td>ACTA D´INSPECCIÓ OCULAR A IMMOBLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A33PL</td>
+<td>ACTA D´INSPECCIÓ OCULAR DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A35PL</td>
+<td>ACTA DE LLIURAMENT DE MENOR O PERSONA AMB DISCAPACITAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A43PL</td>
+<td>ACTA DE GESTIÓ DE TROBALLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A43.2PL</td>
+<td>REBUT DE TROBALLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A54PL</td>
+<td>ACTA DE LLIURAMENT DE PERSONA DETINGUDA PER A CUSTÒDIA OI TRASLLAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A55PL</td>
+<td>ACTA DE DETENCIÓ PER RECLAMACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A56PL</td>
+<td>ACTA DE RECONEIXEMENT I LLIURAMENT D´EFECTES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A57PL</td>
+<td>ACTA DE DECLARACIÓ DE PERSONA PERJUDICADA PER SOSTRACCIÓ A ESTABLIMENT COMERCIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A58PL</td>
+<td>ACTA PER PRESSUMPTE INFRACCIÓ ADMINISTRATIVA L.O 4/2000</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A59PL</td>
+<td>ACTA D´ESBRINAMENT DE DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A101PL</td>
+<td>ACTA ÚNICA DE DENÚNCIA I INTERVENCIÓ DE GÈNERE PER A VENDA AMBULANT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A101.2PL</td>
+<td>ACTA DE LLIURAMENT DE GÈNERE INTERVINGUT PER VENDA AMBULANT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A102PL</td>
+<td>ACTA ÚNICA DE DENÚNCIA I INTERVENCIÓ PER L´OFERIMENT DE JUGUESQUES A L´ESPAI PÚBLIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A103PL</td>
+<td>ACTA D´INSPECCIÓ DE LOCALS DE CONCURRÈNCIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A103.1PL</td>
+<td>CITACIÓ PER PRESENTAR REBUT D´ASSEGURANÇA OBLIGATÒRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A104PL</td>
+<td>ACTA DE CESSIÓ D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A105PL</td>
+<td>ACTA D´INSPECCIÓ PER TRANSPORT D´ALIMENTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A106PL</td>
+<td>INFORME PER A SERVEIS SOCIALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A107PL</td>
+<td>ACTA D´INTERVENCIÓ D´ANIMALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A107.bPL</td>
+<td>ACTUACIÓ AMB GOSSOS CONSIDERATS COM A POTENCIALMENT PERILLOSOS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A108PL</td>
+<td>ACTA D´INTERVENCIÓ D´EFECTES A UNA PERSONA DENUNCIADA, INVESTIGADA O DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A109PL</td>
+<td>ACTA DE LLIURAMENT I CUSTÒDIA DELS EFECTES PERSONALS AD´UNA PERSONA DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A110PL</td>
+<td>ACTA DE COMUNICACIÓ SOBRE INTERVENCIÓ DE PERMIS DE CONDUIR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A111PL</td>
+<td>ACTA D´INSPECCIÓ DE NIVELLS SONORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A111.bPL</td>
+<td>ACTA D´INSPECCIÓ DE NIVELLS SONORS MUSICALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A112PL</td>
+<td>ACTA D´INSPECCIÓ D´OBRES A LA VIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A114PL</td>
+<td>ACTA DE CONTROL DE SOROLL DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A115PL</td>
+<td>ACTA DE RESPONSABILITAT EN LA CONDUCCIÓ DEL VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A116PL</td>
+<td>ACTA PER AL TRASLLAT VOLUNTARI DE CONDUCTOR A DEPENDÈNCIES DE GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A118PL</td>
+<td>INFORME SOBRE MITJANS DE VIDA I DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A119PL</td>
+<td>CONTINUACIÓ DE L´ACTA  </td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A121PL</td>
+<td>ANNEX A LA DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A124PL</td>
+<td>ACTA D´OBERTURA DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A125PL</td>
+<td>INFORME PERICIAL DE DROGUES ESTUPEFAENTS O SUBSTÀNCIES PSICOTRÒPIQUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A127PL</td>
+<td>ACTA DE DESTRUCCIÓ D´IMATGES REALITZADES AMB CÀMERES DE VIDEOVIGILÀNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A129PL</td>
+<td>ACTA DE CERTIFICACIÓ DEL VALOR LÍMIT D´EMISSIÓ DE SOROLL PER A VEHICLES A MOTOR I CICLOMOTORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A130PL</td>
+<td>ACTA D´INTERVENCIÓ DE PERMÍS DE CIRCULACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A131PL</td>
+<td>ACTA D´ENTRADA I LLIURAMENT DE LA FINCA AL SEU PROPIETARI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A132PL</td>
+<td>ACTA D´INSPECCIÓ D´ABOCAMENT DE MATERIAL TÒXIC I REQUERIMENT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A134PL</td>
+<td>ANNEX A LA DENÚNCIA DE CONDUCCIÓ SOTA ELS EFECTES DE CONSUM DE DROGUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A135PL</td>
+<td>ACTA D´UTILITZACIÓ DEL RIFLE ANESTÈSIC PER ANIMALS PER ACTUACIONS A LA VIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A136PL</td>
+<td>ACTA OBERTA (GENÈRICA)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A138PL</td>
+<td>ACTA D´INSPECCIÓ D´HABITATGE D´ÚS TURÍSTIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A139PL</td>
+<td>ACTA DE LLIURAMENT DE MOSTRES DE SALIVA PER DETECCIÓ DE DROGUES O ALTRES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A140PL</td>
+<td>COMUNICAT A LA PREFACTURA PROVINCIAL DE TRÀNSIT D´UNA INCIDÈNCIA D´UN PERMÍS DE CONDUIR NO EXP. A ESPANYA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A143PL</td>
+<td>ACTA DE RETORN DE MATERIAL DE DOTACIÓ OPERATIU I NO OPERATIU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D04PL</td>
+<td>DENÚNCIA DE FURT/SOSTRACCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D05PL</td>
+<td>DENÚNCIA DE ROBATORI/FURT DINS D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D06PL</td>
+<td>LLISTA D´OBJECTES SOSTRETS/PERDUTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D07PL</td>
+<td>DENÚNCIA DE LA PÈRDUA D´OBJECTES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D10PL</td>
+<td>DENÚNCIA PER PRESSUMPTES INFRACCIONS A LA L.O. 4/2015</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D10.bPL</td>
+<td>ACTA D´INTERVENCIÓ TEMPORAL A L´EMPARA DE LA L.O 4/2015</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D11PL</td>
+<td>DENÚNCIA GENÈRICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D16PL</td>
+<td>DENÚNCIA DE DANYS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D24PL</td>
+<td>DENÚNCIA DE FURT A ESTABLIMENT COMERCIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D25PL</td>
+<td>AMPLIACIÓ DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D32PL</td>
+<td>ACTA DENÚNCIA PER INFRACCIÓ RELACIONADA AMB EL VOL DE RPA/DRONS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D101PL</td>
+<td>DENÚNCIA PER INFRACCIÓ LL 11/2014 PER GARANTIR ELS DRETS DE LESBIANES, GAIS, BISEXUALS…</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G04PL</td>
+<td>INFORME DE PERSECUCIÓ POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G25PL</td>
+<td>INFORME DEL CONTACTE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G30PL</td>
+<td>DOCUMENT DE CORDINACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G31PL</td>
+<td>MINUTA POLICIAL PER FALTES DE FURT A ESTABLIMENT FULL 1</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G31.2PL</td>
+<td>MINUTA POLICIAL PER FALTES DE FURT A ESTABLIMENT FULL 2</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G32PL</td>
+<td>SOL-LICITUD DE NOVA TIPOLOGIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G101PL</td>
+<td>OPERACIÓ CONJUNTA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G102PL</td>
+<td>INFORME SOBRE CONCENTRACIÓ, MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G105PL</td>
+<td>SOL-LICITUD DE TRAGETA D´ARMES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G106PL</td>
+<td>OFICI DE LLIURAMENT D´ATESTATS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G107PL</td>
+<td>OFICI DE LLIURAMENT DE DOCUMENTACIÓ A LA PGME</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G108PL</td>
+<td>OFICI D´AVERIGUACIÓ DE DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G109PL</td>
+<td>OFICI DE SOL-LICITUD DE DADES DEL PADRÓ MUNICIPAL A LA GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G109.2PL</td>
+<td>OFICI DE SOL-LICITUD DE DADES DEL PADRÓ MUNICIPAL A LA GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G113PL</td>
+<td>COMINCAT INTERN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G114PL</td>
+<td>SOL.LICITUD D´INDEMNITZACIÓ PER DESPLAÇAMENTS EN ASSISTÈNCIA A JUDICI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G115PL</td>
+<td>DADES BÀSIQUES DE L´ASSISTÈNCIA A JUDICI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G118PL</td>
+<td>COMITÈ DE QUALITAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G120PL</td>
+<td>FORMULARI DE DERIVACIÓ A MEDIACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G121PL</td>
+<td>RESPOSTA AL PLEC DE DESCÀRREC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G123PL</td>
+<td>COMUNICAT INTERN DE MANIFESTACIÓ D´ACCIDENT AMB VEHICLE POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G124PL</td>
+<td>COMUNICAT DE PINTADES/GRAFITS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G145PL</td>
+<td>DETECCIÓ AVERIA I/O DANYS EN VEHICLE GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G146PL</td>
+<td>DETECCIÓ DE MANCA DOTACIÓ DEL VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G152PL</td>
+<td>DADES EN SUPÒSITS D´ACTITUDS DISCRIMINATÒRIES I/O DELICTES D´ODI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G157PL</td>
+<td>COMUNICAT D’ÚS DEL DISPOSITIU PERSONAL DE GRAVACIÓ (DPG)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I24</td>
+<td>FULL D´IDENTIFICACIÓ DE PERSONES DETINGUDES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I25</td>
+<td>FULL DE CERTIFICAT D´IDENTIFICACIÓ DE PERSONA DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I55</td>
+<td>CADENA DE CUSTÒDIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N01PL</td>
+<td>INFORMACIÓ A LA PERSONA DETINGUDA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N01.bPL</td>
+<td>INFORMACIÓ AL/A LA MENOR DETINGUT/DA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N02PL</td>
+<td>INFORMACIÓ A LA VÍCTIMA I/O PERSONA PERJUDICADA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N07PL</td>
+<td>NOTIFICACIÓ DE CITACIÓ JUDICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N08PL</td>
+<td>INFORMACIÓ DE DRETS A LA PERSONA INVESTIGADA NO DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N09PL</td>
+<td>INFORMACIÓ DE DRETS I FETS A LA PERSONA DENUNCIADA PER DELICTE LLEU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N09.bPL</td>
+<td>INFORMACIÓ DE DRETS I FETS AL MENOR DENUNCIAT PER DELICTE LLEU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N10PL</td>
+<td>CITACIÓ PER A JUDICI INMEDIAT DE DELICTE LLEU (JIDL)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N101PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A VÍCTIMES DE VIOLÈNCIA DOMÈSTICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N101.bPL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A VÍCTIMES DE DELICTES CONTRA LA LLIBERTAT SEXUAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N102PL</td>
+<td>NOTIFICACIÓ DE CITACIÓ POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T11PL</td>
+<td>ACTA D´INSPECCIÓ DE TRANSPORT ESCOLAR O DE MENORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T12PL</td>
+<td>MOSTRA PER ANALÍTICA CONTRAST ALCOHOL O ALTRES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T17PL</td>
+<td>ACTA D´ISPECCIÓ DE TRANSPORTS DE VIATGERS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T100PL</td>
+<td>COMUNICAT DELICTE CONTRA LA SEGURETAT VIÀRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T101PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A LES PERSONES SOTMESES A LES PROVES D´ALCOHOL O DROGUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T102PL</td>
+<td>INFORMACIÓ DE DRETS A LA PERSONA INVESTIGADA EN UN DELICTE RELACIONAT AMB LA CIRCULACIÓ DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T102.2PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ DE DRETS A UN MENOR INVESTIGAT EN UN PRESSUMPTE DELICTE DE SEGURETAT VIÀRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T103PL</td>
+<td>DELICTE CONTRA LA SEGURETAT VIÀRIA: EXCÉS DE VELOCITAT O CONDUCCIÓ SENSE PERMÍS O LLICÈNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T104PL</td>
+<td>CITACIÓ PER A LA PERSONA DENUNCIADAA CAUSA D´UN PRESSUMPTE DELICTE CONTRA LA SEGURETAT VIARIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T105PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ EN CAS D´ACCIDENT DE TRÀNSIT </td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T06.1PL</td>
+<td>FULL D´IDENTIFICACIÓ ACCIDENT DE TRÀNSIT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T107PL</td>
+<td>PROPOSTA EXTRAORDINÀRIA D´INSPECCIÓ TÈCNICA DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T108PL</td>
+<td>VEHICLE DE TRANSPORT PÚBLIC DE VIATGERS. DECLARACIÓ CONDUCTOR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T109PL</td>
+<td>VEHICLE DE TRANSPORT PÚBLIC DE VIATGERS. DECLARACIÓ PASSATGER</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T06PL</td>
+<td>COMUNICAT D´UN ACCIDENT DE TRÀNSIT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T110</td>
+<td>MOSTRA PER A ANALÍTICA DE DROGUES TÒXIQUES, ESTUPEFAENTS O SUBSTÀNCIES PSICOTRÒPIQUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T111PL</td>
+<td>INFORMACIÓ SOBRE L’OBLIGACIÓ DE RENOVAR EL PERMÍS DE CONDUCCIÓ COMUNITARIS ALS TITULARS RESIDENTS A ESPANYA</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<!----------------------------------------------------------->
+<!------------------ DIV VICTIMA ---------------------------->
+<!----------------------------------------------------------->
+<div id="divTaulaPerjudicat">
+  <p class="hitCounter">Actes per al perjudicat:</p>
+  <table id="tablePerjudicat" class="taulaMain">
+  <thead><tr><th>Codi</th>
+<th>Descripció</th>
+</tr></thead>
+<tbody><tr onClick="tableClick(this)">
+<td>A10PL</td>
+<td>ACTA GENÈRICA D´INTERVENCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A13PL</td>
+<td>ACTA D´IMMOBILITZACIÓ, INTERVENCIÓ, DIPÒSIT D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A14PL</td>
+<td>ACTA DE PRECINTE D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A15PL</td>
+<td>ACTA DE DESPRECINTE D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A17PL</td>
+<td>ACTA DE MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A17.2PL</td>
+<td>CONTINUACIÓ DE L´ACTA DE MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A18PL</td>
+<td>ACTA DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A18.2PL</td>
+<td>CONTINUACIÓ  ACTA DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A20PL</td>
+<td>ACTA DE PESATGE DE SUBSTÀNCIES ESTUPEFAENTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A21PL</td>
+<td>INFORME PERICIAL D´ALCOHOLÈMIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A29PL</td>
+<td>ACTA PER DEIXAR SENSE EFECTE UNA DETENCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A31PL</td>
+<td>ACTA D´INSPECCIÓ OCULAR A IMMOBLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A33PL</td>
+<td>ACTA D´INSPECCIÓ OCULAR DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A35PL</td>
+<td>ACTA DE LLIURAMENT DE MENOR O PERSONA AMB DISCAPACITAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A43PL</td>
+<td>ACTA DE GESTIÓ DE TROBALLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A43.2PL</td>
+<td>REBUT DE TROBALLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A54PL</td>
+<td>ACTA DE LLIURAMENT DE PERSONA DETINGUDA PER A CUSTÒDIA OI TRASLLAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A55PL</td>
+<td>ACTA DE DETENCIÓ PER RECLAMACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A56PL</td>
+<td>ACTA DE RECONEIXEMENT I LLIURAMENT D´EFECTES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A57PL</td>
+<td>ACTA DE DECLARACIÓ DE PERSONA PERJUDICADA PER SOSTRACCIÓ A ESTABLIMENT COMERCIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A58PL</td>
+<td>ACTA PER PRESSUMPTE INFRACCIÓ ADMINISTRATIVA L.O 4/2000</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A59PL</td>
+<td>ACTA D´ESBRINAMENT DE DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A101PL</td>
+<td>ACTA ÚNICA DE DENÚNCIA I INTERVENCIÓ DE GÈNERE PER A VENDA AMBULANT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A101.2PL</td>
+<td>ACTA DE LLIURAMENT DE GÈNERE INTERVINGUT PER VENDA AMBULANT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A102PL</td>
+<td>ACTA ÚNICA DE DENÚNCIA I INTERVENCIÓ PER L´OFERIMENT DE JUGUESQUES A L´ESPAI PÚBLIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A103PL</td>
+<td>ACTA D´INSPECCIÓ DE LOCALS DE CONCURRÈNCIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A103.1PL</td>
+<td>CITACIÓ PER PRESENTAR REBUT D´ASSEGURANÇA OBLIGATÒRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A104PL</td>
+<td>ACTA DE CESSIÓ D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A105PL</td>
+<td>ACTA D´INSPECCIÓ PER TRANSPORT D´ALIMENTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A106PL</td>
+<td>INFORME PER A SERVEIS SOCIALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A107PL</td>
+<td>ACTA D´INTERVENCIÓ D´ANIMALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A107.bPL</td>
+<td>ACTUACIÓ AMB GOSSOS CONSIDERATS COM A POTENCIALMENT PERILLOSOS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A108PL</td>
+<td>ACTA D´INTERVENCIÓ D´EFECTES A UNA PERSONA DENUNCIADA, INVESTIGADA O DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A109PL</td>
+<td>ACTA DE LLIURAMENT I CUSTÒDIA DELS EFECTES PERSONALS AD´UNA PERSONA DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A110PL</td>
+<td>ACTA DE COMUNICACIÓ SOBRE INTERVENCIÓ DE PERMIS DE CONDUIR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A111PL</td>
+<td>ACTA D´INSPECCIÓ DE NIVELLS SONORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A111.bPL</td>
+<td>ACTA D´INSPECCIÓ DE NIVELLS SONORS MUSICALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A112PL</td>
+<td>ACTA D´INSPECCIÓ D´OBRES A LA VIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A114PL</td>
+<td>ACTA DE CONTROL DE SOROLL DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A115PL</td>
+<td>ACTA DE RESPONSABILITAT EN LA CONDUCCIÓ DEL VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A116PL</td>
+<td>ACTA PER AL TRASLLAT VOLUNTARI DE CONDUCTOR A DEPENDÈNCIES DE GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A118PL</td>
+<td>INFORME SOBRE MITJANS DE VIDA I DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A119PL</td>
+<td>CONTINUACIÓ DE L´ACTA  </td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A121PL</td>
+<td>ANNEX A LA DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A124PL</td>
+<td>ACTA D´OBERTURA DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A125PL</td>
+<td>INFORME PERICIAL DE DROGUES ESTUPEFAENTS O SUBSTÀNCIES PSICOTRÒPIQUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A127PL</td>
+<td>ACTA DE DESTRUCCIÓ D´IMATGES REALITZADES AMB CÀMERES DE VIDEOVIGILÀNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A129PL</td>
+<td>ACTA DE CERTIFICACIÓ DEL VALOR LÍMIT D´EMISSIÓ DE SOROLL PER A VEHICLES A MOTOR I CICLOMOTORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A130PL</td>
+<td>ACTA D´INTERVENCIÓ DE PERMÍS DE CIRCULACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A131PL</td>
+<td>ACTA D´ENTRADA I LLIURAMENT DE LA FINCA AL SEU PROPIETARI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A132PL</td>
+<td>ACTA D´INSPECCIÓ D´ABOCAMENT DE MATERIAL TÒXIC I REQUERIMENT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A134PL</td>
+<td>ANNEX A LA DENÚNCIA DE CONDUCCIÓ SOTA ELS EFECTES DE CONSUM DE DROGUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A135PL</td>
+<td>ACTA D´UTILITZACIÓ DEL RIFLE ANESTÈSIC PER ANIMALS PER ACTUACIONS A LA VIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A136PL</td>
+<td>ACTA OBERTA (GENÈRICA)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A138PL</td>
+<td>ACTA D´INSPECCIÓ D´HABITATGE D´ÚS TURÍSTIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A139PL</td>
+<td>ACTA DE LLIURAMENT DE MOSTRES DE SALIVA PER DETECCIÓ DE DROGUES O ALTRES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A140PL</td>
+<td>COMUNICAT A LA PREFACTURA PROVINCIAL DE TRÀNSIT D´UNA INCIDÈNCIA D´UN PERMÍS DE CONDUIR NO EXP. A ESPANYA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A143PL</td>
+<td>ACTA DE RETORN DE MATERIAL DE DOTACIÓ OPERATIU I NO OPERATIU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D04PL</td>
+<td>DENÚNCIA DE FURT/SOSTRACCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D05PL</td>
+<td>DENÚNCIA DE ROBATORI/FURT DINS D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D06PL</td>
+<td>LLISTA D´OBJECTES SOSTRETS/PERDUTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D07PL</td>
+<td>DENÚNCIA DE LA PÈRDUA D´OBJECTES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D10PL</td>
+<td>DENÚNCIA PER PRESSUMPTES INFRACCIONS A LA L.O. 4/2015</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D10.bPL</td>
+<td>ACTA D´INTERVENCIÓ TEMPORAL A L´EMPARA DE LA L.O 4/2015</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D11PL</td>
+<td>DENÚNCIA GENÈRICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D16PL</td>
+<td>DENÚNCIA DE DANYS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D24PL</td>
+<td>DENÚNCIA DE FURT A ESTABLIMENT COMERCIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D25PL</td>
+<td>AMPLIACIÓ DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D32PL</td>
+<td>ACTA DENÚNCIA PER INFRACCIÓ RELACIONADA AMB EL VOL DE RPA/DRONS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D101PL</td>
+<td>DENÚNCIA PER INFRACCIÓ LL 11/2014 PER GARANTIR ELS DRETS DE LESBIANES, GAIS, BISEXUALS…</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G04PL</td>
+<td>INFORME DE PERSECUCIÓ POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G25PL</td>
+<td>INFORME DEL CONTACTE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G30PL</td>
+<td>DOCUMENT DE CORDINACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G31PL</td>
+<td>MINUTA POLICIAL PER FALTES DE FURT A ESTABLIMENT FULL 1</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G31.2PL</td>
+<td>MINUTA POLICIAL PER FALTES DE FURT A ESTABLIMENT FULL 2</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G32PL</td>
+<td>SOL-LICITUD DE NOVA TIPOLOGIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G101PL</td>
+<td>OPERACIÓ CONJUNTA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G102PL</td>
+<td>INFORME SOBRE CONCENTRACIÓ, MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G105PL</td>
+<td>SOL-LICITUD DE TRAGETA D´ARMES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G106PL</td>
+<td>OFICI DE LLIURAMENT D´ATESTATS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G107PL</td>
+<td>OFICI DE LLIURAMENT DE DOCUMENTACIÓ A LA PGME</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G108PL</td>
+<td>OFICI D´AVERIGUACIÓ DE DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G109PL</td>
+<td>OFICI DE SOL-LICITUD DE DADES DEL PADRÓ MUNICIPAL A LA GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G109.2PL</td>
+<td>OFICI DE SOL-LICITUD DE DADES DEL PADRÓ MUNICIPAL A LA GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G113PL</td>
+<td>COMINCAT INTERN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G114PL</td>
+<td>SOL.LICITUD D´INDEMNITZACIÓ PER DESPLAÇAMENTS EN ASSISTÈNCIA A JUDICI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G115PL</td>
+<td>DADES BÀSIQUES DE L´ASSISTÈNCIA A JUDICI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G118PL</td>
+<td>COMITÈ DE QUALITAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G120PL</td>
+<td>FORMULARI DE DERIVACIÓ A MEDIACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G121PL</td>
+<td>RESPOSTA AL PLEC DE DESCÀRREC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G123PL</td>
+<td>COMUNICAT INTERN DE MANIFESTACIÓ D´ACCIDENT AMB VEHICLE POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G124PL</td>
+<td>COMUNICAT DE PINTADES/GRAFITS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G145PL</td>
+<td>DETECCIÓ AVERIA I/O DANYS EN VEHICLE GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G146PL</td>
+<td>DETECCIÓ DE MANCA DOTACIÓ DEL VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G152PL</td>
+<td>DADES EN SUPÒSITS D´ACTITUDS DISCRIMINATÒRIES I/O DELICTES D´ODI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G157PL</td>
+<td>COMUNICAT D’ÚS DEL DISPOSITIU PERSONAL DE GRAVACIÓ (DPG)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I24</td>
+<td>FULL D´IDENTIFICACIÓ DE PERSONES DETINGUDES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I25</td>
+<td>FULL DE CERTIFICAT D´IDENTIFICACIÓ DE PERSONA DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I55</td>
+<td>CADENA DE CUSTÒDIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N01PL</td>
+<td>INFORMACIÓ A LA PERSONA DETINGUDA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N01.bPL</td>
+<td>INFORMACIÓ AL/A LA MENOR DETINGUT/DA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N02PL</td>
+<td>INFORMACIÓ A LA VÍCTIMA I/O PERSONA PERJUDICADA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N07PL</td>
+<td>NOTIFICACIÓ DE CITACIÓ JUDICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N08PL</td>
+<td>INFORMACIÓ DE DRETS A LA PERSONA INVESTIGADA NO DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N09PL</td>
+<td>INFORMACIÓ DE DRETS I FETS A LA PERSONA DENUNCIADA PER DELICTE LLEU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N09.bPL</td>
+<td>INFORMACIÓ DE DRETS I FETS AL MENOR DENUNCIAT PER DELICTE LLEU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N10PL</td>
+<td>CITACIÓ PER A JUDICI INMEDIAT DE DELICTE LLEU (JIDL)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N101PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A VÍCTIMES DE VIOLÈNCIA DOMÈSTICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N101.bPL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A VÍCTIMES DE DELICTES CONTRA LA LLIBERTAT SEXUAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N102PL</td>
+<td>NOTIFICACIÓ DE CITACIÓ POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T11PL</td>
+<td>ACTA D´INSPECCIÓ DE TRANSPORT ESCOLAR O DE MENORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T12PL</td>
+<td>MOSTRA PER ANALÍTICA CONTRAST ALCOHOL O ALTRES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T17PL</td>
+<td>ACTA D´ISPECCIÓ DE TRANSPORTS DE VIATGERS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T100PL</td>
+<td>COMUNICAT DELICTE CONTRA LA SEGURETAT VIÀRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T101PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A LES PERSONES SOTMESES A LES PROVES D´ALCOHOL O DROGUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T102PL</td>
+<td>INFORMACIÓ DE DRETS A LA PERSONA INVESTIGADA EN UN DELICTE RELACIONAT AMB LA CIRCULACIÓ DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T102.2PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ DE DRETS A UN MENOR INVESTIGAT EN UN PRESSUMPTE DELICTE DE SEGURETAT VIÀRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T103PL</td>
+<td>DELICTE CONTRA LA SEGURETAT VIÀRIA: EXCÉS DE VELOCITAT O CONDUCCIÓ SENSE PERMÍS O LLICÈNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T104PL</td>
+<td>CITACIÓ PER A LA PERSONA DENUNCIADAA CAUSA D´UN PRESSUMPTE DELICTE CONTRA LA SEGURETAT VIARIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T105PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ EN CAS D´ACCIDENT DE TRÀNSIT </td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T06.1PL</td>
+<td>FULL D´IDENTIFICACIÓ ACCIDENT DE TRÀNSIT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T107PL</td>
+<td>PROPOSTA EXTRAORDINÀRIA D´INSPECCIÓ TÈCNICA DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T108PL</td>
+<td>VEHICLE DE TRANSPORT PÚBLIC DE VIATGERS. DECLARACIÓ CONDUCTOR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T109PL</td>
+<td>VEHICLE DE TRANSPORT PÚBLIC DE VIATGERS. DECLARACIÓ PASSATGER</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T06PL</td>
+<td>COMUNICAT D´UN ACCIDENT DE TRÀNSIT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T110</td>
+<td>MOSTRA PER A ANALÍTICA DE DROGUES TÒXIQUES, ESTUPEFAENTS O SUBSTÀNCIES PSICOTRÒPIQUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T111PL</td>
+<td>INFORMACIÓ SOBRE L’OBLIGACIÓ DE RENOVAR EL PERMÍS DE CONDUCCIÓ COMUNITARIS ALS TITULARS RESIDENTS A ESPANYA</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<!----------------------------------------------------------->
+<!------------------ DIV RESTA ------------------------------>
+<!----------------------------------------------------------->
+<div id="divTaulaResta">
+  <p class="hitCounter" id="textResta">Resta d'actes:</p>
+  <table id="tableResta" class="taulaMain">
+  <thead><tr><th>Codi</th>
+<th>Descripció</th>
+</tr></thead>
+<tbody><tr onClick="tableClick(this)">
+<td>A10PL</td>
+<td>ACTA GENÈRICA D´INTERVENCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A13PL</td>
+<td>ACTA D´IMMOBILITZACIÓ, INTERVENCIÓ, DIPÒSIT D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A14PL</td>
+<td>ACTA DE PRECINTE D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A15PL</td>
+<td>ACTA DE DESPRECINTE D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A17PL</td>
+<td>ACTA DE MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A17.2PL</td>
+<td>CONTINUACIÓ DE L´ACTA DE MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A18PL</td>
+<td>ACTA DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A18.2PL</td>
+<td>CONTINUACIÓ  ACTA DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A20PL</td>
+<td>ACTA DE PESATGE DE SUBSTÀNCIES ESTUPEFAENTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A21PL</td>
+<td>INFORME PERICIAL D´ALCOHOLÈMIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A29PL</td>
+<td>ACTA PER DEIXAR SENSE EFECTE UNA DETENCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A31PL</td>
+<td>ACTA D´INSPECCIÓ OCULAR A IMMOBLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A33PL</td>
+<td>ACTA D´INSPECCIÓ OCULAR DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A35PL</td>
+<td>ACTA DE LLIURAMENT DE MENOR O PERSONA AMB DISCAPACITAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A43PL</td>
+<td>ACTA DE GESTIÓ DE TROBALLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A43.2PL</td>
+<td>REBUT DE TROBALLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A54PL</td>
+<td>ACTA DE LLIURAMENT DE PERSONA DETINGUDA PER A CUSTÒDIA OI TRASLLAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A55PL</td>
+<td>ACTA DE DETENCIÓ PER RECLAMACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A56PL</td>
+<td>ACTA DE RECONEIXEMENT I LLIURAMENT D´EFECTES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A57PL</td>
+<td>ACTA DE DECLARACIÓ DE PERSONA PERJUDICADA PER SOSTRACCIÓ A ESTABLIMENT COMERCIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A58PL</td>
+<td>ACTA PER PRESSUMPTE INFRACCIÓ ADMINISTRATIVA L.O 4/2000</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A59PL</td>
+<td>ACTA D´ESBRINAMENT DE DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A101PL</td>
+<td>ACTA ÚNICA DE DENÚNCIA I INTERVENCIÓ DE GÈNERE PER A VENDA AMBULANT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A101.2PL</td>
+<td>ACTA DE LLIURAMENT DE GÈNERE INTERVINGUT PER VENDA AMBULANT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A102PL</td>
+<td>ACTA ÚNICA DE DENÚNCIA I INTERVENCIÓ PER L´OFERIMENT DE JUGUESQUES A L´ESPAI PÚBLIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A103PL</td>
+<td>ACTA D´INSPECCIÓ DE LOCALS DE CONCURRÈNCIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A103.1PL</td>
+<td>CITACIÓ PER PRESENTAR REBUT D´ASSEGURANÇA OBLIGATÒRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A104PL</td>
+<td>ACTA DE CESSIÓ D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A105PL</td>
+<td>ACTA D´INSPECCIÓ PER TRANSPORT D´ALIMENTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A106PL</td>
+<td>INFORME PER A SERVEIS SOCIALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A107PL</td>
+<td>ACTA D´INTERVENCIÓ D´ANIMALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A107.bPL</td>
+<td>ACTUACIÓ AMB GOSSOS CONSIDERATS COM A POTENCIALMENT PERILLOSOS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A108PL</td>
+<td>ACTA D´INTERVENCIÓ D´EFECTES A UNA PERSONA DENUNCIADA, INVESTIGADA O DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A109PL</td>
+<td>ACTA DE LLIURAMENT I CUSTÒDIA DELS EFECTES PERSONALS AD´UNA PERSONA DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A110PL</td>
+<td>ACTA DE COMUNICACIÓ SOBRE INTERVENCIÓ DE PERMIS DE CONDUIR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A111PL</td>
+<td>ACTA D´INSPECCIÓ DE NIVELLS SONORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A111.bPL</td>
+<td>ACTA D´INSPECCIÓ DE NIVELLS SONORS MUSICALS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A112PL</td>
+<td>ACTA D´INSPECCIÓ D´OBRES A LA VIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A114PL</td>
+<td>ACTA DE CONTROL DE SOROLL DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A115PL</td>
+<td>ACTA DE RESPONSABILITAT EN LA CONDUCCIÓ DEL VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A116PL</td>
+<td>ACTA PER AL TRASLLAT VOLUNTARI DE CONDUCTOR A DEPENDÈNCIES DE GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A118PL</td>
+<td>INFORME SOBRE MITJANS DE VIDA I DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A119PL</td>
+<td>CONTINUACIÓ DE L´ACTA  </td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A121PL</td>
+<td>ANNEX A LA DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A124PL</td>
+<td>ACTA D´OBERTURA DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A125PL</td>
+<td>INFORME PERICIAL DE DROGUES ESTUPEFAENTS O SUBSTÀNCIES PSICOTRÒPIQUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A127PL</td>
+<td>ACTA DE DESTRUCCIÓ D´IMATGES REALITZADES AMB CÀMERES DE VIDEOVIGILÀNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A129PL</td>
+<td>ACTA DE CERTIFICACIÓ DEL VALOR LÍMIT D´EMISSIÓ DE SOROLL PER A VEHICLES A MOTOR I CICLOMOTORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A130PL</td>
+<td>ACTA D´INTERVENCIÓ DE PERMÍS DE CIRCULACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A131PL</td>
+<td>ACTA D´ENTRADA I LLIURAMENT DE LA FINCA AL SEU PROPIETARI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A132PL</td>
+<td>ACTA D´INSPECCIÓ D´ABOCAMENT DE MATERIAL TÒXIC I REQUERIMENT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A134PL</td>
+<td>ANNEX A LA DENÚNCIA DE CONDUCCIÓ SOTA ELS EFECTES DE CONSUM DE DROGUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A135PL</td>
+<td>ACTA D´UTILITZACIÓ DEL RIFLE ANESTÈSIC PER ANIMALS PER ACTUACIONS A LA VIA PÚBLICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A136PL</td>
+<td>ACTA OBERTA (GENÈRICA)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A138PL</td>
+<td>ACTA D´INSPECCIÓ D´HABITATGE D´ÚS TURÍSTIC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A139PL</td>
+<td>ACTA DE LLIURAMENT DE MOSTRES DE SALIVA PER DETECCIÓ DE DROGUES O ALTRES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A140PL</td>
+<td>COMUNICAT A LA PREFACTURA PROVINCIAL DE TRÀNSIT D´UNA INCIDÈNCIA D´UN PERMÍS DE CONDUIR NO EXP. A ESPANYA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>A143PL</td>
+<td>ACTA DE RETORN DE MATERIAL DE DOTACIÓ OPERATIU I NO OPERATIU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D04PL</td>
+<td>DENÚNCIA DE FURT/SOSTRACCIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D05PL</td>
+<td>DENÚNCIA DE ROBATORI/FURT DINS D´UN VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D06PL</td>
+<td>LLISTA D´OBJECTES SOSTRETS/PERDUTS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D07PL</td>
+<td>DENÚNCIA DE LA PÈRDUA D´OBJECTES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D10PL</td>
+<td>DENÚNCIA PER PRESSUMPTES INFRACCIONS A LA L.O. 4/2015</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D10.bPL</td>
+<td>ACTA D´INTERVENCIÓ TEMPORAL A L´EMPARA DE LA L.O 4/2015</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D11PL</td>
+<td>DENÚNCIA GENÈRICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D16PL</td>
+<td>DENÚNCIA DE DANYS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D24PL</td>
+<td>DENÚNCIA DE FURT A ESTABLIMENT COMERCIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D25PL</td>
+<td>AMPLIACIÓ DE DENÚNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D32PL</td>
+<td>ACTA DENÚNCIA PER INFRACCIÓ RELACIONADA AMB EL VOL DE RPA/DRONS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>D101PL</td>
+<td>DENÚNCIA PER INFRACCIÓ LL 11/2014 PER GARANTIR ELS DRETS DE LESBIANES, GAIS, BISEXUALS…</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G04PL</td>
+<td>INFORME DE PERSECUCIÓ POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G25PL</td>
+<td>INFORME DEL CONTACTE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G30PL</td>
+<td>DOCUMENT DE CORDINACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G31PL</td>
+<td>MINUTA POLICIAL PER FALTES DE FURT A ESTABLIMENT FULL 1</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G31.2PL</td>
+<td>MINUTA POLICIAL PER FALTES DE FURT A ESTABLIMENT FULL 2</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G32PL</td>
+<td>SOL-LICITUD DE NOVA TIPOLOGIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G101PL</td>
+<td>OPERACIÓ CONJUNTA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G102PL</td>
+<td>INFORME SOBRE CONCENTRACIÓ, MANIFESTACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G105PL</td>
+<td>SOL-LICITUD DE TRAGETA D´ARMES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G106PL</td>
+<td>OFICI DE LLIURAMENT D´ATESTATS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G107PL</td>
+<td>OFICI DE LLIURAMENT DE DOCUMENTACIÓ A LA PGME</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G108PL</td>
+<td>OFICI D´AVERIGUACIÓ DE DOMICILI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G109PL</td>
+<td>OFICI DE SOL-LICITUD DE DADES DEL PADRÓ MUNICIPAL A LA GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G109.2PL</td>
+<td>OFICI DE SOL-LICITUD DE DADES DEL PADRÓ MUNICIPAL A LA GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G113PL</td>
+<td>COMINCAT INTERN</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G114PL</td>
+<td>SOL.LICITUD D´INDEMNITZACIÓ PER DESPLAÇAMENTS EN ASSISTÈNCIA A JUDICI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G115PL</td>
+<td>DADES BÀSIQUES DE L´ASSISTÈNCIA A JUDICI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G118PL</td>
+<td>COMITÈ DE QUALITAT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G120PL</td>
+<td>FORMULARI DE DERIVACIÓ A MEDIACIÓ</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G121PL</td>
+<td>RESPOSTA AL PLEC DE DESCÀRREC</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G123PL</td>
+<td>COMUNICAT INTERN DE MANIFESTACIÓ D´ACCIDENT AMB VEHICLE POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G124PL</td>
+<td>COMUNICAT DE PINTADES/GRAFITS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G145PL</td>
+<td>DETECCIÓ AVERIA I/O DANYS EN VEHICLE GUB</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G146PL</td>
+<td>DETECCIÓ DE MANCA DOTACIÓ DEL VEHICLE</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G152PL</td>
+<td>DADES EN SUPÒSITS D´ACTITUDS DISCRIMINATÒRIES I/O DELICTES D´ODI</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>G157PL</td>
+<td>COMUNICAT D’ÚS DEL DISPOSITIU PERSONAL DE GRAVACIÓ (DPG)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I24</td>
+<td>FULL D´IDENTIFICACIÓ DE PERSONES DETINGUDES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I25</td>
+<td>FULL DE CERTIFICAT D´IDENTIFICACIÓ DE PERSONA DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>I55</td>
+<td>CADENA DE CUSTÒDIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N01PL</td>
+<td>INFORMACIÓ A LA PERSONA DETINGUDA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N01.bPL</td>
+<td>INFORMACIÓ AL/A LA MENOR DETINGUT/DA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N02PL</td>
+<td>INFORMACIÓ A LA VÍCTIMA I/O PERSONA PERJUDICADA SOBRE ELS SEUS DRETS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N07PL</td>
+<td>NOTIFICACIÓ DE CITACIÓ JUDICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N08PL</td>
+<td>INFORMACIÓ DE DRETS A LA PERSONA INVESTIGADA NO DETINGUDA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N09PL</td>
+<td>INFORMACIÓ DE DRETS I FETS A LA PERSONA DENUNCIADA PER DELICTE LLEU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N09.bPL</td>
+<td>INFORMACIÓ DE DRETS I FETS AL MENOR DENUNCIAT PER DELICTE LLEU</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N10PL</td>
+<td>CITACIÓ PER A JUDICI INMEDIAT DE DELICTE LLEU (JIDL)</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N101PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A VÍCTIMES DE VIOLÈNCIA DOMÈSTICA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N101.bPL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A VÍCTIMES DE DELICTES CONTRA LA LLIBERTAT SEXUAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>N102PL</td>
+<td>NOTIFICACIÓ DE CITACIÓ POLICIAL</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T11PL</td>
+<td>ACTA D´INSPECCIÓ DE TRANSPORT ESCOLAR O DE MENORS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T12PL</td>
+<td>MOSTRA PER ANALÍTICA CONTRAST ALCOHOL O ALTRES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T17PL</td>
+<td>ACTA D´ISPECCIÓ DE TRANSPORTS DE VIATGERS</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T100PL</td>
+<td>COMUNICAT DELICTE CONTRA LA SEGURETAT VIÀRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T101PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ PER A LES PERSONES SOTMESES A LES PROVES D´ALCOHOL O DROGUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T102PL</td>
+<td>INFORMACIÓ DE DRETS A LA PERSONA INVESTIGADA EN UN DELICTE RELACIONAT AMB LA CIRCULACIÓ DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T102.2PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ DE DRETS A UN MENOR INVESTIGAT EN UN PRESSUMPTE DELICTE DE SEGURETAT VIÀRIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T103PL</td>
+<td>DELICTE CONTRA LA SEGURETAT VIÀRIA: EXCÉS DE VELOCITAT O CONDUCCIÓ SENSE PERMÍS O LLICÈNCIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T104PL</td>
+<td>CITACIÓ PER A LA PERSONA DENUNCIADAA CAUSA D´UN PRESSUMPTE DELICTE CONTRA LA SEGURETAT VIARIA</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T105PL</td>
+<td>DILIGÈNCIA D´INFORMACIÓ EN CAS D´ACCIDENT DE TRÀNSIT </td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T06.1PL</td>
+<td>FULL D´IDENTIFICACIÓ ACCIDENT DE TRÀNSIT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T107PL</td>
+<td>PROPOSTA EXTRAORDINÀRIA D´INSPECCIÓ TÈCNICA DE VEHICLES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T108PL</td>
+<td>VEHICLE DE TRANSPORT PÚBLIC DE VIATGERS. DECLARACIÓ CONDUCTOR</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T109PL</td>
+<td>VEHICLE DE TRANSPORT PÚBLIC DE VIATGERS. DECLARACIÓ PASSATGER</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T06PL</td>
+<td>COMUNICAT D´UN ACCIDENT DE TRÀNSIT</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T110</td>
+<td>MOSTRA PER A ANALÍTICA DE DROGUES TÒXIQUES, ESTUPEFAENTS O SUBSTÀNCIES PSICOTRÒPIQUES</td>
+</tr>
+<tr onClick="tableClick(this)">
+<td>T111PL</td>
+<td>INFORMACIÓ SOBRE L’OBLIGACIÓ DE RENOVAR EL PERMÍS DE CONDUCCIÓ COMUNITARIS ALS TITULARS RESIDENTS A ESPANYA</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+<!----------------------------------------------------------->
+<!------------------ DIV EXTRA INFO ------------------------->
+<!----------------------------------------------------------->
+  <div id="divExtraInfo" class="divExtraInfo">
+    <table class="tableExtraInfo" align="center">
+      <tr><td>
+        <p id="labelMesInfo" class="labelMesInfo">Més informació:</p>
+        <p id="labelExtra" class="labelExtra"></p>
+      </td></tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
