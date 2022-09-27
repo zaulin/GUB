@@ -34,6 +34,12 @@ function clickNegra(){
     window.open("negra/index.html","_self")
 }
 
+function clickActuacions(){
+    document.getElementById("loadingBlack").style.display = "block";
+    document.getElementById("galetesDiv").style.display = "none";
+    window.open("actuacions/index.html","_self")
+}
+
 function pageonload() {
     document.getElementById("loadingBlack").style.display = "none";
     document.getElementById("galetesDiv").style.display = "block";
