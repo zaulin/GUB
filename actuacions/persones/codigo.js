@@ -206,7 +206,6 @@ function pageonload() {
   document.getElementById("divExtraInfo").style.display = "none";
 
   loadSituaciones();
-
 }
 
 function decoraTablas() {
