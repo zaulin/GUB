@@ -1,0 +1,63 @@
+﻿situacio;actes autor;actes perjudicat;actes resta;extra
+Alcoholèmia penal;T101,A21,T102,T100,A13,T104;;;"Es penal si:
+- la ingesta afecta a la conducció i taxa > 0,43 mg/l
+o
+- taxa > 0,60 mg/l
+
+S'han de fer les sancions administratives per si no prospera la via penal:
+> 0,15 mg/l
+- Sense permís: 3280
+- Novell, professional, … : 3281
+- Reincident: 3282
+
+> 0,25 mg/l
+- Qualsevol conductor: 3284
+- Reincident: 3285
+
+> 0,30 mg/l
+- Sense permís: 3286
+- Novell, professional, … : 3287
+- Reincident: 3288
+
+> 0,50 mg/l
+- Qualsevol conductor: 3289
+- Reincident: 3290"
+Negativa proves alcohol/drogues;T101,A21,T102,T100,A13,T104;;;"S'han de fer les sancions administratives per si no prospera la via penal:
+
+Alcohol:
+- Conductor sense permís: 3292
+- Conductor: 3293
+
+Drogues: 
+- Conductor: 3299"
+Drogotest positiu;T101,A13,A125;;T110;"S'ha de fer previament la prova d'alcohoèmia.
+
+A125 nomès per penal i l'ha de fer un EAS.
+
+Etiquetes a totes les actes.
+
+A13:
+- Indicar num. denúncia a les diligencies.
+
+T110: 
+- Indicar a diligències el num. de denúncia.
+- Als agents actuants indicar l'unitat.
+- Omplir la cadena de custodia.
+
+Al tub:
+- Número de denúncia.
+
+A la nevera de la unitat (dintre de la bossa del drogotest):
+- Bossa precintada.
+- T110
+- Etiquetes sobrants
+
+Per la unitat:
+- T101
+- Original denúncia (3296)
+- A13
+
+S'han de fer les sancions administratives per si no prospera la via penal:
+- Conductor sense permís: 3297
+- Conductor: 3296"
+Taxi ilegal;T108;T109;;Avisar a KM
