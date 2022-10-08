@@ -26,6 +26,33 @@ S'han de fer les sancions administratives per si no prospera la via penal:
 > 0,50 mg/l (0,55 mg/l)
 - Qualsevol conductor: 3289
 - Reincident: 3290"
+Alcoholèmia admin;T101,A13;;;"Es penal si:
+- la ingesta afecta a la conducció, implicat en accident i taxa > 0,40 mg/l (0,44 mg/l)
+o
+- taxa > 0,60 mg/l (0,66 mg/l)
+
+No es penal si:
+- falta de pericia
+- cap altre usuari de la via implicat ni danys al mobiliari urbà.
+
+Sancions administratives:
+> 0,15 mg/l (0,19 mg/l)
+- Sense permís: 3280
+- Novell, professional, … : 3281
+- Reincident: 3282
+
+> 0,25 mg/l (0,29 mg/l)
+- Qualsevol conductor: 3284
+- Reincident: 3285
+
+> 0,30 mg/l (0,34 mg/l)
+- Sense permís: 3286
+- Novell, professional, … : 3287
+- Reincident: 3288
+
+> 0,50 mg/l (0,55 mg/l)
+- Qualsevol conductor: 3289
+- Reincident: 3290"
 Negativa proves alcohol/drogues;T101,A21,T102,T100,A13;;;"A la T100 s'ha de deixar clarament indicat que s'ha informat a la persona de les consenqüències de no realitzar la prova. 
 
 S'han de fer les sancions administratives per si no prospera la via penal:
