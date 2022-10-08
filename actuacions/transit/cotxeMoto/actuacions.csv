@@ -1,5 +1,5 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
-Alcoholèmia penal;T101,A21,T102,T100,A13;;;"Es penal si:
+Alcoholèmia admin;T101,A13;;;"Es penal si:
 - la ingesta afecta a la conducció, implicat en accident i taxa > 0,40 mg/l (0,44 mg/l)
 o
 - taxa > 0,60 mg/l (0,66 mg/l)
@@ -8,7 +8,7 @@ No es penal si:
 - falta de pericia
 - cap altre usuari de la via implicat ni danys al mobiliari urbà.
 
-S'han de fer les sancions administratives per si no prospera la via penal:
+Sancions administratives:
 > 0,15 mg/l (0,19 mg/l)
 - Sense permís: 3280
 - Novell, professional, … : 3281
@@ -26,7 +26,7 @@ S'han de fer les sancions administratives per si no prospera la via penal:
 > 0,50 mg/l (0,55 mg/l)
 - Qualsevol conductor: 3290
 - Reincident: 3291"
-Alcoholèmia admin;T101,A13;;;"Es penal si:
+Alcoholèmia penal;T101,A21,T102,T100,A13;;;"Es penal si:
 - la ingesta afecta a la conducció, implicat en accident i taxa > 0,40 mg/l (0,44 mg/l)
 o
 - taxa > 0,60 mg/l (0,66 mg/l)
@@ -35,7 +35,7 @@ No es penal si:
 - falta de pericia
 - cap altre usuari de la via implicat ni danys al mobiliari urbà.
 
-Sancions administratives:
+S'han de fer les sancions administratives per si no prospera la via penal:
 > 0,15 mg/l (0,19 mg/l)
 - Sense permís: 3280
 - Novell, professional, … : 3281
@@ -93,8 +93,8 @@ Per la unitat:
 S'han de fer les sancions administratives per si no prospera la via penal:
 - Conductor sense permís: 3297
 - Conductor: 3296"
+Alcoholèmia admin - CME;T101,A13;;;
+Alcoholèmia penal - CME;T101,A13,A21;;;
 Taxi ilegal;T108;T109;;"T109 a cada un dels passatgers
 
 Avisar a KM per a que ells facin la denúncia de transports"
-Alcoholèmia admin - CME;T101,A13;;;
-Alcoholèmia penal - CME;T101,A13,A21;;;
