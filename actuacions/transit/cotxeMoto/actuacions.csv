@@ -94,7 +94,7 @@ S'han de fer les sancions administratives per si no prospera la via penal:
 - Conductor sense permís: 3297
 - Conductor: 3296"
 Alcoholèmia admin - CME;T101,A13;;;
-Alcoholèmia penal - CME;T101,A13,A21;;;
+Alcoholèmia penal - CME;T101,A13,A21,A121;;;
 Taxi ilegal;T108;T109;;"T109 a cada un dels passatgers
 
 Avisar a KM per a que ells facin la denúncia de transports"
