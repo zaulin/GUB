@@ -85,22 +85,24 @@ function buscar() {
         hit = 0;
 
         txtValue = normalice(td.textContent || td.innerText);
+
         tdCodi = tr[i].getElementsByTagName("td")[1];
         txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
+        
+        tdArt =  tr[i].getElementsByTagName("td")[4];
+        txtArt = normalice(tdArt.textContent || tdArt.innerText).replace(/\s/g, '')
 
           if (arrayFiltreDenuncies) {
 
             if (arrayFiltreDenuncies.includes(txtCodi)) {
               if (filter2 == "") {
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
                   hit = 1
                 } else {
-                    if (txtCodi.toUpperCase().startsWith(filter)) {
-                      hit = 1
-                    } else {
-                      hit = 0;
-                    }
+                  hit = 0;
                 }  
+
               } else {
               
                   if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
@@ -116,19 +118,15 @@ function buscar() {
           } else {
 
             if (filter2 == "") {
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter) || txtArt.toUpperCase().startsWith(filter)) {
                 hit = 1
-              } else {
-                    if (txtCodi.toUpperCase().startsWith(filter) && txtCodi.toUpperCase().startsWith(filter2) ) {
-                      hit = 1
-                    } else {
-                      hit = 0;
-                    }
+              } else  {
+                hit = 0;
               }  
             } else {
             
-                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter)) {
-                    if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2)) {
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter) || txtArt.toUpperCase().startsWith(filter)) {
+                    if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2) || txtArt.toUpperCase().startsWith(filter2)) {
                       hit = 1
                     } else {
                       hit = 0
