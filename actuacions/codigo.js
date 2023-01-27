@@ -27,6 +27,11 @@ function clickAgents(){
     window.open("agents/index.html","_self")
 }
 
+function clickSAV(){
+    document.getElementById("loadingBlack").style.display = "block";
+    window.open("SAV/index.html","_self")
+}
+
 function pageonload() {
     document.getElementById("loadingBlack").style.display = "none";
     

@@ -1,0 +1,27 @@
+﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
+SAV;ViGe;N01,A108;N02,N101,A18;A106,A17,G30;"Home (parella o ex) agredeix a la víctima dona (amb o sense convivència)
+
+Persones transexuals: Sexe legal (indicat a DNI)
+
+A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
+
+Agreujants:
+- Fer servir armes
+- Al domicili familiar
+- En presència de menors"
+SAV;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"Requereix denúncia de la víctima.
+
+Si són denúncies creuades també és JIDL"
+SAV;Amenaces lleus;N09,A108;N02,A18;A17;"Requereix denúncia de la víctima
+Amb o sense armes (si hi ha arma s'intervé amb A108PL)
+Mostrar arma en baralla
+Amenaça lleu"
+SAV;Amenaces;N09,A108;N02,A18;A17,G30;"A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
+
+En ViGe és amb o sense arma
+En ViDo és AMB arma (sense arma es delicte lleu)
+
+L'amenaça ha de ser directe i creïble
+La diferència amb el delicte lleu es la por que es produeix en la víctima"
+SAV;Lesions;N01,A108;N02,A18;A17;A108PL per intervenir objectes que s'hagin fet servir a l'agresió
+SAV;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;A108PL per intervenir objectes que s'hagin fet servir a l'agresió

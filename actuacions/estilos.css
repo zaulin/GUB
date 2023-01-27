@@ -15,6 +15,22 @@
   color: #064a9d;
 }
 
+.tableBotonSAV {
+  border: solid;
+  border-width: 3px;
+  border-color: #7c047c;
+  border-radius: 8px;
+  width: 100px;
+  height: 90px;
+}
+
+.ButtonTextSAV {
+  font-family:Arial;
+  font-size:14px;
+  font-weight: bold;
+  color: #7c047c;
+}
+
 .trImagen {
   height: 50px;
 }
