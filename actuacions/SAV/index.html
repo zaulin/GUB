@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GAV</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    type="text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYXV6ZJSGC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MYXV6ZJSGC');
+    </script>
+    
+    <script type="text/javascript" src="papaparse.min.js"></script>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/loader.css">
+    <link rel="stylesheet" href="../../css/cabecera.css">
+    <link rel="stylesheet" href="../../css/taules.css">
+    <link rel="stylesheet" href="../../css/textos.css">
+
+    <link rel="shortcut icon" href="https://zaulin.github.io/GUB/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://zaulin.github.io/GUB/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://zaulin.github.io/GUB/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://zaulin.github.io/GUB/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://zaulin.github.io/GUB/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="https://zaulin.github.io/GUB/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#064a9d">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Cache-Control" content="no-store" /> 
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+
+<meta name="apple-mobile-web-app-title" content="GUB">
+
+</head>
+<body onload="pageonload()" style="margin: 0;padding: 0;">
+
+
+
+
+    <div id="loadingBlack">
+      <div id="loadingIn">
+        <div class="loader">
+        
+        </div>
+      </div>
+    </div>
+    
+<table class="cabecera">
+  <tr>
+    <td id="version" onclick="clickBack()" class="back"><img src="../../img/back.png" height="16px" style="vertical-align: middle;"></td>
+    <td id="titulo" class="titulo">GAV</td>
+    <td id="fecha" class="fecha"></td>
+  </tr>
+</table>
+
+<div style="margin-left: 5px; margin-right: 5px; text-align: center;" width="100%">
+ <br>
+
+
+ <table align="center" >
+    <tr>
+      <td align="center">
+        <table onclick="clickVige()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../../img/actuacions/vige.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">ViGe - GUB</td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <table onclick="clickVido()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../../img/actuacions/vido.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">ViDo - CME</td></tr>
+        </table>
+      </td>
+    </tr>
+
+</table>
+<br><br>
+
+ </div>
+
+<!----------------------------------------------------------->
+<!------------------ DIV EXTRA INFO ------------------------->
+<!----------------------------------------------------------->
+  <div id="divExtraInfo" class="divExtraInfo">
+    <table class="tableExtraInfo" align="center">
+      <tr><td>
+        <p id="labelMesInfo" class="labelMesInfo">ViGe - GUB:</p>
+        <p id="labelExtra" class="labelExtra">
+          Subjecte actiu: home<br>
+Subjecte passiu: dona<br>
+En el cas de persones no cisgènere es tindrà en compte el gènere legal.<br>
+<br>
+Relació:<br>
+La dona és o ha estat cònjugue (o relació anàloga) amb o sense convivència.<br>
+<br>
+Inclou:<br>
+- Violència física o psicològica.<br>
+- Agressions a la llibertat sexual.<br>
+- Amenaces.<br>
+- Coaccions.<br>
+- Privació de llibertat.<br>
+
+        </p>
+      </td></tr>
+
+      <tr><td>
+        <p id="labelMesInfo" class="labelMesInfo">ViDo - CME:</p>
+        <p id="labelExtra" class="labelExtra">
+Relació amb el sujecte passiu:<br>
+- És o ha estat cònjugue (o relació anàloga) amb o sense convivència.<br>
+- Descendents, ascendents o germans (o afins) propis o del cònjugue o convivent.<br>
+- Menors o persones necesitades d'especial protecció amb convivència o sota la guarda del cònjugue o convivent.<br>
+- Qualsevol persona que integri el núcli de convivència familiar.<br>
+- Persones especialment vulnerables sota custoria de centres públics o privats.<br>
+<br>
+Inclou:<br>
+- Violència física o psicològica.<br>
+- Agressions a la llibertat sexual.<br>
+- Amenaces.<br>
+- Coaccions.<br>
+- Privació de llibertat.<br>
+
+        </p>
+      </td></tr>
+
+    </table>
+  </div>
+ 
+
+
+</body>
+</html>
