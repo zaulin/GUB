@@ -270,6 +270,13 @@ function tableClick(el) {
   document.getElementById("popUpNormativa").innerText = td[3].innerText + " - Article: " + td[4].innerText;
   //document.getElementById("popUpArticle").innerText = td[4].innerText;
   document.getElementById("popUpImporte").innerText = td[5].innerText + "€ / " + td[6].innerText + "€";
+
+  sPunts = "-";
+  if (isNumeric(td[8].innerText)) {
+    sPunts = td[8].innerText 
+  }
+  document.getElementById("popUpPunts").innerText = sPunts
+  /*
   if (td[7].innerText == "S") {
     document.getElementById("cboxRetirada").checked = true;
   } else {
@@ -280,6 +287,7 @@ function tableClick(el) {
   } else {
     document.getElementById("cboxPunts").checked = false;
   }
+  */
   if (td[9].innerText == "1") {
     document.getElementById("cboxCondicional").checked = true;
   } else {
@@ -444,4 +452,10 @@ function getCookie(cname) {
     }
   }
   return "";
+}
+
+function isNumeric(str) {
+  if (typeof str != "string") return false // we only process strings!  
+  return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+         !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
 }
