@@ -1,0 +1,46 @@
+.taulaEnlaces {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.taulaEnlaces th {
+  background-color: #f1f1f1;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font: calibri;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.taulaEnlaces td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font: calibri;
+  font-size: 14px;
+}
+
+.taulaEnlaces a {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  font: calibri;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.taulaEnlaces tr {
+  border-bottom: 1px solid #ddd;
+}
