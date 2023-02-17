@@ -54,7 +54,7 @@ GBR;BASE DE DATOS SOA UK;https://cbd.mtsbu.ua/MTSBU_Pages/Tree.aspx?autoauth=tru
 LTU;SITUACIÓN ADMINISTRATIVA DEL VEHÍCULO ;https://www.eregitra.lt/services/vehicle-registration/data-search
 SVN;SITUACIÓN ADMINISTRATIVA DEL VEHÍCULO ;https://e-uprava.gov.si/javne-evidence/motorna-vozila.html 
 SVN;VERIFICAR SOA;https://raz.zav-zdruzenje.si/euinfocenter/Search.aspx 
-EST;SOA  ;https://vs.lkf.ee/pls/xlk/!sysadm.ic_insurance_co-ver_pkt.show_form?p_purpose=CLAIM&p_lang=ENG 
+EST;SOA  ;https://vs.lkf.ee/pls/xlk/!sysadm.ic_insurance_cover_pkt.show_form?p_purpose=CLAIM&p_lang=ENG
 EST;SITUACIÓN ADMINISTRATIVA DEL VEHÍCULO ;https://eteenindus.mnt.ee/public/soidukTaustakontroll.jsf 
 SVK;OFICINA SOA;https://www.skp.sk/weben/indexen.htm#xl_xr_page_index 
 SVK;CONTROL DE EMISIONES CO2;https://www.seka.sk/verejnost/sluzby/overenie-emisnej-kontroly 

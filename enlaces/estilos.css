@@ -1,3 +1,7 @@
+.popUpBandera {
+  border: 2px solid #000000;
+}
+
 .taulaEnlaces {
   border-collapse: collapse;
   width: 100%;
