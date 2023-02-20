@@ -259,6 +259,7 @@ function getCountryISO2(countryCode) {
 const version = "0.9";
 const fecha = "08/05/2022";
 const arrayEnlaces = [];
+const arrayPaisos = [];
 const csvData = [];
 
 function clickBack() {
@@ -268,12 +269,18 @@ function clickBack() {
 
 function onkeyupInputCodi(){
   inputConveni = document.getElementById("dropdownConveni").value = "";
+  document.getElementById("chMultiEnlaces").checked = false;
 
+  buscar();
+}
+
+function onkeyupCheckMulti(){
   buscar();
 }
 
 function dropdownChange(){
   document.getElementById("myInputCodi").value = "";
+  document.getElementById("chMultiEnlaces").checked = false;
 
   inputConveni = document.getElementById("dropdownConveni");
   txtFilterConveni = inputConveni.value;
@@ -295,7 +302,27 @@ function buscar() {
   table = document.getElementById("tableMain");
   tr = table.getElementsByTagName("tr");
 
-  if (txtFilterConveni!="") {
+  if (document.getElementById("chMultiEnlaces").checked == true) {
+    for (i = 0; i < tr.length; i++) {
+      hit = 0;
+      tdCodiPais = tr[i].getElementsByTagName("td")[2];
+      if (tdCodiPais) {
+        
+        codiPais = tdCodiPais.innerText;
+
+        if (arrayPaisos.includes(codiPais)) {
+          hit = 1;
+        }
+
+        if (hit==1) {
+          tr[i].style.display = "";
+          iHits = iHits + 1;
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  } else if (txtFilterConveni!="") {
 
     for (i = 0; i < tr.length; i++) {
       hit = 0;
@@ -384,15 +411,10 @@ function tableClick(el) {
   //Crear filas
   url="https://www.consilium.europa.eu/prado/es/prado-documents/" + sCodigoPais + "/index.html"
   enlace = '<a href="' + url + '">PRADO</a>'
-  //fila = "<tr><td>" + enlace + "</td></tr>"
 
   fila = "<tr onclick=\"window.location.href='" + url + "';\"><td>PRADO</td></tr>"
   for (var i = 0; i < arrayEnlaces.length; i++) {
     if (arrayEnlaces[i][0] == sCodigoPais) {
-      //enlace = '<a href="' + arrayEnlaces[i][2] + '">' + arrayEnlaces[i][1] + '</a>'
-
-      //fila = fila + "<tr><td>" + enlace + "</td></tr>"
-      //enlace = '<a href="' + arrayEnlaces[i][2] + '">' + arrayEnlaces[i][1] + '</a>'
 
       fila = fila + "<tr onclick=\"window.location.href='" + arrayEnlaces[i][2] + "';\"><td>" + arrayEnlaces[i][1] + "</td></tr>"
     }
@@ -425,7 +447,7 @@ function tableClick(el) {
     //https://flagcdn.com/h60/de.png
 */
   //document.getElementById("popUpBandera").src = "https://countryflagsapi.com/png/" + sCodigoPais;
-  return "";
+
 
 return "";
 
@@ -484,6 +506,7 @@ function esconde() {
           if (!arrayConveni.includes(tr[i].getElementsByTagName("td")[1].innerText)) {
             arrayConveni.push(tr[i].getElementsByTagName("td")[1].innerText);
           }
+    
     }
     if (th) {
           th.style.display = "none";
@@ -509,8 +532,10 @@ function pageonload() {
   document.getElementById("myInputCodi").value = "";
 
   esconde();
+
   loadEnlaces();
-  buscar();
+
+  
   document.getElementById("loading").style.display = "none";
 
 }
@@ -522,6 +547,7 @@ function loadEnlaces() {
     url: "enlaces.csv",
     dataType: "text",
     success: function(res) {
+
 
       var count = 0; // cache the running count
       csvArray = Papa.parse(res).data;
@@ -547,11 +573,18 @@ function loadEnlaces() {
 
 
       for (var i = 0; i < csvData.length; i++) {
-        arrayEnlaces.push(csvData[i])
-      }
+        arrayEnlaces.push(csvData[i]);
 
+        if (!arrayPaisos.includes(csvData[i][0])) {
+          arrayPaisos.push(csvData[i][0]);  
+        }
+        
+      }
     
+      buscar();
+
     }
+
 
   });
 

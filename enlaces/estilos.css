@@ -1,3 +1,10 @@
+.chMultiEnlaces {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: calibri;
+  font-weight: bold;
+}
+
 .popUpBandera {
   border: 2px solid #000000;
 }
