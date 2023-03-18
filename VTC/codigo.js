@@ -2,12 +2,14 @@ const version = "0.9";
 const fecha = "08/05/2022";
 const arraySituacion = [];
 
-document.addEventListener("backbutton", backKeyDown, true); 
-function backKeyDown() { 
-     // Call my back key code here.
-    alert('go back!');
-    window.open('../index.html', "_self")
-}
+Button backButton = (Button)this.findViewById(R.id.back);
+backButton.setOnClickListener(new OnClickListener() {
+  @Override
+  public void onClick(View v) {
+    alert("BACK!");
+    clickBack();
+  }
+});
 
 function clickBack() {
   window.open('../index.html', "_self")
