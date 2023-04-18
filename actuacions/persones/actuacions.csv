@@ -1,6 +1,7 @@
 ﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
-Persones;Abús sexual;N01;N02,A18;A106,G30,A17;Trucar a ORD abans de redactar la G30.
-Persones;Agresió sexual;N01,A108;N02,A18;G30,A17;"Ha d'existir violència o intimidació.
+Persones;Agresió sexual;N01,A108;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+
+Ha d'existir violència o intimidació.
 
 Trucar a ORD abans de redactar la G30.
 
@@ -8,7 +9,9 @@ A108 per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
 
 Agreujant:
 Accès carnal"
-Persones;ViGe;N01,A108;N02,N101,A18;A106,A17,G30;"Home (parella o ex) agredeix a la víctima (amb o sense convivència)
+Persones;ViGe;N01,A108;N02,N101,A18;A106,A17,G30;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+
+Home (parella o ex) agredeix a la víctima (amb o sense convivència)
 
 A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
 
@@ -16,19 +19,29 @@ Agreujants:
 - Fer servir armes
 - Al domicili familiar
 - En presència de menors"
-Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"Requereix denúncia de la víctima.
+Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
-Si són denúncies creuades també és JIDL"
-Persones;Amenaces lleus;N09,A108;N02,A18;A17;"Requereix denúncia de la víctima
+Requereix denúncia de la víctima.
+
+Si són denúncies creuades també és JIDL i es recullen dues A18PL"
+Persones;Amenaces lleus;N09,A108;N02,A18;A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+
+Requereix denúncia de la víctima
 Amb o sense armes (si hi ha arma s'intervé amb A108PL)
 Mostrar arma en baralla
 Amenaça lleu"
-Persones;Amenaces;N09,A108;N02,A18;A17,G30;"A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
+Persones;Amenaces;N09,A108;N02,A18;A17,G30;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+
+A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
 
 En ViGe és amb o sense arma
 En ViDo és AMB arma (sense arma es delicte lleu)
 
 L'amenaça ha de ser directe i creïble
 La diferència amb el delicte lleu es la por que es produeix en la víctima"
-Persones;Lesions;N01,A108;N02,A18;A17;A108PL per intervenir objectes que s'hagin fet servir a l'agresió
-Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;A108PL per intervenir objectes que s'hagin fet servir a l'agresió
+Persones;Lesions;N01,A108;N02,A18;A17;"A108PL per intervenir objectes que s'hagin fet servir a l'agresió.
+
+A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18."
+Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+
+A108PL per intervenir objectes que s'hagin fet servir a l'agresió"
