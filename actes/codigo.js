@@ -147,7 +147,7 @@ function dropdownChange() {
 
 function pageonload() {
 
-  document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
+  //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
   document.getElementById("myInput").value = "";
   document.getElementById("myInput2").value = "";

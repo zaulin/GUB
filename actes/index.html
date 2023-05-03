@@ -1,68 +1,76 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>ACTES</title>
+  <head>
+      <title>DENUNCIES</title>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+      type="text/javascript"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYXV6ZJSGC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
-    type="text/javascript"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYXV6ZJSGC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        gtag('config', 'G-MYXV6ZJSGC');
+      </script>
 
-      gtag('config', 'G-MYXV6ZJSGC');
-    </script>
-    
-    <script src="codigo.js"></script>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="../css/loader.css">
-    <link rel="stylesheet" href="../css/cabecera.css">
-    <link rel="stylesheet" href="../css/taules.css">
-    <link rel="stylesheet" href="../css/textos.css">
+      <script type="text/javascript" src="papaparse.min.js"></script>
+      <script src="codigo.js"></script>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="estilos.css">
+      <link rel="stylesheet" href="../css/loader.css">
+      <link rel="stylesheet" href="../css/cabecera.css">
+      <link rel="stylesheet" href="../css/taules.css">
+      <link rel="stylesheet" href="../css/textos.css">
 
-<meta name="theme-color" content="#064a9d">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta http-equiv="Cache-Control" content="no-store" /> 
-<meta http-equiv="Expires" content="0">
-<meta http-equiv="Last-Modified" content="0">
-<meta http-equiv="Pragma" content="no-cache">
+      <meta name="theme-color" content="#064a9d">
 
-</head>
-<body onload="pageonload()" style="margin: 0;padding: 0">
+      <meta http-equiv="Cache-Control" content="no-store" /> 
+      <meta http-equiv="Expires" content="0">
+      <meta http-equiv="Last-Modified" content="0">
+      <meta http-equiv="Pragma" content="no-cache">
+
+  </head>
+  <body onload="pageonload()" style="margin: 0;padding: 0" >
 
     <div id="loading">
-      <div id="loadingIn">
-        <div class="loader">
-        
+        <div id="loadingIn">
+          <div class="loader">
+          
+          </div>
         </div>
       </div>
-    </div>
-    
 
-<table class="cabecera">
-  <tr>
-    <td id="version" onclick="clickBack()" class="back"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
-    <td id="titulo" class="titulo">ACTES</td>
-    <td id="fecha" class="fecha"></td>
-  </tr>
-</table>
 
-<div style="margin-left: 5px; margin-right: 5px;">
-  
-      <div>
+    <div style="height:100%;" > <!-- overflow: hidden;-->
+      <div style="background-color: white; margin-bottom: 10px;">
+        <div>
+          <table class="cabecera">
+            <tr>
+              <td id="version" class="back" onclick="clickBack()"><img src="../img/back.png" height="26px" style="vertical-align: middle;"></td>
+              <td id="titulo" class="titulo">ACTES</td>
+              <td id="fecha" class="fecha"></td>
+            </tr>
+          </table>
+        </div>  
+
+        <div style="margin-left: 5px; margin-right: 5px;" >
+
+          <div style="margin-bottom: 10px">
             <table>
                 <tr>
                   <td style="vertical-align: bottom;">
                     <label class="myLabel" >Filtrar:</label>
                   </td>
-                  <td style="vertical-align: bottom;">
-                    <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
+                  <td>
+                    <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula 1" class="myInput" >
                   </td>
-                  
+                  <td style="vertical-align: bottom;">
+                    <p id="hitCounter" class="hitCounter"></p>
+                  </td>
                 </tr>
 
                 <tr>
@@ -70,22 +78,14 @@
                     <label class="myLabel" >i:</label>
                   </td>
                   <td>
-                    <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula.." class="myInput" >
+                    <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula 2" class="myInput" >
                   </td>
                   <td style="vertical-align: bottom;">
-
-                    <td style="vertical-align: bottom;"><button onClick="reset()" class="boton">netejar</button></td>
+                    <button onClick="reset()" class="eraseButton"><img src="../img/erase.png" height="20px"></button>
                   </td>
                 </tr>
             </table>
-                                
-
-            <!--label for="dropdownSituacion" class="myLabel">Situació:</label>
-            <select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
-              <option></option>
-            </select-->  
-          <p id="hitCounter" class="hitCounter"></p>
-      </div>
+          </div>
 
 <div id="divTaules">
 
@@ -616,5 +616,10 @@
 </div>
 
 
-</body>
+
+      </div>
+
+        
+    </div>
+  </body>
 </html>
