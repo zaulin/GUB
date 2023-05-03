@@ -80,8 +80,8 @@
         <div>
           <table class="cabecera">
             <tr>
-              <td id="version" class="back" onclick="clickBack()"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
-              <td id="titulo" class="titulo">DENUNCIES</td>
+              <td id="version" class="back" onclick="clickBack()"><img src="../img/back.png" height="26px" style="vertical-align: middle;"></td>
+              <td id="titulo" class="titulo">DENÚNCIES</td>
               <td id="fecha" class="fecha"></td>
             </tr>
           </table>
@@ -89,14 +89,14 @@
 
         <div style="margin-left: 5px; margin-right: 5px;" >
 
-          <div>
+          <div style="margin-bottom: 10px">
             <table>
                 <tr>
                   <td style="vertical-align: bottom;">
                     <label class="myLabel" >Filtrar:</label>
                   </td>
                   <td>
-                    <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
+                    <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula 1" class="myInput" >
                   </td>
                   <td style="vertical-align: bottom;">
                     <p id="hitCounter" class="hitCounter"></p>
@@ -108,10 +108,10 @@
                     <label class="myLabel" >i:</label>
                   </td>
                   <td>
-                    <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula.." class="myInput" >
+                    <input name="input2" type="text" id="myInput2" onkeyup="keyupInput2()" placeholder="paraula 2" class="myInput" >
                   </td>
                   <td style="vertical-align: bottom;">
-                    <button onClick="reset()" class="boton">netejar</button>
+                    <button onClick="reset()" class="eraseButton"><img src="../img/erase.png" height="20px"></button>
                   </td>
                 </tr>
             </table>

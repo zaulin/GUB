@@ -6,6 +6,12 @@
   color: white;
 }
 
+.eraseButton {
+  background-color: white;
+  border-color: #064a9d;
+  border-width: 2px;
+}
+
 #overlay {
   position: fixed;
   display: none;
@@ -24,7 +30,7 @@
   background-color:  #064a9d;
   width: 100%;
   font-size: 18px;
-  font-family: Calibri;
+  font-family: Helvetica;
   font-weight: bold;
 }
 

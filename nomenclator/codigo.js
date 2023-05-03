@@ -327,8 +327,10 @@ function tableClick(el) {
 
 function pageonload() {
 
-  document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
-
+  if (document.getElementById("fecha")) {
+    //document.getElementById("fecha").innerText = "v." + version + " - " + fecha
+  }
+  
   esconde();
   loadDenuncias();
 
