@@ -165,7 +165,7 @@ function esconde() {
 
 function pageonload() {
 
-  document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
+  //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
   document.getElementById("myInputCodi").value = "";
 
