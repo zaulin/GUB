@@ -1,7 +1,7 @@
 .chMultiEnlaces {
   margin-top: 10px;
   font-size: 16px;
-  font-family: calibri;
+  font-family: Helvetica;
   font-weight: bold;
 }
 
@@ -24,7 +24,7 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  font: calibri;
+  font: Helvetica;
   font-size: 18px;
   font-weight: bold;
 }
@@ -35,7 +35,7 @@
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  font: calibri;
+  font: Helvetica;
   font-size: 14px;
 }
 
@@ -45,7 +45,7 @@
   padding-bottom: 10px;
   padding-left: 10px;
 
-  font: calibri;
+  font: Helvetica;
   font-size: 16px;
   color: black;
   text-decoration: none;
@@ -74,7 +74,7 @@
   background-color:  #064a9d;
   width: 100%;
   font-size: 18px;
-  font-family: Calibri;
+  font-family: Helvetica;
   font-weight: bold;
 }
 
