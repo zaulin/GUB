@@ -17,8 +17,20 @@ DOSIS SUPERIOR A CONSUM PROPI:
 - Pastilles de síntesis: 20 unitats"
 SC;Vermell;N01,A55;;;"Fer copia del requeriment de detenció
 Omplir el llibre de detinguts"
-SC;Violació domicil (p. física);N02,A108;N01,A18;A17;"Un cohabitant mai pot vulnerar la inviolabilitat del domicili (pot vulnerar el dret a la intimitat).
+SC;Violació domicil (p. física);N01,A18;N02,A108;A17;"Un cohabitant mai pot vulnerar la inviolabilitat del domicili (pot vulnerar el dret a la intimitat).
 
 Es considera domicili a on una persona exerceix la seva llibertat íntima sense estar subjecte als usos i convencions socials. 
 
 Pot incluir segones residencies, habitacions d'hotel, tendes de campanya, autocaravanes.  "
+SC;Violació domicil (p. jurídica);N01,A18;N02,A108;A17;"Establiment obert:
+  Es nega a marxar a requeriment del titular: Art. 36.6 llei 4/2015
+  Es nega a marxar  AMB violencia o intimidació: Delicte menys greu Art. 203.3
+
+Establiment vol tancar:
+  Es nega a marxar a requeriment del titular: Delicte menys greu Art. 203.2
+  Es nega a marxar  AMB violencia o intimidació: Delicte menys greu Art. 203.3
+
+Si ha accedit fora de l'horari d'apertura: Delicte menys greu Art. 203.1"
+SC;Estranger a CNP;A58PL;;;"A CNP segellen el acta, es queden una copia i et retornen un full de filiació. L'A58PL original i la fulla de filiació van a l'ORD.
+
+IMPORTANT: indicar el lloc a on ha estat privat de llibertat"
