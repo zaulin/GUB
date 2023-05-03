@@ -192,7 +192,7 @@ function dropdownChange() {
 
 function pageonload() {
 
-  document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
+  //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
   document.getElementById("dropdownSituacion").value = "";
   document.getElementById("labelExtra").innerText = "";

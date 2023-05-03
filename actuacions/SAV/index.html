@@ -55,13 +55,15 @@
       </div>
     </div>
     
-<table class="cabecera">
-  <tr>
-    <td id="version" onclick="clickBack()" class="back"><img src="../../img/back.png" height="16px" style="vertical-align: middle;"></td>
-    <td id="titulo" class="titulo">GAV</td>
-    <td id="fecha" class="fecha"></td>
-  </tr>
-</table>
+  <div style="background-color: white; margin-bottom: 10px;">
+    <table class="cabecera">
+      <tr>
+        <td id="version" class="back" onclick="clickBack()"><img src="../../img/back.png" height="26px" style="vertical-align: middle;"></td>
+        <td id="titulo" class="titulo">SAV</td>
+        <td id="fecha" class="fecha"></td>
+      </tr>
+    </table>
+  </div>
 
 <div style="margin-left: 5px; margin-right: 5px; text-align: center;" width="100%">
  <br>
@@ -97,43 +99,63 @@
   <div id="divExtraInfo" class="divExtraInfo">
     <table class="tableExtraInfo" align="center">
       <tr><td>
+        <p id="labelMesInfo" class="labelMesInfo">Si son creuades (ViGe-ViDo): </p>
+        <p id="labelExtra" class="labelExtra">
+        Competència de la URIV
         <p id="labelMesInfo" class="labelMesInfo">Violència de gènere: </p>
         <p id="labelExtra" class="labelExtra">
-          Víctima a <b>SAV GUB</b><br><br>
-          Subjecte actiu: home<br>
-Subjecte passiu: dona<br>
-En el cas de persones no cisgènere es tindrà en compte el gènere legal.<br>
-<br>
-Relació:<br>
-La dona és o ha estat cònjugue (o relació anàloga) amb o sense convivència.<br>
-<br>
-Inclou:<br>
-- Violència física o psicològica.<br>
-- Agressions a la llibertat sexual.<br>
-- Amenaces.<br>
-- Coaccions.<br>
-- Privació de llibertat.<br>
+          
 
+          Víctima a (la gestió la fa la ORD): <br>
+          <b>SAV GUB</b> si està dins d'horari de SAV (7h-22h)
+          <br>
+          <b>GAV CME</b> si està fora d'horari de GAV. Si CME no te agenda se la pot citar a partir de les 10h a <b>SAV GUB</b> mtijançant N102.
+
+          <br><br>
+          
+          Subjecte actiu: home<br>
+          Subjecte passiu: dona<br>
+          En el cas de persones no cisgènere es tindrà en compte el gènere legal.<br>
+          <br>
+          Relació:<br>
+          La dona és o ha estat cònjugue (o relació anàloga) amb o sense convivència.<br>
+          <br>
+          Inclou:
+          <ul>
+          <li>Violència física o psicològica.</li>
+          <li>Agressions a la llibertat sexual.</li>
+          <li>Amenaces.</li>
+          <li>Coaccions.</li>
+          <li>Privació de llibertat.</li>
+          </ul>
         </p>
       </td></tr>
 
       <tr><td>
         <p id="labelMesInfo" class="labelMesInfo">Violència domèstica:</p>
         <p id="labelExtra" class="labelExtra">
-          Víctima a <b>GAV CME</b><br><br>
-Relació amb el sujecte passiu:<br>
-- És o ha estat cònjugue (o relació anàloga) amb o sense convivència.<br>
-- Descendents, ascendents o germans (o afins) propis o del cònjugue o convivent.<br>
-- Menors o persones necesitades d'especial protecció amb convivència o sota la guarda del cònjugue o convivent.<br>
-- Qualsevol persona que integri el núcli de convivència familiar.<br>
-- Persones especialment vulnerables sota custodia de centres públics o privats.<br>
-<br>
-Inclou:<br>
-- Violència física o psicològica.<br>
-- Agressions a la llibertat sexual.<br>
-- Amenaces.<br>
-- Coaccions.<br>
-- Privació de llibertat.<br>
+            Víctima a <b>GAV CME</b><br><br>
+
+
+            Relació amb el sujecte passiu:
+            <ul>
+              <li>És o ha estat cònjugue (o relació anàloga) amb o sense convivència.</li>
+              <li>Descendents, ascendents o germans (o afins) propis o del cònjugue o convivent.</li>
+              <li>Menors o persones necesitades d'especial protecció amb convivència o sota la guarda del cònjugue o convivent.</li>
+              <li>Qualsevol persona que integri el núcli de convivència familiar.</li>
+              <li>Persones especialment vulnerables sota custodia de centres públics o privats.</li>
+            </ul>
+
+<p id="labelExtra" class="labelExtra">
+                        Inclou:
+            
+            <ul>
+              <li>Violència física o psicològica.</li>
+              <li>Agressions a la llibertat sexual.</li>
+              <li>Amenaces.</li>
+              <li>Coaccions.</li>
+              <li>Privació de llibertat.</li>
+            </ul>
 
         </p>
       </td></tr>
