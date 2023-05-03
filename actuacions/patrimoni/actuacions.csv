@@ -21,7 +21,7 @@ Patrimoni;Apropiació indeguda +400€;N01,A108;N02,A56;;"Si l'autor s'ha trobat
 
 L'apropiació indeguda d'un vehicle la comet el que signa el contracte, no el conductor."
 Patrimoni;Robatori/furt ús de vehícle;N08,A108;N02,A18;A33;Ingresar el vehícle a disposició judicial.
-Patrimoni;Danys +400€;N01,A108;N02;A17,A33,A31;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
-Patrimoni;Danys;N09,A108;N02;A17,A33,A32;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
+Patrimoni;Danys +400€;N01,A108;N02,A18;A17,A33,A31;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
+Patrimoni;Danys;N09,A108;N02,A18;A17,A33,A31;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
 Patrimoni;Ús de moneda falsa +400€;N09,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
 Patrimoni;Ús de moneda falsa;N01,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
