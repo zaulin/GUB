@@ -1,7 +1,7 @@
 ﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
-Persones;Agresió sexual;N01,A108;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+Persones;Agresió sexual;N01,A108,N101.bPL;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
-Ha d'existir violència o intimidació.
+S'ha d'especificar si ha d'existit violència o intimidació.
 
 Trucar a ORD abans de redactar la G30.
 
