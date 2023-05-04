@@ -1,0 +1,10 @@
+.botonEnlace {
+ padding: 20px;
+ text-align: center;
+ background-color: #064a9d;
+ color: white;
+ font-size: 16px;
+  border: 0;
+ box-shadow: none;
+ border-radius: 0px;
+}

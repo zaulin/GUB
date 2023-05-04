@@ -1,0 +1,112 @@
+{
+  "decisions" : [
+    {
+      "answer" : "PÈRDUA DE VIGÈNCIA PER PERDUDA TOTAL DE PUNTS (JPT)\n",
+      "decisions" : [
+        {
+          "answer" : "CONDUEIX DINS DEL PERÍODE DE PERDUA DE VIGENCIA",
+          "message" : "Instrucció de diligència per l'article 384 del Codi Penal\na més denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+        },
+        {
+          "answer" : "CONDUEIX FINALITZAT EL PERÍODE DE PERDUA DE VIGENCIA",
+          "decisions" : [
+            {
+              "answer" : "NO REALITZA CURS, NI EXAMEN",
+              "message" : "Instrucció de diligència per l'article 384 del Codi Penal\na més denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+            },
+            {
+              "answer" : "SÍ REALITZA CURS, NO EXAMEN",
+              "message" : "Instrucció de diligència per l'article 384 del Codi Penal\na més denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+            },
+            {
+              "answer" : "SÍ REALITZA CURS, SÍ EXAMEN AMB RESULTAT APTE",
+              "message" : "Todo correcto, el usuario continúa el viaje"
+            }
+          ]
+        },
+        {
+          "answer" : "PÈRDUA DE VIGÈNCIA EDICTAL",
+          "decisions" : [
+            {
+              "answer" : "NO TÉ CONEIXEMENT",
+              "message" : "Denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+            },
+            {
+              "answer" : "SI TÉ CONEIXEMENT",
+              "message" : "Instrucció de diligència per l'article 384 del Codi Penal\na més denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+            }
+          ]
+        },
+        {
+          "answer" : "ESTÀ EN PERÍODE DE PRESENTACIÓ DE RECURS ",
+          "message" : "Denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+        },
+        {
+          "answer" : "ESTÀ PENDENT DE RESOLDRE RECURS",
+          "message" : "Denuncia codi GUB 3176-77 - Infracció administrativa al RGCon Art. 3\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+        }
+      ]
+    },
+    {
+      "answer" : "SUSPENSIÓ PER RESOLUCIÓ JUDICIAL\n",
+      "decisions" : [
+        {
+          "answer" : "IGUAL O INFERIOR A 2 ANYS",
+          "decisions" : [
+            {
+              "answer" : "CONDUEIX DINS DEL PERÍODE DE CONDEMNA",
+              "message" : "Instrucció de diligència per l'article 384 del Codi Penal\na més denuncia codi GUB 3172-73 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+            },
+            {
+              "answer" : "DESPRÉS DE COMPLIR EL TEMPS DE SUSPENSIÓ",
+              "decisions" : [
+                {
+                  "answer" : "NO REALITZA EL CURS",
+                  "message" : "Denuncia codi GUB 3178 - Infracció administrativa al RGCon Art. 3\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat (No haver fet el curs preceptiu deprès de complir la condemna)."
+                },
+                {
+                  "answer" : "SÍ REALITZA EL CURS",
+                  "message" : "Tot correcte, pot continuar el viatge"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "answer" : "SUPERIOR A 2 ANYS",
+          "decisions" : [
+            {
+              "answer" : "CONDUEIX DINS DEL PERÍODE DE CONDEMNA",
+              "message" : "Instrucció de diligència per l'article 384 del Codi Penal\na més denuncia codi GUB 3172-73 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+            },
+            {
+              "answer" : "CONDUEIX FINALITZADA LA CONDEMNA",
+              "decisions" : [
+                {
+                  "answer" : "NO REALITZA CURS, NI EXAMEN",
+                  "message" : "Instrucció de diligència per l'article 468 del Codi Penal\na més denuncia codi GUB 3172-73 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+                },
+                {
+                  "answer" : "SÍ REALITZA CURS, NO EXAMEN",
+                  "message" : "Instrucció de diligència per l'article 468 del Codi Penal\na més denuncia codi GUB 3172-73 - Infracció administrativa al RGCon Art. 3.2\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat."
+                },
+                {
+                  "answer" : "SÍ REALITZA CURS, SÍ EXAMEN AMB RESULTAT APTE",
+                  "message" : "Tot correcte, pot continuar el viatge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "answer" : "PÉRDIDA DE VIGENCIA POR PÉRDIDA DE ACTITUDES PSICOFÍSICAS",
+      "message" : "Denuncia codi GUB 3152-53-54-57-58-59 - Infracció administrativa al RGCon Art. 1.1\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat (sense vigència per causa administrativa)."
+    },
+    {
+      "answer" : "PROPUESTA DE PÉRDIDA DE VIGENCIA DE LA AUTORIZACIÓN ADMINISTRATIVA PARA CONDUCIR",
+      "message" : "Realitzar informe intern per adreçar a DGT sobre el supòsit\n"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+
+.dc-tree {
+  font: 16px 'Roboto',Verdana, sans-serif;
+  position: relative;
+  text-align: center;
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+.dctree-prev {
+  color: #064a9d;
+}
+
+.dc-tree * { box-sizing: border-box; }
+
+.dctree-card {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  margin: 0 auto;
+  background-color: white;
+  display: none;
+}
+
+.dctree-message {
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 14px; 
+  text-align: left;
+  color: black;
+}
+
+[class^="dctree-answer"] {
+ padding: 20px;
+ text-align: center;
+ margin: 10px 20px;
+ box-shadow: 3px 3px 5px 2px #BDBDBD;
+ background-color: #064a9d;
+ color: white;
+ font-size: 16px;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
