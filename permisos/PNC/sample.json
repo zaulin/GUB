@@ -20,7 +20,7 @@
             },
             {
               "answer" : "SÍ REALITZA CURS, SÍ EXAMEN AMB RESULTAT APTE",
-              "message" : "Todo correcto, el usuario continúa el viaje"
+              "message" : "Tot correcte, pot continuar el trajecte."
             }
           ]
         },
@@ -101,11 +101,11 @@
       ]
     },
     {
-      "answer" : "PÉRDIDA DE VIGENCIA POR PÉRDIDA DE ACTITUDES PSICOFÍSICAS",
+      "answer" : "PÈRDUA DE VIGÈNCIA PER PÈRDUA D'APTITUDS PSICOFÍSIQUES",
       "message" : "Denuncia codi GUB 3152-53-54-57-58-59 - Infracció administrativa al RGCon Art. 1.1\nDetallar el tipus de vehicle que es condueix i el supòsit concret detectat (sense vigència per causa administrativa)."
     },
     {
-      "answer" : "PROPUESTA DE PÉRDIDA DE VIGENCIA DE LA AUTORIZACIÓN ADMINISTRATIVA PARA CONDUCIR",
+      "answer" : "PROPOSTA DE PÈRDUA DE VIGÈNCIA DE L'AUTORITZACIÓ ADMINISTRATIVA PER CONDUIR",
       "message" : "Realitzar informe intern per adreçar a DGT sobre el supòsit\n"
     }
   ]
