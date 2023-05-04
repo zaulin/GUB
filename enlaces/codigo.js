@@ -269,18 +269,18 @@ function clickBack() {
 
 function onkeyupInputCodi(){
   inputConveni = document.getElementById("dropdownConveni").value = "";
-  document.getElementById("chMultiEnlaces").checked = false;
+  //document.getElementById("chMultiEnlaces").checked = false;
 
   buscar();
 }
 
 function onkeyupCheckMulti(){
-  buscar();
+  //buscar();
 }
 
 function dropdownChange(){
   document.getElementById("myInputCodi").value = "";
-  document.getElementById("chMultiEnlaces").checked = false;
+  //document.getElementById("chMultiEnlaces").checked = false;
 
   inputConveni = document.getElementById("dropdownConveni");
   txtFilterConveni = inputConveni.value;
@@ -293,16 +293,18 @@ function buscar() {
   var input, filter, table, tr, td, i, txtValue, iHits;
   var arrayActas;
 
+/*
   inputCodi = document.getElementById("myInputCodi");
   filterCodi = normalice(inputCodi.value.toUpperCase());
 
   inputConveni = document.getElementById("dropdownConveni");
   txtFilterConveni = inputConveni.value;
-
+*/
   table = document.getElementById("tableMain");
   tr = table.getElementsByTagName("tr");
 
-  if (document.getElementById("chMultiEnlaces").checked == true) {
+  //if (document.getElementById("chMultiEnlaces").checked == true) {
+  if (true) {
     for (i = 0; i < tr.length; i++) {
       hit = 0;
       tdCodiPais = tr[i].getElementsByTagName("td")[2];
@@ -427,64 +429,6 @@ function tableClick(el) {
   
   document.getElementById("overlay").style.display = "block";
   
-/*
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        
-        console.log(this.responseText)
-
-        var data = JSON.parse(this.responseText);
-        document.getElementById("popUpBandera").src = data.message;
-      }
-    };
-    
-    xhttp.open("GET", "<img src="https://countryflagsapi.com/png/ad" alt="Andorra flag"/>", true);
-
-    //xhttp.open("GET", "https://countryflagsapi.com/svg/" + sCodigoPais, true);
-    xhttp.send();
-    
-    //https://flagcdn.com/h60/de.png
-*/
-  //document.getElementById("popUpBandera").src = "https://countryflagsapi.com/png/" + sCodigoPais;
-
-
-return "";
-
-console.log(td[0].innerText);
-  
-  url = "https://www.consilium.europa.eu/prado/es/prado-documents/" + sCodigoPais + "/index.html";
-
-/*
-  if (tr[indice + 1].getAttribute("open") == "true") {
-    tr[indice + 1].setAttribute("open", "false");
-  } else {
-    tr[indice + 1].setAttribute("open", "true");
-  }
-*/
-  if (tr[indice + 1].getAttribute("open") == "true") {
-    return "";  
-  }
-  
-  tr[indice + 1].setAttribute("open", "true");
-
-  //ocultas:
-  sColumnasOcultas='<td style="display:none">' + td[0].innerText + '</td>'
-
-  //Crear filas
-  enlace = '<a href="' + url + '">PRADO</a>'
-  fila = "<tr>" + sColumnasOcultas + "<td>" + enlace + "</td></tr>"
-
-  for (var i = 0; i < arrayEnlaces.length; i++) {
-    if (arrayEnlaces[i][0] == sCodigoPais) {
-      enlace = '<a href="' + arrayEnlaces[i][2] + '">' + arrayEnlaces[i][1] + '</a>'
-
-      fila = fila + "<tr>" + sColumnasOcultas + "<td>" + enlace + "</td></tr>"
-    }
-  }
-
-  $( '<tr><td colSpan="2"><table class="taulaEnlaces">' + fila + '</table></td><td style="display:none"></td></tr>' ).insertAfter( $(el).closest('tr'));
-//console.log(document.getElementById("tableMain").outerHTML)
 }
 
 function esconde() {
@@ -529,7 +473,7 @@ function pageonload() {
 
   //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
-  document.getElementById("myInputCodi").value = "";
+  //document.getElementById("myInputCodi").value = "";
 
   esconde();
 
