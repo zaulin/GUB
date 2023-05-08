@@ -62,11 +62,11 @@
               "answer" : "CONDUEIX FORA DEL PERÍODE DE SUSPENSIÓ",
               "decisions" : [
                 {
-                  "answer" : "NO REALITZA EL CURS ",
+                  "answer" : "NO HA FET EL CURS DE SENSIBILITZACIÓ",
                   "message" : "<b>DENÚNCIA:</b><ul><li>3178 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat (No haver fet el curs preceptiu deprès de complir la condemna)</li></ul>"
                 },
                 {
-                  "answer" : "SÍ REALITZA EL CURS",
+                  "answer" : "SÍ HA FET EL CURS DE SENSIBILITZACIÓ",
                   "message" : "Tot correcte, pot continuar el viatge."
                 }
               ]
