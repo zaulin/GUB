@@ -83,6 +83,9 @@ function buscar() {
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
+  tablePlus = document.getElementById("myTablePlus");
+  trPlus = tablePlus.getElementsByTagName("tr");
+
     if (filter == "") {
       if (filter2 != "") {
         filter = filter2;
@@ -101,7 +104,7 @@ function buscar() {
         tdCodi = tr[i].getElementsByTagName("td")[iColCodi-1];
         txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
         
-        tdArt =  tr[i].getElementsByTagName("td")[iColArticle-1];
+        tdArt =  trPlus[i].getElementsByTagName("td")[iColArticle-1];
         txtArt = normalice(tdArt.textContent || tdArt.innerText).replace(/\s/g, '')
 
           if (arrayFiltreDenuncies) {
@@ -200,17 +203,6 @@ function esconde() {
     
     //no contamos la cabecera
     if (i>0) {iHits = iHits + 1}
-
-    for (j = 2; j < 12; j++) {
-      td = tr[i].getElementsByTagName("td")[j];
-      th = tr[i].getElementsByTagName("th")[j];
-      if (td) {
-            td.style.display = "none";
-      }
-      if (th) {
-            th.style.display = "none";
-      }  
-    }
     
   }
 
@@ -220,14 +212,6 @@ function esconde() {
     document.getElementById("hitCounter").innerHTML = numberWithCommas(iHits) + " coincidències." 
   }
 
-/*
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const paramFilter1 = urlParams.get('filter1')
-  const paramFilter2 = urlParams.get('filter2')
-
-  reset(paramFilter1, paramFilter2);
-*/
 }
 
 function off() {
@@ -261,7 +245,7 @@ function tableClick(el) {
   var indice, table, tr, td;
   indice = $(el).closest('tr').index();
 
-  table = document.getElementById("myTable");
+  table = document.getElementById("myTablePlus");
   tr = table.getElementsByTagName("tr");
   td = tr[indice + 1].getElementsByTagName("td")
 
