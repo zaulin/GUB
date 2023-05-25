@@ -100,8 +100,27 @@ Per la unitat:
 S'han de fer les sancions administratives per si no prospera la via penal:
 - Conductor sense permís: 3297
 - Conductor: 3296"
-Alcoholèmia admin - CME;T101,A13;;;
-Alcoholèmia penal - CME;T101,A13,A21,A121;;;
+Alcoholèmia admin - CME;T101,A13,A121;;;"La patrulla fa:
+   - T101PL.
+   - A121PL.
+   - Comprobants de l'etilòmetre.
+   - A13PL de desinmovilització.
+
+CME fa:
+   - La denúncia administrativa amb butlletí municipal la fa CME.
+   - A13PL d'inmovilització."
+Alcoholèmia penal - CME;T101,A13,A21,A121;;;"La patrulla fa:
+   - A21PL
+   - T101PL.
+   - A121PL.
+   - Comprobants de l'etilòmetre.
+   - A13PL de desinmovilització.
+
+CME fa:
+   - Lectura de drets.
+   - Minuta policial.
+   - La denúncia administrativa amb butlletí municipal la fa CME.
+   - A13PL d'inmovilització."
 Prova de contrast;T12;;;"S'ha d'informar que si la prova dona positiu haurà de pagar el cost.
 
 Si no signa la T12PL no es realitzarà la prova.
