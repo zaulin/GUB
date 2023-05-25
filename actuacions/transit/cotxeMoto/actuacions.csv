@@ -1,5 +1,5 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
-Accident;T105;T105;T06;"S'ha de fer prova d'alcoholèmia a tots els implicats.
+Accident;T105;T105;T06;"S'ha de fer la prova d'alcoholèmia a tots els implicats.
 
 És delicte penal:
   - Si la persona que ha provocat l'accident dona >0,44 mg/l 
@@ -104,7 +104,7 @@ Alcoholèmia admin - CME;T101,A13;;;
 Alcoholèmia penal - CME;T101,A13,A21,A121;;;
 No haver obtingut mai;T100,T102,A13;;;"Si està fora dels supòsits de la T100 s'ha de compareixer a UIPA.
 
-L'hora de l'atura ha de ser anterior a la lectura de drets.
+L'hora de l'aturada ha de ser anterior a la lectura de drets.
 
 A13 consultar amb KA a disposició de qui queda el vehicle.
 
