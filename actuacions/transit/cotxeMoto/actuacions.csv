@@ -1,4 +1,11 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
+Accident;T105;T105;T06;"S'ha de fer prova d'alcoholèmia a tots els implicats.
+
+És delicte penal:
+  - Si la persona que ha provocat l'accident dona >0,44 mg/l 
+  - Si la persona que ha provocat l'accident abandona el lloc sense donar dades i hi ha lesions del 147.1
+
+Si hi ha un o més ferits que han de ser atesos s'ha de contactar amb KA."
 Alcoholèmia admin;T101,A13;;;"Es penal si:
 - la ingesta afecta a la conducció, implicat en accident i taxa > 0,40 mg/l (0,44 mg/l)
 o
@@ -95,6 +102,13 @@ S'han de fer les sancions administratives per si no prospera la via penal:
 - Conductor: 3296"
 Alcoholèmia admin - CME;T101,A13;;;
 Alcoholèmia penal - CME;T101,A13,A21,A121;;;
+No haver obtingut mai;T100,T102,A13;;;"Si està fora dels supòsits de la T100 s'ha de compareixer a UIPA.
+
+L'hora de l'atura ha de ser anterior a la lectura de drets.
+
+A13 consultar amb KA a disposició de qui queda el vehicle.
+
+A la denúncia administrativa s'ha de marcar la casella ""dil·ligències penals""."
 Taxi il·legal;T108;T109;;"T109 a cada un dels passatgers
 
 Avisar a KM per a que ells facin la denúncia de transports
