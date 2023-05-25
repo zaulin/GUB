@@ -102,6 +102,11 @@ S'han de fer les sancions administratives per si no prospera la via penal:
 - Conductor: 3296"
 Alcoholèmia admin - CME;T101,A13;;;
 Alcoholèmia penal - CME;T101,A13,A21,A121;;;
+Prova de contrast;T12;;;"S'ha d'informar que si la prova dona positiu haurà de pagar el cost.
+
+Si no signa la T12PL no es realitzarà la prova.
+
+Els agents han d'estar presents durant l'extracció i han de custodiar la mostra fins al laboratori acordat o a l'Institut Nacional de Toxicologia."
 No haver obtingut mai;T100,T102,A13;;;"Si està fora dels supòsits de la T100 s'ha de compareixer a UIPA.
 
 L'hora de l'aturada ha de ser anterior a la lectura de drets.
