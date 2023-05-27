@@ -33,7 +33,9 @@ Sancions administratives:
 > 0,50 mg/l (0,55 mg/l)
 - Qualsevol conductor: 3290
 - Reincident: 3291"
-Alcoholèmia penal;T101,A21,T102,T100,A13;;;"Es penal si:
+Alcoholèmia penal;T101,A21,T102,T100,A13;;;"L'ordre de les hores de les actes és: T100PL, A21PL, T101PL, T102PL, A13
+
+Es penal si:
 - la ingesta afecta a la conducció, implicat en accident i taxa > 0,40 mg/l (0,44 mg/l)
 o
 - taxa > 0,60 mg/l (0,66 mg/l)
