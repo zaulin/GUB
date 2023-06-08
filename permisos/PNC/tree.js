@@ -77,7 +77,8 @@
             //controls.append($(sAdd + '<p href="javascrip: function(){getPrevCard()};" class="dctree-prev"><- Anterior </p><br><br>'));
             //controls.append($(sAdd + '<p onClick="javascrip: function back(){getPrevCard()};" class="dctree-prev"><- Anterior </p>'));
             //controls.append($(sAdd + '<a href="javascrip:;" class="dctree-prev"><- Anterior </a>'));
-            controls.append($(sAdd + '<p onClick="javascrip:;" class="dctree-prev"><- Anterior </p>'));
+            //controls.append($(sAdd + '<p onClick="javascrip:;" class="dctree-prev"><- Anterior </p>'));
+            controls.append($(sAdd + '<button id="jsonBack" onClick="javascrip:;" class="dctree-prev">Anterior</button>'));
             
             container.append(controls);
         }

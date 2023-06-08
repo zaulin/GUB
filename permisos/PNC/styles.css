@@ -8,7 +8,9 @@
 }
 
 .dctree-prev {
-  color: #064a9d;
+  color: white;
+  background-color: white;
+  border: none;
 }
 
 .dc-tree * { box-sizing: border-box; }
