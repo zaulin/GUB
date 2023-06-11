@@ -250,7 +250,7 @@ function tableClick(el) {
   td = tr[indice + 1].getElementsByTagName("td")
 
   //document.getElementById("popUpCodigo").innerText = td[1].innerText;
-  selectedNum = td[1].innerText;
+  selectedNum = td[0].innerText;
   selectedTr = indice;
 
   document.getElementById("popUpNum").innerHTML = td[iColCodi - 1].innerText;
