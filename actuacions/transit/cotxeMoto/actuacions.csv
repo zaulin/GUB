@@ -135,6 +135,9 @@ L'hora de l'aturada ha de ser anterior a la lectura de drets.
 A13 consultar amb KA a disposició de qui queda el vehicle.
 
 A la denúncia administrativa s'ha de marcar la casella ""dil·ligències penals""."
+No haver obtingut mai - CME;T100,T102,T104,A13;;;"Dona dil·ligències KA.
+
+S'han d'indicar els indicatius i TIPs de CME"
 Taxi il·legal;T108;T109;;"T109 a cada un dels passatgers
 
 Avisar a KM per a que ells facin la denúncia de transports
