@@ -284,12 +284,12 @@ function tableClick(el) {
   }
   */
 
-  if (td[iColCondicional-1].innerText == "1") {
+  if (td[iColCondicional-1].innerText == "Si") {
     document.getElementById("cboxCondicional").checked = true;
   } else {
     document.getElementById("cboxCondicional").checked = false;
   }
-  if (td[iColIntervencio-1].innerText == "S") {
+  if (td[iColIntervencio-1].innerText == "Si") {
     document.getElementById("cboxIntervencio").checked = true;
   } else {
     document.getElementById("cboxIntervencio").checked = false;
