@@ -14,8 +14,9 @@ Agreujants:
 - Desamparament de la víctima
 - Aprofitant-se d'un accident
 - Fer servir menors"
-Patrimoni;Furt a establiment;N09,N10,A108;A18,N02,A56,A57,N10;N10,D24,A17,G31,D24;"Adjuntar el tiquet de caixa (A57PL)
-- Només fer la D24PL si l'autor ha estat aturat per un vigilant o ciutadà i la patrulla només fa les actes."
+Patrimoni;Furt a establiment;N09,N10,A108;A18,N02,A56,A57,N10;N10,D24,A17,G31,D24;"Adjuntar el tiquet de caixa a l'A57PL
+- Només fer la D24PL si l'autor ha estat aturat per un vigilant o ciutadà i la patrulla només fa les actes.
+- Els empleats de la tenda són testimonis: A17PL"
 Patrimoni;Furt a transport públic;N09,N10,A108;A18,N02,A56,N10;N10,A17,D30;
 Patrimoni;Apropiació indeguda;N09,A108;N02,A56;;"Si l'autor s'ha trobat l'objecte sempre serà un delicte lleu independentment del valor de l'objecte.
 
