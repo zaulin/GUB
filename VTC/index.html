@@ -206,10 +206,6 @@
 
   <p class="txtSeccioSancions">Prestació de servei:</p>
 
-  <!--div class="texto">
-    Si la cobertura de l'assegurança és insuficient (50 milions d'€) NO s'inmobilitza.
-  </div>
-  <br-->
   <div style="margin-bottom: 10px;"> 
     <table id="myTable" class="taulaMain" style="margin-bottom: 10px;">
       <thead>
@@ -252,28 +248,18 @@
           <td align="right">3909</td>
           <td>(VTC-AMB) Incomplir els horaris i dies de descans establerts en aquest Reglament a excepció d'allò establert a la Disposició addicional d'aquest Reglament.</td>
         </tr>
+        <tr onClick="tableClick(this)">
+          <td align="right">3910</td>
+          <td>(VTC-AMB) No tenir els preceptius quadres de preus i altres d&#39;obligada exhibició per al coneixement del públic.</td>
+        </tr>
 
       </tbody>
     </table>
   </div>
-  <!--div class="texto">
-  <b>Actuació en cas d'inmovilització:</b>
-  <ul>
-    <li>T116PL</li>
-    <li>A13PL</li>
-    <li>Denúncies corresponents</li>
-    <li>Parte entrada del vehícle a dipòsit</li>
-    <li>Reportatge fotogràfic (només si te la geolocalització activada (3851))</li>
-    <li>Permís de circulació i tarjeta d'insepecció técnica (excepte: No disposar d'autorització d'AMB (3912))</li>
-  </ul>
 
-  </div-->
+  </div>
 
-  <!--div class="texto">
-  Pàgina de denúncies: <a href="../nomenclator/index.html?filter1=VTC" target="_blank">enllaç</a>
-  </div-->
-
-  <!----------------------------------------------------------->
+    <!----------------------------------------------------------->
   <!------------------ DIV EXTRA INFO ------------------------->
   <!----------------------------------------------------------->
 
@@ -283,21 +269,26 @@
       <table class="tableExtraInfo" align="center">
         <tr><td>
           <p id="labelExtra">
-              <b>Actuació en cas d'inmovilització a disposició del AMB-VTC:</b>
+            Demanar a sala que obri incident amb codi 2403 (Control de vigilància de trànsit).
+          </p>
+          <p id="labelExtra">
+              <b>Actuació en cas d'inmovilització:</b>
                 <ul>
                   <li>T116PL</li>
-                  <li>A13PL</li>
-                  <li>Denúncies corresponents</li>
-                  <li>Parte entrada del vehícle a dipòsit</li>
-                  <li>Reportatge fotogràfic (només si te la geolocalització activada (3851))</li>
-                  <!--li>Permís de circulació i tarjeta d'insepecció técnica (excepte: No disposar d'autorització d'AMB (3912))</li-->
+                  <li>A13PL (Vehicle a disposició del AMB-VTC).</li>
+                  <li>Denúncies corresponents.</li>
+                  <li>La documentació intervinguda (indicat a la T116PL).</li>
+                  <li>Parte entrada del vehicle a dipòsit.</li>
+                  <li>Reportatge fotogràfic (només si te la geolocalització activada (3851)).</li>
+                  
                 </ul>
+          </p>
+          <p id="labelExtra">
+            Tota la documentació s'enviarà per correu electrònic a l'AMB i la documentació físcia es farà arribar a l'AMB-VTC quan el cap de torn decideixi en funció de les necessitats del servei.<br>
+            Horari AMB-VTC: de dilluns a divendres de 9h a 14h. 
           </p>
         </td></tr>
       </table>
     </div>
-
-  </div>
-</div>
 </body>
 </html>
