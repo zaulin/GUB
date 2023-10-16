@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../css/cabecera.css">
     <link rel="stylesheet" href="../../css/taules.css">
     <link rel="stylesheet" href="../../css/textos.css">
+    <link rel="stylesheet" href="../../css/dropdown.css">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,29 +44,33 @@
       </div>
     </div>
     
-
   <div style="background-color: white; margin-bottom: 10px;">
     <table class="cabecera">
       <tr>
         <td id="version" class="back" onclick="clickBack()"><img src="../../img/back.png" height="26px" style="vertical-align: middle;"></td>
-        <td id="titulo" class="titulo">SEGURETAT CIUTADANA</td>
+        <td id="titulo" class="titulo">PATRIMONI</td>
         <td id="fecha" class="fecha"></td>
       </tr>
     </table>
   </div>
 
 <div style="margin-left: 5px; margin-right: 5px;">
-  
-      <div>
 
-                                
+    <div class="sec-center">  
+      <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+      <label id="selector" class="for-dropdown" for="dropdown">Sel·lecciona una situació</label>
+      <div id = "section-dropdown" class="section-dropdown"> 
+      </div>
+    </div>
+
+      <!--div>
 
             <label for="dropdownSituacion" class="myLabel">Situació:</label>
             <select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
               <option></option>
             </select>  
           <p id="hitCounter" class="hitCounter"></p>
-      </div>
+      </div-->
 
 <div id="divTaules">
 <!----------------------------------------------------------->

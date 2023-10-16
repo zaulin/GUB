@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ViDo</title>
+    <title>VIOLÈNCIA DOMÈSTICA</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
     type="text/javascript"></script>
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../../css/cabecera.css">
     <link rel="stylesheet" href="../../../css/taules.css">
     <link rel="stylesheet" href="../../../css/textos.css">
+    <link rel="stylesheet" href="../../../css/dropdown.css">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +49,7 @@
     <table class="cabecera">
       <tr>
         <td id="version" class="back" onclick="clickBack()"><img src="../../../img/back.png" height="26px" style="vertical-align: middle;"></td>
-        <td id="titulo" class="titulo">ViDo</td>
+        <td id="titulo" class="titulo">VMP</td>
         <td id="fecha" class="fecha"></td>
       </tr>
     </table>
@@ -58,13 +59,19 @@
   
       <div>
 
-                                
+        <div class="sec-center">  
+          <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+          <label id="selector" class="for-dropdown" for="dropdown">Sel·lecciona una situació</label>
+          <div id = "section-dropdown" class="section-dropdown"> 
+          </div>
+        </div>
+                                    
 
-            <label for="dropdownSituacion" class="myLabel">Situació:</label>
+            <!--label for="dropdownSituacion" class="myLabel">Situació:</label>
             <select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
               <option></option>
             </select>  
-          <p id="hitCounter" class="hitCounter"></p>
+          <p id="hitCounter" class="hitCounter"></p-->
       </div>
 
 <div id="divTaules">

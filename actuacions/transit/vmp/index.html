@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../../css/cabecera.css">
     <link rel="stylesheet" href="../../../css/taules.css">
     <link rel="stylesheet" href="../../../css/textos.css">
+    <link rel="stylesheet" href="../../../css/dropdown.css">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,13 +59,19 @@
   
       <div>
 
-                                
+        <div class="sec-center">  
+          <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+          <label id="selector" class="for-dropdown" for="dropdown">Sel·lecciona una situació</label>
+          <div id = "section-dropdown" class="section-dropdown"> 
+          </div>
+        </div>
+                                    
 
-            <label for="dropdownSituacion" class="myLabel">Situació:</label>
+            <!--label for="dropdownSituacion" class="myLabel">Situació:</label>
             <select id = "dropdownSituacion" onchange = "dropdownChange()" class="dropdown" >
               <option></option>
             </select>  
-          <p id="hitCounter" class="hitCounter"></p>
+          <p id="hitCounter" class="hitCounter"></p-->
       </div>
 
 <div id="divTaules">

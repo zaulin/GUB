@@ -9,15 +9,12 @@ function clickBack() {
 
 
 
-function filterSituacio() {
+function filterSituacio(txtFilterSituacio) {
   var iHits, iHitsAutor, iHitsPerjudicat, iHitsResta;
   iHits = 0;
   iHitsAutor = 0;
   iHitsPerjudicat = 0;
   iHitsResta = 0;
-
-  inputSituacio = document.getElementById("dropdownSituacion");
-  txtFilterSituacio = inputSituacio.value;
 
   tableResta = document.getElementById("tableResta");
   trResta = tableResta.getElementsByTagName("tr");
@@ -106,7 +103,7 @@ function filterSituacio() {
   return iHits;
 }
 
-function buscar() {
+function buscar(txtFilterSituacio) {
   var input, filter, table, tr, td, i, txtValue, iHits;
   var arrayActas;
 
@@ -118,25 +115,20 @@ function buscar() {
 
   iHits = 0;
 
-  inputSituacio = document.getElementById("dropdownSituacion");
-  txtFilterSituacio = inputSituacio.value;
-
-  //logic = document.getElementById("button");
-  //operator = logic.innerText;
 
   table = document.getElementById("tableResta");
   tr = table.getElementsByTagName("tr");
 
   if (txtFilterSituacio != "") {
 
-    iHits = filterSituacio();
+    iHits = filterSituacio(txtFilterSituacio);
 
   }
 
   if (iHits == 1) {
-    document.getElementById("hitCounter").innerHTML = iHits + " coincidència."
+    //document.getElementById("hitCounter").innerHTML = iHits + " coincidència."
   } else {
-    document.getElementById("hitCounter").innerHTML = numberWithCommas(iHits) + " coincidències."
+    //document.getElementById("hitCounter").innerHTML = numberWithCommas(iHits) + " coincidències."
   }
 
 }
@@ -164,15 +156,16 @@ function tableClick(el) {
   //alert(arraySituacion[0].nombre);
 }
 
-function dropdownChange() {
+function dropdownChange(txtFilterSituacio) {
 
-  inputSituacio = document.getElementById("dropdownSituacion");
-  txtFilterSituacio = inputSituacio.value;
+  //plegar y poner el valor
+  $("#selector").click();
 
+  document.getElementById("selector").innerText = txtFilterSituacio;
   document.getElementById("labelExtra").innerText = "";
   document.getElementById("divExtraInfo").style.display = "none";
 
-  buscar();
+  buscar(txtFilterSituacio);
 
   if (txtFilterSituacio != "") {
     for (var j = 0; j < arraySituacion.length; j++) {
@@ -194,7 +187,7 @@ function pageonload() {
 
   //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
-  document.getElementById("dropdownSituacion").value = "";
+  //document.getElementById("dropdownSituacion").value = "";
   document.getElementById("labelExtra").innerText = "";
 
   decoraTablas();
@@ -206,6 +199,7 @@ function pageonload() {
   document.getElementById("divExtraInfo").style.display = "none";
 
   loadSituaciones();
+  
 }
 
 function decoraTablas() {
@@ -328,15 +322,13 @@ function loadSituaciones() {
         arraySituacion.push(csvData[i])
       }
 
-        $(function() {
-          var $select = $('#dropdownSituacion');
-          $.each(csvData, function() {
-
-                  $('<option />').html(this.situacio).appendTo($select);
-                
-          });
-
+      $(function() {
+        var $select = $('#section-dropdown');
+        $.each(csvData, function() {
+              $select.append('<a class="elementoLista" onclick="dropdownChange(\'' + this.situacio + '\')">' + this.situacio + '</a>');              
         });
+
+      });
 
       document.getElementById("loading").style.display = "none";
     }
