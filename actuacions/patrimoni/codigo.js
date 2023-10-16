@@ -325,7 +325,7 @@ function loadSituaciones() {
       $(function() {
         var $select = $('#section-dropdown');
         $.each(csvData, function() {
-              $select.append('<a onclick="dropdownChange(\'' + this.situacio + '\')">' + this.situacio + '</a>');              
+              $select.append('<a class="elementoLista" onclick="dropdownChange(\'' + this.situacio + '\')">' + this.situacio + '</a>');              
         });
 
       });
