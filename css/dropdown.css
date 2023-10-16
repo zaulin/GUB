@@ -30,7 +30,7 @@
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2;
   height: 30px;
   transition: all 200ms linear;
@@ -98,10 +98,12 @@
 
 .elementoLista:nth-of-type(odd){
   background-color: #cee1f5;
+  font-size: 16px;
 }
 
 .elementoLista:nth-of-type(even){
   background-color: #a8caed;
+  font-size: 16px;
 }
 
 
