@@ -1,5 +1,6 @@
 ﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
 Patrimoni;Robatori amb força;N01,A108;N02,A56,A18;A31,A33,A17;Es considera també robatori amb força si la força s'exerceix per abandonar el lloc
+Patrimoni;Robatori amb violència;N01,A108;N02,A56,A18;A17;Es considera també robatori amb violència si la violència s'exerceix per abandonar el lloc
 Patrimoni;Usurpació (okupes);N09;N02,A18;G133,A31,A17;"Si es tracta d'un edifici públic: GUB - UI
 Si es tracta d'un edifici privat: CME"
 Patrimoni;Furt;N09,N10,A108;A18,N02,A56,N10;N10,A17;Si es a establiment: adjuntar el tiquet de caixa (A57PL)
