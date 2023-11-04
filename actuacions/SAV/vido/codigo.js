@@ -9,7 +9,7 @@ function clickBack() {
 
 
 
-function filterSituacio(txtFilterSituacio) {
+function filterSituacio(iIndexSituacio) {
   var iHits, iHitsAutor, iHitsPerjudicat, iHitsResta;
   iHits = 0;
   iHitsAutor = 0;
@@ -25,9 +25,7 @@ function filterSituacio(txtFilterSituacio) {
   tableAutor = document.getElementById("tableAutor");
   trAutor = tableAutor.getElementsByTagName("tr");
 
-  for (var j = 0; j < arraySituacion.length; j++) {
-
-    if (arraySituacion[j].situacio == txtFilterSituacio) {
+  j = iIndexSituacio;
 
       if (arraySituacion[j]["actes autor"]) {
         arrayActasAutor = arraySituacion[j]["actes autor"].split(',');
@@ -76,9 +74,7 @@ function filterSituacio(txtFilterSituacio) {
           }
         }
       }
-
-    }
-  }
+  
 
   if (iHitsResta > 0) {
     document.getElementById("textResta").style.display = "block";
@@ -103,7 +99,7 @@ function filterSituacio(txtFilterSituacio) {
   return iHits;
 }
 
-function buscar(txtFilterSituacio) {
+function buscar(iIndexSituacio) {
   var input, filter, table, tr, td, i, txtValue, iHits;
   var arrayActas;
 
@@ -119,11 +115,7 @@ function buscar(txtFilterSituacio) {
   table = document.getElementById("tableResta");
   tr = table.getElementsByTagName("tr");
 
-  if (txtFilterSituacio != "") {
-
-    iHits = filterSituacio(txtFilterSituacio);
-
-  }
+  iHits = filterSituacio(iIndexSituacio);
 
   if (iHits == 1) {
     //document.getElementById("hitCounter").innerHTML = iHits + " coincidència."
@@ -156,31 +148,25 @@ function tableClick(el) {
   //alert(arraySituacion[0].nombre);
 }
 
-function dropdownChange(txtFilterSituacio) {
+function dropdownChange(iIndexSituacio) {
 
   //plegar y poner el valor
   $("#selector").click();
 
-  document.getElementById("selector").innerText = txtFilterSituacio;
+  document.getElementById("selector").innerText = arraySituacion[iIndexSituacio].situacio;
   document.getElementById("labelExtra").innerText = "";
   document.getElementById("divExtraInfo").style.display = "none";
 
-  buscar(txtFilterSituacio);
+  buscar(iIndexSituacio);
 
-  if (txtFilterSituacio != "") {
-    for (var j = 0; j < arraySituacion.length; j++) {
 
-      if (arraySituacion[j].situacio == txtFilterSituacio) {
-        if (arraySituacion[j].extra) {
-          if (arraySituacion[j].extra.trim() != "") {
-            document.getElementById("labelExtra").innerText = arraySituacion[j].extra;
+        if (arraySituacion[iIndexSituacio].extra) {
+          if (arraySituacion[iIndexSituacio].extra.trim() != "") {
+            document.getElementById("labelExtra").innerText = arraySituacion[iIndexSituacio].extra;
             document.getElementById("divExtraInfo").style.display = "block";
           }
         }
-      }
-    }
 
-  }
 }
 
 function pageonload() {
@@ -324,8 +310,10 @@ function loadSituaciones() {
 
       $(function() {
         var $select = $('#section-dropdown');
+        iIndex = 0;
         $.each(csvData, function() {
-              $select.append('<a class="elementoLista" onclick="dropdownChange(\'' + this.situacio + '\')">' + this.situacio + '</a>');              
+            $select.append('<a class="elementoLista" onclick="dropdownChange(' + iIndex + ')">' + this.situacio + '</a>');              
+            iIndex = iIndex + 1;
         });
 
       });
