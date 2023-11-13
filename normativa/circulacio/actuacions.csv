@@ -1,0 +1,73 @@
+﻿filtre;info
+Cotxe;"<b>ESTACIONAR:</b><ul>
+<li>Està permesa la parada als xamfrans de l’Eixample.</li>
+<li>Es considera parada si és inferior a 2 minuts. El conductor pot baixar del cotxer però no pot perdre contacte visual amb el vehicle.</li>
+</ul>"
+Motocicleta;"<b>CIRCULAR:</b><ul>
+<li>Passatger major de 12 anys.</li>
+<li>Passatger major de 7 anys si el conductor és el pare o mare.</li>
+<li>Passatger ha d’arribar al reposapeus.</li>
+</ul>
+
+<b>ESTACIONAR:</b><ul>
+<li>Interior d'eixos verds: PROHIBIT.</li>
+<li>En vorera de < 3m: PROHIBIT.</li>
+<li>Vorera de entre 3 i 6m: En paral·lel a 50cm del voral deixant 3m d'espai lliure.</li>
+<li>Vorera de més de 6m: En semi bateria a 50cm del voral deixant 3m d'espai lliure.</li>
+</ul>"
+VMP;"<b>CONDICIONS:</b>
+<ul>
+<li>Conductor major de 16 anys.</li>
+<li>Si es activitat econòmica: assegurança, casc i registre BSM.</li>
+<li>Només una persona.</li>
+<li>Pot portar seient si te un nombre d'eixos imparell.</li>
+<li>Velocitat màxima: 25 km/h.</li>
+<li>Potència màxima: 1000 W si no te sistema d’auto-equilibrat, 2.500 W si en te.</li>
+</ul>
+<b>CIRCULAR:</b>
+<ul>
+<li>Vorera: PROHIBIT</li>
+<li>Carril bici en vorera: Respectar la prioritat dels vianants.</li>
+<li>Carril bici: En el sentit de la circulació i donant prioritat als vehicles sense motor.</li>
+<li>Carrers de prioritat invertida: En el sentit de la circulació i respectant la prioritat de vianants i bicicletes. Màxim 20km/h</li>
+<li>Carrers 30: En el sentit de la circulació.</li>
+<li>Carrers amb més d'un carril en el mateix sentit: PROHIBIT.</li>
+<li>Carrers de més de 30: PROHIBIT.</li>
+</ul>"
+Bicicleta;"<b>CONDICIONS:</b>
+<ul>
+<li>Pedaleig assistit de fins a 25 km/h.</li>
+<li>Han de dur timbre, llums i reflectants.</li>
+</ul>
+<b>CIRCULAR:</b>
+<ul>
+<li>Prohibit circular a menys d'1m de façanes</li>
+<li>Vorera:</li>
+<ul>
+<li>Menors de 12 anys amb la persona que ostenti la seva guarda a un màxim de 10km/h.</li>
+<li>Quan no existeixi carril bici i la vorera sigui de >5m (4,75m de 22h a 7h) i deixant 3m d’espai lliure.</li>
+<li>Respectant la prioritat dels vianants</li>
+</ul>
+<li>Carril bici en vorera: Ha de respectar la prioritat dels vianants.</li>
+<li>Carril bici: Te prioritat sobre vehicles a motor.</li>
+<li>Carrers de prioritat invertida: En qualsevol sentit i respectant la prioritat de vianants.</li>
+<li>Circulació en calçada pel carril més proper a la vorera.</li>
+</ul>
+<b>ESTACIONAMENT:</b>
+<ul>
+<li>No es poden lligar a mobiliari urbà.</li>
+</ul>"
+Taxi;"<b>CONDICIONS:</b>
+<ul>
+<li>No poden estacionar a les parades de taxi, han d’estar amb el llum verd encès i al taxi.</li>
+<li>No poden recollir passatge a menys de 50m d’una parada de taxis.</li>
+<li>No poden recollir o deixar passatge a on molestin: carrils BUS, vies d’un únic sentit, ..</li>
+<li>El conductor no pot prestar servei en xancletes, samarreta de tirants, ..</li>
+</ul>"
+VTC;"<b>CONDICIONS:</b>
+<ul>
+<li>No poden estacionar a VP.</li>
+<li>L’ITV l'ha de passar cada any els primers 5 anys i desprès cada 6 mesos.</li>
+<li>Només poden circular si estan de camí a un servei, en servei, tornant a base després d'un servei.</li>
+<li>Ha de presentar assegurança amb clàusula de RC de 50 milions d'euros.</li>
+</ul>"
