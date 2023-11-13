@@ -40,6 +40,12 @@ function clickActuacions(){
     window.open("actuacions/index.html","_self")
 }
 
+function clickNormativa(){
+    document.getElementById("loadingBlack").style.display = "block";
+    document.getElementById("galetesDiv").style.display = "none";
+    window.open("normativa/index.html","_self")
+}
+
 function clickEnlaces(){
     document.getElementById("loadingBlack").style.display = "block";
     document.getElementById("galetesDiv").style.display = "none";
