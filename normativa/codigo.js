@@ -2,6 +2,11 @@ function clickBack() {
   window.open('../index.html', "_self")
 }
 
+function clickOrdenances(){
+    document.getElementById("loadingBlack").style.display = "block";
+    window.open("ordenances/index.html","_self")
+}
+
 function clickCirculacio(){
     document.getElementById("loadingBlack").style.display = "block";
     window.open("circulacio/index.html","_self")
