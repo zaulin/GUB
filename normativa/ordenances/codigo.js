@@ -38,7 +38,7 @@ function loadEnlaces() {
       }
 
       for (var i = 0; i < csvData.length; i++) {
-          fila = "<tr onclick=\"window.location.href='" + csvData[i][1] + "';\"><td>" + csvData[i][0] + "</td></tr>"
+          fila = "<tr onclick=\"window.open('" + csvData[i][1] + "','_blank')\"><td>" + csvData[i][0] + "</td></tr>"
           $('#tableMain').append(fila)
       }
     
