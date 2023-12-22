@@ -42,6 +42,8 @@ La diferència amb el delicte lleu es la por que es produeix en la víctima"
 Persones;Lesions;N01,A108;N02,A18;A17;"A108PL per intervenir objectes que s'hagin fet servir a l'agresió.
 
 A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18."
-Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;"Si són creuades no es fa JIDL.
+
+A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
 A108PL per intervenir objectes que s'hagin fet servir a l'agresió"
