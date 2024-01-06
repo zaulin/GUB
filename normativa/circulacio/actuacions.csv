@@ -58,6 +58,18 @@ Bicicleta;"<b>CONDICIONS:</b>
 <ul>
 <li>No es poden lligar a mobiliari urbà.</li>
 </ul>"
+Bicicleta elèctrica;"<b>Pedaleig assistit:</b>
+<ul>
+<li>Si s'atura als 25 km/h: EPAC</li>
+<li>Si NO s’atura als 25 km/h: Ciclomotor (L1e-B)</li>
+</ul>
+<b>Disposa d'accelerador:</b>
+<ul>
+<li>Menys de 25 km/h y potència nominal màxima inferior a 1000 W: Ciclomotor (L1e-A)</li>
+<li>La resta: Ciclomotor (L1e-B)</li>
+</ul>
+<b>EPAC:</b> Ha d'estar homologada<br>
+<b>Ciclomotor:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ..."
 Taxi;"<b>CONDICIONS:</b>
 <ul>
 <li>No poden estacionar a les parades de taxi, han d’estar amb el llum verd encès i al taxi.</li>
