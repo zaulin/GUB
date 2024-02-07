@@ -9,16 +9,6 @@ A108 per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
 
 Agreujant:
 Accès carnal"
-Persones;ViGe;N01,A108;N02,N101,A18;A106,A17,G30;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-Home (parella o ex) agredeix a la víctima (amb o sense convivència)
-
-A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
-
-Agreujants:
-- Fer servir armes
-- Al domicili familiar
-- En presència de menors"
 Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
 Requereix denúncia de la víctima.
