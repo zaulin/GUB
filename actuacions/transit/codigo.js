@@ -12,6 +12,11 @@ function clickVmp(){
     window.open("vmp/index.html","_self")
 }
 
+function clickPNC(){
+    document.getElementById("loadingBlack").style.display = "block";
+    window.open("PNC/index.html","_self")
+}
+
 function pageonload() {
     document.getElementById("loadingBlack").style.display = "none";
     

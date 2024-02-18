@@ -1,0 +1,109 @@
+{
+  "decisions" : [
+    {
+      "answer" : "PÈRDUA DE VIGÈNCIA PER PERDUDA TOTAL DE PUNTS (JPT)\n",
+      "decisions" : [
+        {
+          "answer" : "CONDUEIX DINS DEL PERÍODE DE PERDUA DE VIGENCIA",
+          "message" : "<b>DELICTE</b> (CP Art. 384.1) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>T100 PL o T103PL (en cas de comparèixer, no es lliura copia)</li><li>A110PL</li><li>A13</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> Si no porta el permís de conduir l'ha de presentar en menys de 24h a UIPA i fer-ho constar a l'A110PL.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+        },
+        {
+          "answer" : "CONDUEIX FINALITZAT EL PERÍODE DE PERDUA DE VIGENCIA",
+          "decisions" : [
+            {
+              "answer" : "NO REALITZA CURS, NI EXAMEN",
+              "message" : "<b>DELICTE</b> (CP Art. 384.1) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>T100 PL o T103PL (en cas de comparèixer, no es lliura copia)</li><li>A110PL</li><li>A13</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> Si no porta el permís de conduir l'ha de presentar en menys de 24h a UIPA i fer-ho constar a l'A110PL.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+            },
+            {
+              "answer" : "SÍ REALITZA CURS, NO EXAMEN",
+              "message" : "<b>DELICTE</b> (CP Art. 384.1) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>T100 PL o T103PL (en cas de comparèixer, no es lliura copia)</li><li>A110PL</li><li>A13</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> Si no porta el permís de conduir l'ha de presentar en menys de 24h a UIPA i fer-ho constar a l'A110PL.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+            },
+            {
+              "answer" : "SÍ REALITZA CURS, SÍ EXAMEN AMB RESULTAT APTE",
+              "message" : "Tot correcte, pot continuar el viatge."
+            }
+          ]
+        },
+        {
+          "answer" : "PÈRDUA DE VIGÈNCIA EDICTAL",
+          "decisions" : [
+            {
+              "answer" : "NO TÉ CONEIXEMENT",
+              "message" : "<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n<b>ACTES:</b><br><ul><li>T110PL Per a intervenir el permís i notificar de la suspensió.</li></ul><br>\r\n<b>"
+            },
+            {
+              "answer" : "SI TÉ CONEIXEMENT",
+              "message" : "<b>DELICTE</b> (CP Art. 384.1) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>T100 PL o T103PL (en cas de comparèixer, no es lliura copia)</li><li>A110PL</li><li>A13</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> Si no porta el permís de conduir l'ha de presentar en menys de 24h a UIPA i fer-ho constar a l'A110PL.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+            }
+          ]
+        },
+        {
+          "answer" : "ESTÀ EN PERÍODE DE PRESENTACIÓ DE RECURS ",
+          "message" : "<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>"
+        },
+        {
+          "answer" : "ESTÀ PENDENT DE RESOLDRE RECURS",
+          "message" : "<b>DENÚNCIA:</b><ul><li>3176-77 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>"
+        }
+      ]
+    },
+    {
+      "answer" : "SUSPENSIÓ PER RESOLUCIÓ JUDICIAL\n",
+      "decisions" : [
+        {
+          "answer" : "CAP DE LES CONDEMNES SUPERA ELS 2 ANYS",
+          "decisions" : [
+            {
+              "answer" : "CONDUEIX DINS DEL PERÍODE DE SUSPENSIÓ",
+              "message" : "<b>DELICTE</b> (CP Art. 384.2) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>T100 PL o T103PL (en cas de comparèixer, no es lliura copia)</li><li>A110PL</li><li>A13</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> Si no porta el permís de conduir l'ha de presentar en menys de 24h a UIPA i fer-ho constar a l'A110PL.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3172-73 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+            },
+            {
+
+              "answer" : "CONDUEIX FORA DEL PERÍODE DE SUSPENSIÓ",
+              "decisions" : [
+                {
+                  "answer" : "NO HA FET EL CURS DE SENSIBILITZACIÓ",
+                  "message" : "<b>DENÚNCIA:</b><ul><li>3178 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat (No haver fet el curs preceptiu deprès de complir la condemna)</li></ul>"
+                },
+                {
+                  "answer" : "SÍ HA FET EL CURS DE SENSIBILITZACIÓ",
+                  "message" : "Tot correcte, pot continuar el viatge."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "answer" : "TÉ COM A MÍNIM UNA CONDEMNA QUE SUPERI ELS 2 ANYS",
+          "decisions" : [
+            {
+              "answer" : "CONDUEIX DINS DEL PERÍODE DE CONDEMNA",
+              "message" : "<b>DELICTE</b> (CP Art. 384.2) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>T100 PL o T103PL (en cas de comparèixer, no es lliura copia)</li><li>A110PL</li><li>A13PL</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> Si no porta el permís de conduir l'ha de presentar en menys de 24h a UIPA i fer-ho constar a l'A110PL.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3172-73 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+            },
+            {
+              "answer" : "CONDUEIX FINALITZADA LA CONDEMNA",
+              "decisions" : [
+                {
+                  "answer" : "TÉ UN RESULTAT APTE A L'EXÀMEN DEL CURS DE SENSIBILITZACIÓ",
+                  "message" : "Tot correcte, pot continuar el viatge"
+                },
+                {
+                  "answer" : "RESTA DE CASOS",
+                  "message" : "<b>DELICTE</b> (CP Art. 468) <br><br>\r\n<b>ACTES:</b><br><ul><li>T102PL</li><li>N01PL (si queda detingut)</li><li>A110PL (si mostra un permís)</li><li>A13</li></ul><br>\r\n<b>ACTUACIÓ:</b><ul><li><b>PERSONA:</b> No es cita.</li><li><b>VEHICLE:</b> Immobilitzat a dipòsit. Conductor habilitat nomès si tot està correcte i UIPA autoritza.</li></ul><br>\r\n<b>DENÚNCIA:</b><ul><li>3172-73 (RGCon. Art. 3.2)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat.</li></ul>\r\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "answer" : "PÉRDIDA DE VIGENCIA POR PÉRDIDA DE ACTITUDES PSICOFÍSICAS",
+      "message" : "<b>DENÚNCIA:</b><ul><li>3152-53-54-57-58-59 (RGCon. Art. 1.1)</li><li>Detallar el tipus de vehicle que es condueix i el supòsit concret detectat (sense vigència per causa administrativa).</li></ul>"
+    },
+    {
+      "answer" : "PROPUESTA DE PÉRDIDA DE VIGENCIA DE LA AUTORIZACIÓN ADMINISTRATIVA PARA CONDUCIR",
+      "message" : "Realitzar informe intern per adreçar a DGT sobre el supòsit.\n"
+    }
+  ]
+}
