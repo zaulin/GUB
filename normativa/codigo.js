@@ -23,6 +23,11 @@ function clickVTC(){
     window.open("VTC/index.html","_self")
 }
 
+function clickPlatges(){
+    document.getElementById("loadingBlack").style.display = "block";
+    window.open("platges/index.html","_self")
+}
+
 function pageonload() {
     document.getElementById("loadingBlack").style.display = "none";
     
