@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLATGES</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    type="text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYXV6ZJSGC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MYXV6ZJSGC');
+    </script>
+    
+    <script type="text/javascript" src="papaparse.min.js"></script>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/loader.css">
+    <link rel="stylesheet" href="../../css/cabecera.css">
+    <link rel="stylesheet" href="../../css/taules.css">
+    <link rel="stylesheet" href="../../css/textos.css">
+    <link rel="stylesheet" href="../../css/dropdown.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#064a9d">
+
+<meta http-equiv="Cache-Control" content="no-store" /> 
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+
+</head>
+<body onload="pageonload()" style="margin: 0;padding: 0">
+
+    <div id="loading">
+      <div id="loadingIn">
+        <div class="loader">
+        
+        </div>
+      </div>
+    </div>
+    
+  <div style="background-color: white; margin-bottom: 10px;">
+    <table class="cabecera">
+      <tr>
+        <td id="version" class="back" onclick="clickBack()"><img src="../../img/back.png" height="26px" style="vertical-align: middle;"></td>
+        <td id="titulo" class="titulo">PLATGES</td>
+        <td id="fecha" class="fecha"></td>
+      </tr>
+    </table>
+  </div>
+
+<div style="margin-left: 5px; margin-right: 5px; margin-bottom: 10px;">
+
+    <div class="sec-center">  
+      <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+      <label id="selector" class="for-dropdown" for="dropdown">Sel·lecciona una situació</label>
+      <div id = "section-dropdown" class="section-dropdown"> 
+      </div>
+    </div>
+
+</div>
+
+
+</div>
+
+<!----------------------------------------------------------->
+<!------------------ DIV EXTRA INFO ------------------------->
+<!----------------------------------------------------------->
+  <div id="divExtraInfo" class="divExtraInfo">
+    <table class="tableExtraInfo" align="center">
+      <tr><td>
+        <p id="labelExtra" class="labelExtra"></p>
+      </td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
