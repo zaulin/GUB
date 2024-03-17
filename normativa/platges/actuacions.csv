@@ -1,4 +1,4 @@
-﻿filtre;info;;;
+﻿filtre;info
 Gossos;"<b>CONDICIONS:</b>
 <ul>
 <li>DINS de la temporada de bany: Només zona de gossos de platja Llevant.</li>
@@ -22,7 +22,7 @@ Gossos;"<b>CONDICIONS:</b>
 <ul>
 <li>4973: Tenir animals domèstics a les platges.</li>
 <li>4976: No recollir immediatament les deposicions.</li>
-</ul>";;;
+</ul>"
 Pesca;"<b>CONDICIONS:</b>
 <ul>
 <li>DINS de la temporada ALTA de bany:</li>
@@ -43,14 +43,14 @@ Pesca;"<b>CONDICIONS:</b>
 <li>2851: Pescar sense llicència.</li>
 </ul>
 
-S'ha d'estar en possessió de la llicència de pesca recreativa de superfície vigent.";;;
+S'ha d'estar en possessió de la llicència de pesca recreativa de superfície vigent."
 Venda ambulant;"<b>INFRACCIONS:</b>
 <ul>
-<li>6790: Abandonament de mercaderies destinades a la venda ambulant sense autorització a l'espai públic.</li>
-<li>6850: (Amb ocupació de la via pública) Venda ambulant sense autorització de qualsevol tipus de producte.</li>
-<li>6851: (Aliments i/o begudes) Venda ambulant sense autorització a l'espai públic.</li>
-<li>6854: (Sense ocupació de la via pública) Venda ambulant sense autorització a l'espai públic.</li>
+<li>6790: Abandonament de mercaderies.</li>
+<li>6850: Venda ambulant amb ocupació de VP.</li>
+<li>6851: Venda ambulant d'aliments i/o begudes.</li>
+<li>6854: Venda ambulant sense ocupació de VP.</li>
 <li>8761: Repartir propaganda a més de 100 metres del local o l'activitat que s'anuncia.</li>
 </ul>
 
-Si s'intervenen diners i producte que té com a destí Serveis de Neteja Urbana a la PDA s'ha de marcar que tot va a neteja.";;;
+Si s'intervenen diners i producte que té com a destí Serveis de Neteja Urbana a la PDA s'ha de marcar que tot va a neteja."
