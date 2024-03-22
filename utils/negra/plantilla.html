@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LLISTA NEGRA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    type="text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYXV6ZJSGC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MYXV6ZJSGC');
+    </script>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/taules.css">
+    <link rel="stylesheet" href="../css/textos.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#064a9d">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+  </head>
+  <body onload="pageonload()" style="margin: 0;padding: 0">
+    <div id="loading">
+      <div id="loadingIn">
+        <div class="loader">
+        
+        </div>
+      </div>
+    </div>
+
+    <table class="cabecera">
+      <tr>
+        <td id="version"onclick="clickBack()" class="back"><img src="../img/back.png" height="16px" style="vertical-align: middle;"></td>
+        <td id="titulo" class="titulo">LLISTA NEGRA</td>
+        <td id="fecha" class="fecha"></td>
+      </tr>
+    </table>
+    <div style="margin-left: 5px; margin-right: 5px;">
+      <p>Llistat de tarjetes de PMR donades de baixa per l'ajuntament.</p>
+      <p>Actualitzat: <b>02/2022</b> </p>
+      <label for="inputCodi" class="myLabel">Tarjeta:</label>
+      <input name="inputCodi" type="text" id="myInputCodi" onkeyup="buscar()" placeholder="codi.." class="myInput" >
+      <div class="divTaulaMain">
+      <table id="myTable" class="taulaMain">
+        <thead>
+          <tr>
+            <th>Núm. Tarjeta</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
