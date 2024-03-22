@@ -17,6 +17,11 @@ function clickPNC(){
     window.open("PNC/index.html","_self")
 }
 
+function clickEstrangers(){
+    document.getElementById("loadingBlack").style.display = "block";
+    window.open("permisos/index.html","_self")
+}
+
 function pageonload() {
     document.getElementById("loadingBlack").style.display = "none";
     
