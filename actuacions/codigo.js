@@ -2,34 +2,29 @@ function clickBack() {
   window.open('../index.html', "_self")
 }
 
-function clickTransit(){
+function clickCotxeMoto(){
     document.getElementById("loadingBlack").style.display = "block";
-    window.open("transit/index.html","_self")
+    window.open("cotxeMoto/index.html","_self")
 }
 
-function clickPatrimoni(){
+function clickVmp(){
     document.getElementById("loadingBlack").style.display = "block";
-    window.open("patrimoni/index.html","_self")
+    window.open("vmp/index.html","_self")
 }
 
-function clickPersones(){
+function clickVTC(){
     document.getElementById("loadingBlack").style.display = "block";
-    window.open("persones/index.html","_self")
+    window.open("VTC/index.html","_self")
 }
 
-function clickSC(){
+function clickPNC(){
     document.getElementById("loadingBlack").style.display = "block";
-    window.open("sc/index.html","_self")
+    window.open("PNC/index.html","_self")
 }
 
-function clickAgents(){
+function clickEstrangers(){
     document.getElementById("loadingBlack").style.display = "block";
-    window.open("agents/index.html","_self")
-}
-
-function clickSAV(){
-    document.getElementById("loadingBlack").style.display = "block";
-    window.open("SAV/index.html","_self")
+    window.open("permisos/index.html","_self")
 }
 
 function pageonload() {
