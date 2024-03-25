@@ -3,7 +3,7 @@ const fecha = "08/05/2022";
 const arraySituacion = [];
 const arrayVehiculos = [];
 const csvData = [];
-const sTextFiltreIni = "Selecciona una vehicle";
+const sTextFiltreIni = "Sel·lecciona una situació";
 
 function clickBack() {
   window.open('../index.html', "_self")
@@ -28,7 +28,7 @@ function dropdownChange(iIndexSituacio) {
   //plegar y poner el valor
   $("#selector").click();
 
-  document.getElementById("selector").innerText = arraySituacion[iIndexSituacio].filtre;
+  document.getElementById("labelExtraTitulo").innerText = arraySituacion[iIndexSituacio].filtre;
   document.getElementById("labelExtra").innerHTML = arraySituacion[iIndexSituacio].info;
   document.getElementById("divExtraInfo").style.display = "block";
 }
