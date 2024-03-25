@@ -28,7 +28,7 @@ function dropdownChange(iIndexSituacio) {
   //plegar y poner el valor
   $("#selector").click();
 
-  document.getElementById("selector").innerText = arraySituacion[iIndexSituacio].filtre;
+  document.getElementById("labelExtraTitulo").innerText = arraySituacion[iIndexSituacio].filtre;
   document.getElementById("labelExtra").innerHTML = arraySituacion[iIndexSituacio].info;
   document.getElementById("divExtraInfo").style.display = "block";
 }
