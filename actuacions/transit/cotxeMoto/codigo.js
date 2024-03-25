@@ -153,7 +153,7 @@ function dropdownChange(iIndexSituacio) {
   //plegar y poner el valor
   $("#selector").click();
 
-  document.getElementById("selector").innerText = arraySituacion[iIndexSituacio].situacio;
+  document.getElementById("labelExtraTitulo").innerText = arraySituacion[iIndexSituacio].situacio;
   document.getElementById("labelExtra").innerText = "";
   document.getElementById("divExtraInfo").style.display = "none";
 
