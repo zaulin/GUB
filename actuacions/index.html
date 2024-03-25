@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TRANSIT</title>
+    <title>ACTUACIONS</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
     type="text/javascript"></script>
@@ -17,10 +17,10 @@
     <script type="text/javascript" src="papaparse.min.js"></script>
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="../../css/loader.css">
-    <link rel="stylesheet" href="../../css/cabecera.css">
-    <link rel="stylesheet" href="../../css/taules.css">
-    <link rel="stylesheet" href="../../css/textos.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/cabecera.css">
+    <link rel="stylesheet" href="../css/taules.css">
+    <link rel="stylesheet" href="../css/textos.css">
 
     <link rel="shortcut icon" href="https://zaulin.github.io/GUB/img/icons/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="https://zaulin.github.io/GUB/img/icons/apple-touch-icon.png">
@@ -56,65 +56,74 @@
       </div>
     </div>
     
-  <div style="background-color: white; margin-bottom: 10px;">
     <table class="cabecera">
       <tr>
-        <td id="version" class="back" onclick="clickBack()"><img src="../../img/back.png" height="26px" style="vertical-align: middle;"></td>
-        <td id="titulo" class="titulo">TRÀNSIT</td>
+        <td id="version" class="back" onclick="clickBack()"><img src="../img/back.png" height="26px" style="vertical-align: middle;"></td>
+        <td id="titulo" class="titulo">ACTUACIONS</td>
         <td id="fecha" class="fecha"></td>
       </tr>
     </table>
-  </div>
 
 <div style="margin-left: 5px; margin-right: 5px; text-align: center;" width="100%">
  <br>
 
 
  <table align="center" >
+
     <tr>
       <td align="center">
-        <table onclick="clickCotxeMoto()" class="tableBoton"  >
-          <tr class="trImagen" ><td align="center"><img src="../../img/actuacions/cotxeMoto.png" height="50px"></td></tr>
-          <tr class="trTexto"><td align="center" class="ButtonText">Cotxe - Moto</td></tr>
+        <table onclick="clickTransit()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../img/actuacions/transit.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">Trànsit</td></tr>
         </table>
       </td>
     </tr>
 
     <tr>
       <td align="center">
-        <table onclick="clickVmp()" class="tableBoton"  >
-          <tr class="trImagen" ><td align="center"><img src="../../img/actuacions/vmp.png" height="50px"></td></tr>
-          <tr class="trTexto"><td align="center" class="ButtonText">VMP</td></tr>
+        <table onclick="clickPatrimoni()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../img/actuacions/patrimoni.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">Patrimoni</td></tr>
         </table>
       </td>
     </tr>
 
     <tr>
       <td align="center">
-        <table onclick="clickVTC()" class="tableBoton"  >
-          <tr class="trImagen" ><td align="center"><img src="../../img/actuacions/VTC.png" height="50px"></td></tr>
-          <tr class="trTexto"><td align="center" class="ButtonText">VTC</td></tr>
+        <table onclick="clickPersones()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../img/actuacions/persones.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">Persones</td></tr>
+        </table>
+      </td>
+    </tr>
+    
+    <tr>
+      <td align="center">
+        <table onclick="clickSC()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../img/actuacions/seguretatCiutadana.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">Seguretat ciutadana</td></tr>
         </table>
       </td>
     </tr>
 
     <tr>
       <td align="center">
-        <table onclick="clickPNC()" class="tableBoton"  >
-          <tr class="trImagen" ><td align="center"><img src="../../img/conduir.png" height="50px"></td></tr>
-          <tr class="trTexto"><td align="center" class="ButtonText">Vigència PNC</td></tr>
+        <table onclick="clickAgents()" class="tableBoton"  >
+          <tr class="trImagen" ><td align="center"><img src="../img/actuacions/agents.png" height="50px"></td></tr>
+          <tr class="trTexto"><td align="center" class="ButtonText">Contra els agents</td></tr>
         </table>
       </td>
     </tr>
 
     <tr>
       <td align="center">
-        <table onclick="clickEstrangers()" class="tableBoton"  >
-          <tr class="trImagen" ><td align="center"><img src="../../img/actuacions/estrangers.png" height="50px"></td></tr>
-          <tr class="trTexto"><td align="center" class="ButtonText">PNC estrangers</td></tr>
+        <table onclick="clickSAV()" class="tableBotonSAV">
+          <tr class="trImagen" ><td align="center"><img src="../img/actuacions/SAV.png" height="50px"></td></tr>
+          <tr class="trTextoSAV"><td align="center" class="ButtonTextSAV">SAV</td></tr>
         </table>
       </td>
     </tr>
+
 
 </table>
 <br><br>
