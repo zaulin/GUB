@@ -75,11 +75,12 @@
 .labelExtraTituloActuacions {
     font-family: calibri;
   font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
+  font-variant-caps: all-small-caps;
 }
 
 .labelMesInfo {
