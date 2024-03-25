@@ -72,6 +72,16 @@
   text-align: center;
 }
 
+.labelExtraTituloActuacions {
+    font-family: calibri;
+  font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
 .labelMesInfo {
   line-height: 10px;
   padding-left: 10px;
