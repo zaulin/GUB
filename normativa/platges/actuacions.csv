@@ -1,4 +1,21 @@
 ﻿filtre;info
+Activitats lliures / esport;"<b>CONDICIONS:</b>
+<ul>
+<li>DINS de la temporada de bany: Només zones habilitades.</li>
+<li>FORA de la temporada de bany: Ocupació màxima de la meitat de la platja.</li>
+</ul>
+
+<b>TEMPORADA DE BANY:</b>
+<ul>
+<li>Des del 23/3/2024 al 1/4/2024.</li>
+<li>Tots els caps de setmana d'abril de 2024.</li>
+<li>Des del 29/4/2024 al 27/10/2024.</li>
+</ul>
+<b>INFRACCIONS:</b>
+<ul>
+<li>6745: Persistir en la pràctica de jocs que causin molèsties als veïns o a d'altres usuaris de l'espai públic.</li></ul>
+
+Si es tracta d'una activitat organitzada requereix d'autorització."
 Gossos;"<b>CONDICIONS:</b>
 <ul>
 <li>DINS de la temporada de bany: Només zona de gossos de platja Llevant.</li>
@@ -23,6 +40,11 @@ Gossos;"<b>CONDICIONS:</b>
 <li>4973: Tenir animals domèstics a les platges.</li>
 <li>4976: No recollir immediatament les deposicions.</li>
 </ul>"
+Kitesurf;"<b>CONDICIONS:</b>
+<ul>
+<li>De l'1 de juny al 30 de setembre: PROHIBIT.</li>
+<li>Resta de l'any: S'ha de practicar a 200 metres de la costa.</li>
+</ul>"
 Pesca;"<b>CONDICIONS:</b>
 <ul>
 <li>DINS de la temporada ALTA de bany:</li>
@@ -44,33 +66,20 @@ Pesca;"<b>CONDICIONS:</b>
 </ul>
 
 S'ha d'estar en possessió de la llicència de pesca recreativa de superfície vigent."
-Venda ambulant;"<b>INFRACCIONS:</b>
+Pesca submarina;"<b>CONDICIONS:</b>
 <ul>
-<li>6790: Abandonament de mercaderies.</li>
-<li>6850: Venda ambulant amb ocupació de VP.</li>
-<li>6851: Venda ambulant d'aliments i/o begudes.</li>
-<li>6854: Venda ambulant sense ocupació de VP.</li>
-<li>8761: Repartir propaganda a més de 100 metres del local o l'activitat que s'anuncia.</li>
+<li>S'ha de senyalitzar la posició amb una balisa i no es pot allunyar més de 25m.</li>
+<li>No es poden fer servir ni bombones d'oxigen ni mitjans mecànics de propulsió.</li>
+<li>Només es pot fer servir arpó manual o impulsat per mitjans mecànics.</li>
+<li>No es pot practicar en horari nocturn.</li>
 </ul>
 
-Si s'intervenen diners i producte que té com a destí Serveis de Neteja Urbana a la PDA s'ha de marcar que tot va a neteja."
-Activitats lliures / esport;"<b>CONDICIONS:</b>
-<ul>
-<li>DINS de la temporada de bany: Només zones habilitades.</li>
-<li>FORA de la temporada de bany: Ocupació màxima de la meitat de la platja.</li>
-</ul>
-
-<b>TEMPORADA DE BANY:</b>
-<ul>
-<li>Des del 23/3/2024 al 1/4/2024.</li>
-<li>Tots els caps de setmana d'abril de 2024.</li>
-<li>Des del 29/4/2024 al 27/10/2024.</li>
-</ul>
 <b>INFRACCIONS:</b>
 <ul>
-<li>6745: Persistir en la pràctica de jocs que causin molèsties als veïns o a d'altres usuaris de l'espai públic.</li></ul>
+<li>2851: Pescar sense llicència.</li>
+</ul>
 
-Si es tracta d'una activitat organitzada requereix d'autorització."
+S'ha d'estar en possessió de la llicència de pesca recreativa submarina vigent."
 Surf;"<b>CONDICIONS:</b>
 <ul>
 <li>DINS de la temporada de bany:</li>
@@ -87,22 +96,13 @@ Surf;"<b>CONDICIONS:</b>
 <li>Tots els caps de setmana d'abril de 2024.</li>
 <li>Des del 29/4/2024 al 27/10/2024.</li>
 </ul>"
-Kitesurf;"<b>CONDICIONS:</b>
+Venda ambulant;"<b>INFRACCIONS:</b>
 <ul>
-<li>De l'1 de juny al 30 de setembre: PROHIBIT.</li>
-<li>Resta de l'any: S'ha de practicar a 200 metres de la costa.</li>
-</ul>"
-Pesca submarina;"<b>CONDICIONS:</b>
-<ul>
-<li>S'ha de senyalitzar la posició amb una balisa i no es pot allunyar més de 25m.</li>
-<li>No es poden fer servir ni bombones d'oxigen ni mitjans mecànics de propulsió.</li>
-<li>Només es pot fer servir arpó manual o impulsat per mitjans mecànics.</li>
-<li>No es pot practicar en horari nocturn.</li>
+<li>6790: Abandonament de mercaderies.</li>
+<li>6850: Venda ambulant amb ocupació de VP.</li>
+<li>6851: Venda ambulant d'aliments i/o begudes.</li>
+<li>6854: Venda ambulant sense ocupació de VP.</li>
+<li>8761: Repartir propaganda a més de 100 metres del local o l'activitat que s'anuncia.</li>
 </ul>
 
-<b>INFRACCIONS:</b>
-<ul>
-<li>2851: Pescar sense llicència.</li>
-</ul>
-
-S'ha d'estar en possessió de la llicència de pesca recreativa submarina vigent."
+Si s'intervenen diners i producte que té com a destí Serveis de Neteja Urbana a la PDA s'ha de marcar que tot va a neteja."
