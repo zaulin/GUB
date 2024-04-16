@@ -54,6 +54,7 @@
 <br><br>
   El dia de descans comença i acaba a les <b>6:00h</b>.
   </div>
+
   <div class="divTaulaMain">
     <table id="tableMain" class="taulaMain">
     <thead><tr><th>Descans</th>
@@ -93,7 +94,7 @@
   <p class="txtSeccioSancions">DENÚNCIES</p>
 
   <div class="texto">
-    En vermell si s'ha d'inmobilitzar.
+    En vermell s'ha d'inmobilitzar el VTC.
   </div>
 
   <p class="txtSeccioSancions">Llicència:</p>
@@ -160,15 +161,15 @@
           <td align="right">3933</td>
           <td>(VTC-AMB) Prestar servei conductor sense estar donat d&#39;alta en la Seguretat Social.</td>
         </tr>
+        <tr onClick="tableClick(this)">
+          <td align="right">3933</td>
+          <td>(VTC-AMB) Prestar servei conductor sense estar donat d&#39;alta en la Seguretat Social.</td>
+        </tr>
       </tbody>
     </table>
   </div>
 
   <p class="txtSeccioSancions">Vehicle:</p>
-
-  <div class="texto">
-    Si la cobertura de l'assegurança és insuficient (50 milions d'€) NO s'inmobilitza.
-  </div>
   <br>
   <div style="margin-bottom: 10px;"> 
     <table id="myTable" class="taulaMain" style="margin-bottom: 10px;">
@@ -187,10 +188,6 @@
         <tr onClick="tableClick(this)" class="inmobilitzar">
           <td align="right">3853</td>
           <td>(VTC-AMB) Prestar servei sense l&#39;assegurança obligatòria del vehicle vigent</td>
-        </tr>
-        <tr onClick="tableClick(this)" class="inmobilitzar">
-          <td align="right">3855</td>
-          <td>(VTC-AMB) L&#39;incompliment de l&#39;obligació de subscriure les assegurances preceptives o tenir-los subscrits amb cobertura insuficient</td>
         </tr>
         <tr onClick="tableClick(this)">
           <td align="right">3919</td>
@@ -233,24 +230,16 @@
           <td>(VTC-AMB) Romandre estacionat propiciant la captació de viatgers que no han contractat prèviament el servei.</td>
         </tr>
         <tr onClick="tableClick(this)" class="inmobilitzar">
-          <td align="right">3851</td>
-          <td>(VTC-AMB) Utilitzar eines de geolocalització que permeten als clients situar, amb caràcter previ a la contractació, els vehicles disponibles, adscrits a una autorització de lloguer de vehicles amb conductor</td>
-        </tr>
-        <tr onClick="tableClick(this)" class="inmobilitzar">
           <td align="right">3858</td>
           <td>(VTC-AMB) Inici d’un servei en un àmbit territorial difefrent d’aquell en que resulti obligatori fer-ho. resulti domiciliada la autorització</td>
         </tr>
         <tr onClick="tableClick(this)" class="inmobilitzar">
           <td align="right">3865</td>
-          <td>(VTC-AMB) No comunicar per via electrònica, les da-des exigides al registre de comunicacions dels serveis d’arrendament de vehicles amb conductor. </td>
+          <td>(VTC-AMB) No comunicar per via electrònica, les dades exigides al registre de comunicacions dels serveis d’arrendament de vehicles amb conductor. </td>
         </tr>
         <tr onClick="tableClick(this)">
           <td align="right">3859</td>
           <td>(VTC-AMB) L'incompliment de les condicions legals o reglamentàriament establertes en relació amb l’itinerari, els horaris i calendari de prestació del servei i les característiques tècniques o l’adequada senyalització del vehicle.</td>
-        </tr>
-        <tr onClick="tableClick(this)">
-          <td align="right">3910</td>
-          <td>(VTC-AMB) No tenir els preceptius quadres de preus i altres d&#39;obligada exhibició per al coneixement del públic.</td>
         </tr>
 
       </tbody>
