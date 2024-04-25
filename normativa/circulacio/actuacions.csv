@@ -60,16 +60,62 @@ Bicicleta;"<b>CONDICIONS:</b>
 </ul>"
 Bicicleta elèctrica;"<b>Pedaleig assistit:</b>
 <ul>
-<li>Si s'atura als 25 km/h: EPAC</li>
+<li>Si s'atura als 25 km/h i potència <250W: EPAC</li>
+<li>Si s’atura als 25 km/h i potència >250W: Cicle a motor (L1e-A)</li>
 <li>Si NO s’atura als 25 km/h: Ciclomotor (L1e-B)</li>
 </ul>
 <b>Disposa d'accelerador:</b>
 <ul>
-<li>Menys de 25 km/h i potència nominal màxima inferior a 1000 W: Ciclomotor (L1e-A)</li>
-<li>La resta: Ciclomotor (L1e-B)</li>
+<li>Tot el que no sigui EPAC o cicle a motor: Ciclomotor (L1e-B)</li>
 </ul>
 <b>EPAC:</b> Ha d'estar homologada<br>
-<b>Ciclomotor:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ..."
+<b>Resta:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ...
+
+<br><br>
+<b>ACTUACIÓ:</b>
+<ul>
+<li><b>Cicle a motor (L1e-A):</b></li>
+<ul>
+<li><b>DENUNCIES:</b></li>
+<ul>
+<li>3051: No haver obtingut el corresponent permís de circulació.</li>
+<li>3052: No haver obtingut el certificat de característica tècnica.</li>
+<li>3231: No haver concertat el segur obligatori del vehicle.</li>
+<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
+</ul>
+
+<li><b>ACTES:</b></li>
+<ul>
+<li>A13PL: A disposició del titular.</li>
+<li>Informe annex.</li>
+<li>Reportatge fotogràfic.</li>
+</ul>
+</ul>
+<br>
+<li><b>Ciclomotor (L1e-B):</b></li>
+<ul>
+<li><b>DENUNCIES:</b></li>
+<ul>
+<li>3051: No haver obtingut el corresponent permís de circulació.</li>
+<li>3052: No haver obtingut el certificat de característica tècnica.</li>
+<li>3231/3232: No haver concertat el segur obligatori del vehicle.</li>
+<li>3152/3153: Falta permís de conduir.</li>
+<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
+</ul>
+
+<li><b>ACTES:</b></li>
+<ul>
+<li>A13PL: A disposició del titular.</li>
+<li>Informe annex.</li>
+<li>Reportatge fotogràfic.</li>
+</ul>
+
+<li><b>DELICTE:</b></li>
+<ul>
+<li>No haver obtingut mai el permís de conduir.</li>
+</ul>
+
+</ul>"
 Taxi;"<b>CONDICIONS:</b>
 <ul>
 <li>No poden estacionar a les parades de taxi, han d’estar amb el llum verd encès i al taxi.</li>
