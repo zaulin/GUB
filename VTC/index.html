@@ -14,10 +14,10 @@
     </script>
     <script src="codigo.js"></script>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="../css/loader.css">
-    <link rel="stylesheet" href="../css/cabecera.css">
-    <link rel="stylesheet" href="../css/taules.css">
-    <link rel="stylesheet" href="../css/textos.css">
+    <link rel="stylesheet" href="../../../css/loader.css">
+    <link rel="stylesheet" href="../../../css/cabecera.css">
+    <link rel="stylesheet" href="../../../css/taules.css">
+    <link rel="stylesheet" href="../../../css/textos.css">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
         <div>
           <table class="cabecera">
             <tr>
-              <td id="version" class="back" onclick="clickBack()"><img src="../img/back.png" height="26px" style="vertical-align: middle;"></td>
+              <td id="version" class="back" onclick="clickBack()"><img src="../../../img/back.png" height="26px" style="vertical-align: middle;"></td>
               <td id="titulo" class="titulo">VTC</td>
               <td id="fecha" class="fecha"></td>
             </tr>
@@ -47,13 +47,19 @@
 
   <p class="txtSeccioSancions">LLICÈNCIA</p>
   <div class="texto">
-  Es pot comprobar la llicència a la PDA introduïnt: "E 1234 BBB" i marcant la casella EMT.<br><br>
+  <!--Es pot comprobar la llicència a la PDA introduïnt: "E 1234 BBB" i marcant la casella EMT.<br><br-->
+    Per comprovar si disposa de llicència d'AMB consultar amb sala.
   </div>
   <div class="texto">
+    <br>
   Pàgina de foment per comprobar la llicència: <a href="https://apps.fomento.gob.es/crgt" target="_blank">enllaç</a>
+<br>
+    <div class="texto">
+  Llicències AMB: <a href="AMB/index.html" target="_self">enllaç</a>
 <br><br>
   El dia de descans comença i acaba a les <b>6:00h</b>.
   </div>
+
   <div class="divTaulaMain">
     <table id="tableMain" class="taulaMain">
     <thead><tr><th>Descans</th>
@@ -93,10 +99,24 @@
   <p class="txtSeccioSancions">DENÚNCIES</p>
 
   <div class="texto">
-    En vermell si s'ha d'inmobilitzar.
+    En vermell s'ha d'inmobilitzar el VTC.
   </div>
 
   <p class="txtSeccioSancions">Llicència:</p>
+
+  <div class="texto">
+    Només es pot denunciar si porta passatge.<br>
+    Si NO té autorització de transports:
+    <ul>
+      <li>Inici i final dins AMB: 3912.</li>
+      <li>Inici o final fora AMB: Posa la denuncia KM.</li>
+    </ul>
+    Si té autorització de transports, però NO d'AMB:
+     <ul>
+      <li>Inici i final dins AMB: 3912.</li>
+      <li>Inici o final fora AMB: NO és denunciable.</li>
+    </ul>
+  </div>
 
   <div style="margin-bottom: 10px;"> <!-- style="overflow: auto; height: 100%;"-->
     <table id="myTable" class="taulaMain" style="margin-bottom: 10px;">
@@ -166,10 +186,6 @@
 
   <p class="txtSeccioSancions">Vehicle:</p>
 
-  <div class="texto">
-    Si la cobertura de l'assegurança és insuficient (50 milions d'€) NO s'inmobilitza.
-  </div>
-  <br>
   <div style="margin-bottom: 10px;"> 
     <table id="myTable" class="taulaMain" style="margin-bottom: 10px;">
       <thead>
@@ -187,10 +203,6 @@
         <tr onClick="tableClick(this)" class="inmobilitzar">
           <td align="right">3853</td>
           <td>(VTC-AMB) Prestar servei sense l&#39;assegurança obligatòria del vehicle vigent</td>
-        </tr>
-        <tr onClick="tableClick(this)" class="inmobilitzar">
-          <td align="right">3855</td>
-          <td>(VTC-AMB) L&#39;incompliment de l&#39;obligació de subscriure les assegurances preceptives o tenir-los subscrits amb cobertura insuficient</td>
         </tr>
         <tr onClick="tableClick(this)">
           <td align="right">3919</td>
@@ -233,24 +245,16 @@
           <td>(VTC-AMB) Romandre estacionat propiciant la captació de viatgers que no han contractat prèviament el servei.</td>
         </tr>
         <tr onClick="tableClick(this)" class="inmobilitzar">
-          <td align="right">3851</td>
-          <td>(VTC-AMB) Utilitzar eines de geolocalització que permeten als clients situar, amb caràcter previ a la contractació, els vehicles disponibles, adscrits a una autorització de lloguer de vehicles amb conductor</td>
-        </tr>
-        <tr onClick="tableClick(this)" class="inmobilitzar">
           <td align="right">3858</td>
           <td>(VTC-AMB) Inici d’un servei en un àmbit territorial difefrent d’aquell en que resulti obligatori fer-ho. resulti domiciliada la autorització</td>
         </tr>
         <tr onClick="tableClick(this)" class="inmobilitzar">
           <td align="right">3865</td>
-          <td>(VTC-AMB) No comunicar per via electrònica, les da-des exigides al registre de comunicacions dels serveis d’arrendament de vehicles amb conductor. </td>
+          <td>(VTC-AMB) No comunicar per via electrònica, les dades exigides al registre de comunicacions dels serveis d’arrendament de vehicles amb conductor. </td>
         </tr>
         <tr onClick="tableClick(this)">
           <td align="right">3859</td>
           <td>(VTC-AMB) L'incompliment de les condicions legals o reglamentàriament establertes en relació amb l’itinerari, els horaris i calendari de prestació del servei i les característiques tècniques o l’adequada senyalització del vehicle.</td>
-        </tr>
-        <tr onClick="tableClick(this)">
-          <td align="right">3910</td>
-          <td>(VTC-AMB) No tenir els preceptius quadres de preus i altres d&#39;obligada exhibició per al coneixement del públic.</td>
         </tr>
 
       </tbody>
