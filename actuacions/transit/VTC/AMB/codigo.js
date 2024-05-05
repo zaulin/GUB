@@ -6,6 +6,9 @@ function clickBack() {
 }
 
 
+function erase() {
+  reset();
+}
 
 function buscar() {
   var input, filter, table, tr, td, i, txtValue, iHits;
@@ -75,8 +78,8 @@ function numberWithCommas(x) {
 
 function reset(){
   document.getElementById("myInputCodi").value = "";
+  document.getElementById("inputCodiProrroga").value = "";
   
-
   buscar();
 }
 
