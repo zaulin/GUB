@@ -8,6 +8,7 @@ function clickBack() {
 
 function erase() {
   reset();
+  document.getElementById("myInputCodi").focus();
 }
 
 function buscar() {
