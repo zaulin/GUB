@@ -81,6 +81,8 @@ function reset(){
   document.getElementById("inputCodiProrroga").value = "";
   
   buscar();
+
+  document.getElementById("myInputCodi").focus();
 }
 
 function esconde() {
