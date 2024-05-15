@@ -8,7 +8,7 @@ function clickBack() {
 
 function erase() {
   reset();
-  document.getElementById("myInputCodi").focus();
+
 }
 
 function buscar() {
@@ -50,6 +50,7 @@ function numberWithCommas(x) {
 function reset(){
   document.getElementById("myInputCodi").value = "";
   buscar();
+    document.getElementById("myInputCodi").focus();
 }
 
 function esconde() {
