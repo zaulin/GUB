@@ -15,7 +15,6 @@
 
       jQuery(window).bind("unload", function() {
         test();
-        alert("unload");
       });
     </script>
     
@@ -50,8 +49,7 @@
 <body onunload="" style="margin: 0;padding: 0;">
 
 <script type="text/javascript">
-    alert('first load / reload');
-    window.onload = function(){alert('onload')};
+    //window.onload = function(){alert('onload')};
 </script>
 
     <div id="loadingBlack" style="display: none">

@@ -19,5 +19,5 @@ function pageonload() {
 
 function test() {
     document.getElementById("loadingBlack").style.display = "none";
-    alert("TEST");
+    //alert("TEST");
 }
