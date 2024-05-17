@@ -17,9 +17,7 @@ function clickVido(){
 }
 
 function pageonload() {
-    if (getMobileOperatingSystem() != "Android") {
-        document.getElementById("loadingBlack").style.display = "block";
-    }
+    //document.getElementById("loadingBlack").style.display = "block";
     
 }
 
