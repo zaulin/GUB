@@ -1,30 +1,40 @@
 function clickNomenclator(){
-    document.getElementById("loadingBlack").style.display = "block";
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
     document.getElementById("galetesDiv").style.display = "none";
     window.open("nomenclator/index.html","_self")
 }
 
 function clickTrixis(){
-    document.getElementById("loadingBlack").style.display = "block";
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
     document.getElementById("galetesDiv").style.display = "none";
     window.open("trixis/index.html","_self")
 }
 
 function clickUtils(){
-    document.getElementById("loadingBlack").style.display = "block";
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
     document.getElementById("galetesDiv").style.display = "none";
     window.open("utils/index.html","_self")
 }
 
 
 function clickActuacions(){
-    document.getElementById("loadingBlack").style.display = "block";
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
     document.getElementById("galetesDiv").style.display = "none";
     window.open("actuacions/index.html","_self")
 }
 
 function clickNormativa(){
-    document.getElementById("loadingBlack").style.display = "block";
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
     document.getElementById("galetesDiv").style.display = "none";
     window.open("normativa/index.html","_self")
 }
@@ -32,7 +42,6 @@ function clickNormativa(){
 
 
 function pageonload() {
-    document.getElementById("loadingBlack").style.display = "none";
     document.getElementById("galetesDiv").style.display = "block";
     
 
@@ -71,4 +80,24 @@ function getCookie(cname) {
     }
   }
   return "";
+}
+
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
 }
