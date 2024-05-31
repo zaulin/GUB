@@ -118,10 +118,26 @@ Bicicleta elèctrica;"<b>Pedaleig assistit:</b>
 </ul>"
 Taxi;"<b>CONDICIONS:</b>
 <ul>
+<li>Si estàn fora de servei es consideren vehicles particulars.</li>
 <li>No poden estacionar a les parades de taxi, han d’estar amb el llum verd encès i al taxi.</li>
 <li>No poden recollir passatge a menys de 50m d’una parada de taxis.</li>
 <li>No poden recollir o deixar passatge a on molestin: carrils BUS, vies d’un únic sentit, ..</li>
 <li>El conductor no pot prestar servei en xancletes, samarreta de tirants, ..</li>
+</ul>
+
+<b>DENUNCIES:</b>
+<br><br>Si es denuncia s'ha d'escriure al llibre del taxi.
+<br>Indicar que circulava en servei (pilot verd o passatge).
+<ul>
+<li>3957: Prestar servei amb la revisió metropolitana ordinària caducada.</li>
+<li>3975: Prestar servei amb aparells taxímetres que no s'ajustin a la revisió metrològica vigent.</li>
+<li>3077 + 3954: Prestar servei amb la ITV del vehicle caducada.</li>
+<li>3990: Admetre passatge a menys de 50 metres d'una parada o fora de les parades en les àrees d'influència</li>
+</ul>
+<b>INGRÉS:</b>
+<ul>
+<li>Si ITV caducada (des del primer dia).</li>
+<li>Si metropolitana caducada de més de 3 anys.</li>
 </ul>"
 VTC;"<b>CONDICIONS:</b>
 <ul>
