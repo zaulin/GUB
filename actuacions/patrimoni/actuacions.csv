@@ -31,3 +31,6 @@ Patrimoni;Danys +400€;N01,A108;N02,A18;A17,A33,A31;S'ha de fer reportatge foto
 Patrimoni;Danys;N09,A108;N02,A18;A17,A33,A31;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
 Patrimoni;Ús de moneda falsa +400€;N09,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
 Patrimoni;Ús de moneda falsa;N01,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
+Patrimoni;Estafa;N01;N02,A18;A17;Import defraudat, relació entre les parts, medis emprats per la estafa
+Patrimoni;Estafa +400€;N09;N02,A18;A17 ;Import defraudat, relació entre les parts, medis emprats per la estafa
+Patrimoni;Estafa tajeta bancaria;N01;N02,A18;A17;
