@@ -16,6 +16,12 @@ function clickUDIG(){
     window.open("UDIG/index.html","_self")
 }
 
+function clickBSM(){
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
+    window.open("BSM/index.html","_self")
+}
 
 function pageonload() {
     //document.getElementById("loadingBlack").style.display = "none";
