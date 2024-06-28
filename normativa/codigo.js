@@ -38,6 +38,13 @@ function clickPlatges(){
     window.open("platges/index.html","_self")
 }
 
+function clickIngres(){
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
+    window.open("ingres/index.html","_self")
+}
+
 function pageonload() {
     //document.getElementById("loadingBlack").style.display = "none";
     
