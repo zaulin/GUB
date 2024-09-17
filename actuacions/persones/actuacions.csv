@@ -17,9 +17,7 @@ Si són denúncies creuades també és JIDL i es recullen dues A18PL"
 Persones;Amenaces lleus;N09,A108;N02,A18;A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
 Requereix denúncia de la víctima
-Amb o sense armes (si hi ha arma s'intervé amb A108PL)
-Mostrar arma en baralla
-Amenaça lleu"
+Amb o sense armes (si hi ha arma s'intervé amb A108PL)"
 Persones;Amenaces;N09,A108;N02,A18;A17,G30;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
 A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
