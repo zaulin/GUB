@@ -37,6 +37,13 @@ function clickEstrangers(){
     window.open("permisos/index.html","_self")
 }
 
+function clickTransports(){
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
+    window.open("transports/index.html","_self")
+}
+
 function pageonload() {
     //document.getElementById("loadingBlack").style.display = "none";
     
