@@ -1,0 +1,33 @@
+{
+  "message": "Tipus de transport<br><br><b>PRIVAT:</b> Els albarans estàn al mateix nom que el camió (Mercadona, distribució, empresa que fabrica i ven, ..).</b> <br><b>PÚBLIC:</b> Empresa que fa transport per a clients (Missatgeria, mudances, ..)</b> ",
+  "decisions" : [
+    {
+      "message": "MMA del camió",
+      "answer" : "PRIVAT",
+      "decisions" : [
+        {
+          "answer" : "> 3.500 Kg",
+          "message" : "Necessita tarjeta de transports. Si no en té: contactar amb KM"
+        },
+        {
+          "answer" : ">= 3.500 Kg",
+          "message" : "Tot correcte, pot continuar."
+        }
+      ]
+    },
+    {
+      "message": "MMA del camió",
+      "answer" : "PÚBLIC",
+      "decisions" : [
+        {
+          "answer" : "> 2.000 Kg",
+          "message" : "Necessita tarjeta de transports. Si no en té: contactar amb KM"
+        },
+        {
+          "answer" : "<= 2.000 Kg",
+          "message" : "Tot correcte, pot continuar."
+        }
+      ]
+    }
+  ]
+}
