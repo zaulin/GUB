@@ -13,9 +13,10 @@ const iColPunts = 6;
 const iColImport = 7;
 const iColImportDesc = 8;
 const iColFamilia = 9;
-const iColIntervencio = 10;
-const iColCondicional = 11;
-const iColAbits = 12;
+const iColButlleta = 10;
+const iColIntervencio = 11;
+const iColCondicional = 12;
+const iColAbits = 13;
 
 var selectedNum = "";
 var selectedTr = -1;
@@ -296,7 +297,9 @@ function tableClick(el) {
   }
 
   document.getElementById("popUpAbits").innerText = td[iColAbits-1].innerText;
+  document.getElementById("popUpButlleta").innerText = td[iColButlleta-1].innerText;
   
+
   //check si es bookmark
   estrella = document.getElementById("estrella");
   if (isBookmark(selectedNum)) {
