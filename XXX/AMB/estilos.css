@@ -3,3 +3,81 @@
   border-color: #064a9d;
   border-width: 2px;
 }
+
+.taulaComu {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.taulaComu th {
+  background-color: #f1f1f1;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font: calibri;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.taulaComu td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  font: calibri;
+  font-size: 18px;
+}
+
+.taulaComu tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.taulaComu tr.header, .taulaComu tr:hover {
+  kkbackground-color: #f9f9f9;
+}
+
+
+
+.taulaMain {
+    width: 100%;
+    border: 1px solid red;
+    padding: 2px;
+}
+
+.taulaMain {
+    width: 100%;
+    border: 1px solid red;
+    padding: 2px;
+}
+
+.taulaMain tr {
+    border: 0px solid blue;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.taulaMain th{
+    flex-basis: 33.3%;
+    border: 0px solid green;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.taulaMain td{
+    flex-basis: 33.3%;
+    border: 0px solid green;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.taulaMain td:last-child{
+    flex-basis: 100%;
+}

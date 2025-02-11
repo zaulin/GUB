@@ -28,7 +28,13 @@ function buscar() {
         txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
         if (txtCodi.toUpperCase().indexOf(filterCodi) > -1) {
           hit = 1;
-        } 
+        } else {
+          tdCodi = tr[i].getElementsByTagName("td")[2];
+          txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
+          if (txtCodi.toUpperCase().indexOf(filterCodi) > -1) {
+            hit = 1;
+          }
+        }
 
         if (hit==1) {
           tr[i].style.display = "";
