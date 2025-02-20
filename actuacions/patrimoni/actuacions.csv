@@ -16,6 +16,7 @@ Agreujants:
 - Aprofitant-se d'un accident
 - Fer servir menors"
 Patrimoni;Furt a establiment;N09,N10,A108;A18,N02,A56,A57,N10;N10,D24,A17,G31,D24;"- Adjuntar el tiquet de caixa a l'A57PL
+- Si es fa G31PL no cal fer A18PL
 - Només fer la D24PL si l'autor ha estat aturat per un vigilant o ciutadà i la patrulla només fa les actes.
 - Si el vigilant signa la D24PL no cal A17PL signada pel mateix.
 - Els empleats de la tenda són testimonis: A17PL"
