@@ -81,3 +81,8 @@
 .taulaMain td:last-child{
     flex-basis: 100%;
 }
+
+.noHIT {
+    font-weight: bold;
+    padding-left: 10px;
+}

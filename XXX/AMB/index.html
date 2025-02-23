@@ -51,17 +51,26 @@
       <table>
         <tr>
           <td>
-      <label for="inputCodi" class="myLabel">Matrícula/visat:</label>
+      <label for="inputCodi" class="myLabel">Matrícula:</label>
       <input name="inputCodi" type="text" id="myInputCodi" onkeyup="buscar()" placeholder="codi.." class="myInput" >
     </td>
 
-                  <td style="vertical-align: bottom;">
+                </tr>
+<tr>
+    <td>
+                <label for="inputCodi" class="myLabel">Llicència:</label>
+      <input name="inputCodiLicencia" type="text" id="inputCodiLicencia" onkeyup="buscarLicencia()" placeholder="codi.." class="myInput" >
+    </td>
+                      <td style="vertical-align: bottom;">
                     <button onClick="reset()" class="eraseButton"><img src="../../img/erase.png" height="20px"></button>
                   </td>
-                </tr>
+</tr>
                 </table>
 
       <div class="divTaulaMain">
+
+      <label id="noHitLicencia" class="noHIT" style="display: none">No disposa de llicència AMB.</label>
+      
       <table id="myTable" class="taulaMain">
         <thead>
           <tr>
@@ -4105,9 +4114,9 @@
 
 
 </p>
-      <label for="inputCodi" class="myLabel">Llicència:</label>
-      <input name="inputCodiProrroga" type="text" id="inputCodiProrroga" onkeyup="buscarProrroga()" placeholder="codi.." class="myInput" >
+      
       <div class="divTaulaMain">
+      <label id="noHitProrroga" class="noHIT" style="display: none">No disposa de pròrroga.</label>
       <table id="myTableProrroga" class="taulaComu">
         <thead>
           <tr>

@@ -16,22 +16,31 @@ function buscar() {
   iHits = 0;
 
   inputCodi = document.getElementById("myInputCodi");
+  inputLicencia = document.getElementById("inputCodiLicencia");
   filterCodi = normalice(inputCodi.value.toUpperCase());
+  filterLicencia = normalice(inputLicencia.value.toUpperCase());
 
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
       hit = 0;
+      
       tdCodi = tr[i].getElementsByTagName("td")[0];
+      tdLicencia = tr[i].getElementsByTagName("td")[2];
+
       if (tdCodi) {
         txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
-        if (txtCodi.toUpperCase().indexOf(filterCodi) > -1) {
-          hit = 1;
+        txtLicencia = normalice(tdLicencia.textContent || tdLicencia.innerText);
+
+        if (filterCodi == '' & filterLicencia == '') {
+          hit = 1
         } else {
-          tdCodi = tr[i].getElementsByTagName("td")[2];
-          txtCodi = normalice(tdCodi.textContent || tdCodi.innerText);
-          if (txtCodi.toUpperCase().indexOf(filterCodi) > -1) {
+          if (txtCodi.toUpperCase().indexOf(filterCodi) > 0) {
+            hit = 1;
+          }
+
+          if (txtLicencia.toUpperCase().indexOf(filterLicencia) > 0) {
             hit = 1;
           }
         }
@@ -44,7 +53,20 @@ function buscar() {
         }
       }
     }
+
+    if (iHits == 0) {
+        myTable.style.display = "none";
+        noHitLicencia.style.display = "";
+    } else {
+        myTable.style.display = "";
+        noHitLicencia.style.display = "none";
+    }
   
+}
+
+function buscarLicencia() {
+    buscar();
+    buscarProrroga();
 }
 
 function buscarProrroga() {
@@ -52,7 +74,7 @@ function buscarProrroga() {
 
   iHits = 0;
 
-  inputCodi = document.getElementById("inputCodiProrroga");
+  inputCodi = document.getElementById("inputCodiLicencia");
   filterCodi = normalice(inputCodi.value.toUpperCase());
 
   table = document.getElementById("myTableProrroga");
@@ -75,7 +97,14 @@ function buscarProrroga() {
         }
       }
     }
-  
+
+    if (iHits == 0) {
+        myTableProrroga.style.display = "none";
+        noHitProrroga.style.display = "";
+    } else {
+        myTableProrroga.style.display = "";
+        noHitProrroga.style.display = "none";
+    }
 }
 
 function numberWithCommas(x) {
@@ -84,7 +113,7 @@ function numberWithCommas(x) {
 
 function reset(){
   document.getElementById("myInputCodi").value = "";
-  document.getElementById("inputCodiProrroga").value = "";
+  document.getElementById("inputCodiLicencia").value = "";
   
   buscar();
 
