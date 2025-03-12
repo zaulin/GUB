@@ -32,7 +32,6 @@ VMP;"<b>CONDICIONS:</b>
 <li>Carril bici: En el sentit de la circulació i donant prioritat als vehicles sense motor.</li>
 <li>Carrers de prioritat invertida: En els dos sentits de la circulació i respectant la prioritat de vianants i bicicletes. Màxim 20km/h</li>
 <li>Carrers 30: En el sentit de la circulació.</li>
-<li>Carrers amb més d'un carril en el mateix sentit: PROHIBIT.</li>
 <li>Carrers de més de 30: PROHIBIT.</li>
 </ul>"
 Bicicleta;"<b>CONDICIONS:</b>
@@ -61,12 +60,13 @@ Bicicleta;"<b>CONDICIONS:</b>
 Bicicleta elèctrica;"<b>Pedaleig assistit:</b>
 <ul>
 <li>Si s'atura als 25 km/h i potència <250W: EPAC</li>
-<li>Si s’atura als 25 km/h i potència >250W: Cicle a motor (L1e-A)</li>
-<li>Si NO s’atura als 25 km/h: Ciclomotor (L1e-B)</li>
+<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
+<li>La resta: Ciclomotor (L1e-B)</li>
 </ul>
 <b>Disposa d'accelerador:</b>
 <ul>
-<li>Tot el que no sigui EPAC o cicle a motor: Ciclomotor (L1e-B)</li>
+<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
+<li>La resta: Ciclomotor (L1e-B)</li>
 </ul>
 <b>EPAC:</b> Ha d'estar homologada<br>
 <b>Resta:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ...
