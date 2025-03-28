@@ -1,0 +1,62 @@
+﻿filtre;info
+Documentació obligatòria;"<b>CONDICIONS:</b>
+<ul>
+<li>Assegurança (conductor assalariat inclòs en la pòlissa)</li>
+<li>Llibre d'inspeccions</li>
+<li>Revisió metropolitana</li>
+<li>Llibre de reclamacions</li>
+<li>Tarjeta taxímetre</li>
+<li>Permís de circulació</li>
+<li>Tarjeta inspecció tècnica</li>
+<li>Tarjeta visible per al client:</li>
+<ul>
+<li>Núm. llicència</li>
+<li>Matrícula del vehicle</li>
+<li>Núm. places del vehicle</li>
+</ul>
+</ul>
+<b>INFRACCIONS:</b>
+<br><br>
+Ingrés a disposició IMT:
+<ul>
+<li>3954: ITV caducada (+ 3077)</li>
+<li>3944: ITV amb perill (+ 3078)</li>
+<li>3955: Assegurança obligatoria (+ 3233)</li>
+<li>3997: Conductor no assegurat</li>
+<li>3950: Conductor no autoritzat</li>
+<li>3957: Metropolitana caducada de més de 2 anys</li>
+</ul>
+No implica ingrés:
+<ul>
+<li>3949: No portar taximetre o portar-ho manipulat</li>
+<li>3945: Vehicle sense llicencia</li>
+<li>3956: Permís de circulació caducat</li>
+</ul>"
+Revisió taximetre;"<b>CONDICIONS:</b>
+<br><br>
+S'ha de revisar un cop a l'any.
+<br>
+A la tarjeta de control metrològic hi ha dues columnes:
+<ul>
+<li>Columna esquerra: Taller de taxímetres (ha de coincidir el precinte)</li>
+<li>Columna dreta: Data de la revisió</li>
+</ul>
+Ha de tenir una verificació (columna dreta) amb data de fa menys d'un any.
+<br><br>
+<b>INFRACCIONS:</b>
+
+<ul>
+<li>3953: Taxímetre sense precinte o sense funcionar</li>
+</ul>"
+Servei;"<b>CONDICIONS:</b>
+<ul>
+<li>Només poden fer servir carril Bus si van amb passatge</li>
+<li>No poden admetre passatge a menys de 50 metres d'una parada o zona d'influència (excepte serveis precontractats)</li>
+<li>Han d'atendre els serveis</li>
+<li>No poden fumar dins del taxi</li>
+<li>No poden abandonar el taxi a una parada</li>
+<li>Conductor NO té l'obligació de fer servir cinturó</li>
+<li>Passatge SI té l'obligació de fer servir cinturó</li>
+<li>Menor de menys de 1,35m pot anar sense SRI sempre als seients posteriors</li>
+<li>Taxis adaptats poden treballar el dia de descans si es per un servei PMR</li>
+</ul>"
