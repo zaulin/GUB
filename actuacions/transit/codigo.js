@@ -23,6 +23,13 @@ function clickVTC(){
     window.open("VTC/index.html","_self")
 }
 
+function clickTaxi(){
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
+    window.open("taxi/index.html","_self")
+}
+
 function clickPNC(){
     if (getMobileOperatingSystem() != "Android") {
         document.getElementById("loadingBlack").style.display = "block";
