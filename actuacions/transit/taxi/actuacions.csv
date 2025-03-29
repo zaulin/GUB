@@ -4,10 +4,13 @@ Documentació obligatòria;"<b>CONDICIONS:</b>
 <li>Assegurança (conductor assalariat inclòs en la pòlissa)</li>
 <li>Llibre d'inspeccions</li>
 <li>Revisió metropolitana</li>
-<li>Llibre de reclamacions</li>
-<li>Tarjeta taxímetre</li>
+<li>Llibre de reclamacions (trajectes interurbans)</li>
+<li>Tarjeta taxímetre (física o digital)</li>
 <li>Permís de circulació</li>
 <li>Tarjeta inspecció tècnica</li>
+<li>Tarjeta identificativa conductor visible per a l'usuari</li>
+<li>TPV: Al rebut ha d'apareixer la llicència</li>
+<li>Adhesiu per cada una de les apps amb les que treballa a la finestra del copilot</li>
 <li>Tarjeta visible per al client:</li>
 <ul>
 <li>Núm. llicència</li>
@@ -31,6 +34,9 @@ No implica ingrés:
 <li>3949: No portar taximetre o portar-ho manipulat</li>
 <li>3945: Vehicle sense llicencia</li>
 <li>3956: Permís de circulació caducat</li>
+<li>3960: App no autoritzada com mediadora</li>
+<li>3979: Tarjeta identificativa no visible</li>
+<li>3980: Tarifes no visibles</li>
 </ul>"
 Revisió taximetre;"<b>CONDICIONS:</b>
 <br><br>
@@ -58,5 +64,47 @@ Servei;"<b>CONDICIONS:</b>
 <li>Conductor NO té l'obligació de fer servir cinturó</li>
 <li>Passatge SI té l'obligació de fer servir cinturó</li>
 <li>Menor de menys de 1,35m pot anar sense SRI sempre als seients posteriors</li>
-<li>Taxis adaptats poden treballar el dia de descans si es per un servei PMR</li>
+</ul>
+<b>INFRACCIONS:</b><ul>
+<li>3964-3988: No respectar torn de descans</li>
+<li>3994: Indumentaria inadequada</li>
+<li>3992: Fumar (no cal estar ocupat)</li>
+<li>3993: Neteja del vehicle o higiene personal (no cal estar ocupat)</li>
+<li>3989: Abandonar vehicle a la parada</li>
+</ul>"
+Tarifes i suplements;"<b>TARIFES</b>
+<ul>
+<li>Tarifa 1: laborables de 8:00 a 20:00</li>
+<li>Tarifa 2: laborables de 20:00 a 8:00, dissabtes i festius</li>
+<li>Tarifa 3: Preu tancant per app oficial (NO web)</li>
+</ul>
+<b>SUPLEMENTS</b>
+<ul>
+<li>Aeroport: 4,50€</li>
+<li>Moll adossat: 4,50€</li>
+<li>Vehicles amb 5-8 passatgers: 4,50€</li>
+<li>Fira Gran Via (només origen): 2,50€</li>
+<li>Estació de sants (només origen): 2,50€</li>
+</ul>
+<b>INFRACCIONS</b>
+<ul>
+<li>3966: Incomplir tarifes</li>
+</ul>
+<a href=""https://infotaxi.amb.cat/quantemcostara"" target=""_blank"">Enllaç a tarifes </a>"
+Descans;"<b>DIA DE DESCANS:</b>
+<br><br>
+Els taxis tenen un dia de descans entre setmana i descansen un dia segons el darrer número de la seva llicència:
+<ul>
+<li>1-2: Dilluns</li>
+<li>3-4: Dimarts</li>
+<li>5-6: Dimecres</li>
+<li>7-8: Dijous</li>
+<li>9-0: Divendres</li>
+</ul>
+Caps de setmana: Dies senars treballen llicències parells
+<br>Taxis adaptats poden treballar el dia de descans si es per un servei PMR
+<br><br>
+<b>INFRACCIONS</b>
+<ul>
+<li>3974: Prestar servei el dia de descans</li>
 </ul>"
