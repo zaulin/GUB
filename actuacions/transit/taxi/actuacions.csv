@@ -31,7 +31,7 @@ Ingrés a disposició IMT:
 </ul>
 No implica ingrés:
 <ul>
-<li>3949: No portar taximetre o portar-ho manipulat</li>
+<li>3971: No portar el llibre d'inspecció</li>
 <li>3945: Vehicle sense llicencia</li>
 <li>3956: Permís de circulació caducat</li>
 <li>3960: App no autoritzada com mediadora</li>
@@ -52,7 +52,9 @@ Ha de tenir una verificació (columna dreta) amb data de fa menys d'un any.
 <b>INFRACCIONS:</b>
 
 <ul>
-<li>3953: Taxímetre sense precinte o sense funcionar</li>
+<li>3953: Taxímetre sense precinte</li>
+<li>3961: Taxímetre sense funcionar</li>
+<li>3949: No portar taxímetre o portar-ho manipulat</li>
 </ul>"
 Servei;"<b>CONDICIONS:</b>
 <ul>
@@ -89,6 +91,7 @@ Tarifes i suplements;"<b>TARIFES</b>
 <b>INFRACCIONS</b>
 <ul>
 <li>3966: Incomplir tarifes</li>
+<li>3968: Aplicar complements no autoritzats</li>
 </ul>
 <a href=""https://infotaxi.amb.cat/quantemcostara"" target=""_blank"">Enllaç a tarifes </a>"
 Descans;"<b>DIA DE DESCANS:</b>
