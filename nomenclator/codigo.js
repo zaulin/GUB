@@ -108,6 +108,9 @@ function buscar() {
         tdArt =  trPlus[i].getElementsByTagName("td")[iColArticle-1];
         txtArt = normalice(tdArt.textContent || tdArt.innerText).replace(/\s/g, '')
 
+        tdNorm =  trPlus[i].getElementsByTagName("td")[iColNormativa-1];
+        txtNorm = normalice(tdNorm.textContent || tdNorm.innerText).replace(/\s/g, '')
+
           if (arrayFiltreDenuncies) {
 
             if (arrayFiltreDenuncies.includes(txtCodi)) {
@@ -134,15 +137,15 @@ function buscar() {
           } else {
 
             if (filter2 == "") {
-              if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter) || txtArt.toUpperCase().startsWith(filter)) {
+              if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter) || txtArt.toUpperCase().startsWith(filter) || txtNorm.toUpperCase().startsWith(filter)) {
                 hit = 1
               } else  {
                 hit = 0;
               }  
             } else {
             
-                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter) || txtArt.toUpperCase().startsWith(filter)) {
-                    if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2) || txtArt.toUpperCase().startsWith(filter2)) {
+                if (txtValue.toUpperCase().indexOf(filter) > -1 || txtCodi.toUpperCase().startsWith(filter) || txtArt.toUpperCase().startsWith(filter) || txtNorm.toUpperCase().startsWith(filter) ) {
+                    if (txtValue.toUpperCase().indexOf(filter2) > -1 || txtCodi.toUpperCase().startsWith(filter2) || txtArt.toUpperCase().startsWith(filter2) || txtNorm.toUpperCase().startsWith(filter2)) {
                       hit = 1
                     } else {
                       hit = 0
