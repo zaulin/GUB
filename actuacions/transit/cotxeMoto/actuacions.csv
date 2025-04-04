@@ -34,6 +34,15 @@ Sancions administratives:
 > 0,50 mg/l (0,55 mg/l)
 - Qualsevol conductor: 3290
 - Reincident: 3291 (Sancionat per un fet similar en el darrer any)"
+Alcoholèmia admin - CME;T101,A13,A121;;;"La patrulla fa:
+   - T101PL.
+   - A121PL.
+   - Comprobants de l'etilòmetre.
+   - A13PL de desinmovilització.
+
+CME fa:
+   - La denúncia administrativa amb butlletí municipal la fa CME.
+   - A13PL d'inmovilització."
 Alcoholèmia penal;T101,A21,T102,T100,A13;;;"L'ordre de les hores de les actes és: T100PL, A21PL, T101PL, T102PL, A13PL
 
 Es penal si:
@@ -63,6 +72,18 @@ S'han de fer les sancions administratives per si no prospera la via penal:
 > 0,50 mg/l (0,55 mg/l)
 - Qualsevol conductor: 3290
 - Reincident: 3291"
+Alcoholèmia penal - CME;T101,A13,A21,A121;;;"La patrulla fa:
+   - A21PL
+   - T101PL.
+   - A121PL.
+   - Comprobants de l'etilòmetre.
+   - A13PL de desinmovilització.
+
+CME fa:
+   - Lectura de drets.
+   - Minuta policial.
+   - La denúncia administrativa amb butlletí municipal la fa CME.
+   - A13PL d'inmovilització."
 Negativa proves alcohol/drogues;T101,A21,T102,T100,A13;;;"A la T100 s'ha de deixar clarament indicat que s'ha informat a la persona de les consenqüències de no realitzar la prova. 
 
 S'han de fer les sancions administratives per si no prospera la via penal:
@@ -103,27 +124,6 @@ Per la unitat:
 S'han de fer les sancions administratives per si no prospera la via penal:
 - Conductor sense permís: 3297
 - Conductor: 3296"
-Alcoholèmia admin - CME;T101,A13,A121;;;"La patrulla fa:
-   - T101PL.
-   - A121PL.
-   - Comprobants de l'etilòmetre.
-   - A13PL de desinmovilització.
-
-CME fa:
-   - La denúncia administrativa amb butlletí municipal la fa CME.
-   - A13PL d'inmovilització."
-Alcoholèmia penal - CME;T101,A13,A21,A121;;;"La patrulla fa:
-   - A21PL
-   - T101PL.
-   - A121PL.
-   - Comprobants de l'etilòmetre.
-   - A13PL de desinmovilització.
-
-CME fa:
-   - Lectura de drets.
-   - Minuta policial.
-   - La denúncia administrativa amb butlletí municipal la fa CME.
-   - A13PL d'inmovilització."
 Prova de contrast;T12;;;"S'ha d'informar que si la prova dona positiu haurà de pagar el cost.
 
 Si no signa la T12PL no es realitzarà la prova.
@@ -136,7 +136,18 @@ L'hora de l'aturada ha de ser anterior a la lectura de drets.
 A13 consultar amb KA a disposició de qui queda el vehicle.
 
 A la denúncia administrativa s'ha de marcar la casella ""dil·ligències penals""."
-No haver obtingut mai - CME;T100,T102,T104,A13;;;"Dona dil·ligències KA.
+No haver obtingut mai - CME;T102,T104,A13;;;"Dona dil·ligències KA.
+
+S'han d'indicar els indicatius i TIPs de CME"
+Sense punts;T100,T102,A110,A13;;;"Si està fora dels supòsits de la T100 s'ha de compareixer a UIPA.
+Si no es fa T100 s'ha de fer A110
+
+L'hora de l'aturada ha de ser anterior a la lectura de drets.
+
+A13 consultar amb KA a disposició de qui queda el vehicle.
+
+A la denúncia administrativa s'ha de marcar la casella ""dil·ligències penals""."
+Sense punts - CME;T102,T104,A110,A13;;;"Dona dil·ligències KA.
 
 S'han d'indicar els indicatius i TIPs de CME"
 Taxi il·legal;T108;T109;;"T109 a cada un dels passatgers
