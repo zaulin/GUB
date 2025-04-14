@@ -8,7 +8,6 @@ Documentació obligatòria;"<b>CONDICIONS:</b>
 <li>Tarjeta taxímetre (física o digital)</li>
 <li>Permís de circulació</li>
 <li>Tarjeta inspecció tècnica</li>
-<li>Tarjeta identificativa conductor visible per a l'usuari</li>
 <li>TPV: Al rebut ha d'apareixer la llicència</li>
 <li>Adhesiu per cada una de les apps amb les que treballa a la finestra del copilot</li>
 <li>Tarjeta visible per al client:</li>
@@ -52,6 +51,7 @@ Ha de tenir una verificació (columna dreta) amb data de fa menys d'un any.
 <b>INFRACCIONS:</b>
 
 <ul>
+<li>3975: Metrològica caducada</li>
 <li>3953: Taxímetre sense precinte</li>
 <li>3961: Taxímetre sense funcionar</li>
 <li>3949: No portar taxímetre o portar-ho manipulat</li>
