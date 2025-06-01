@@ -153,7 +153,7 @@ function dropdownChange(iIndexSituacio) {
   //plegar y poner el valor
   $("#selector").click();
 
-  document.getElementById("labelExtraTitulo").innerText = arraySituacion[iIndexSituacio].situacio;
+  document.getElementById("labelExtraTitulo").innerHTML = arraySituacion[iIndexSituacio].situacio;
   document.getElementById("labelExtra").innerText = "";
   document.getElementById("divExtraInfo").style.display = "none";
 
@@ -162,7 +162,7 @@ function dropdownChange(iIndexSituacio) {
 
         if (arraySituacion[iIndexSituacio].extra) {
           if (arraySituacion[iIndexSituacio].extra.trim() != "") {
-            document.getElementById("labelExtra").innerText = arraySituacion[iIndexSituacio].extra;
+            document.getElementById("labelExtra").innerHTML = arraySituacion[iIndexSituacio].extra;
             document.getElementById("divExtraInfo").style.display = "block";
           }
         }
@@ -174,7 +174,7 @@ function pageonload() {
   //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
 
   //document.getElementById("dropdownSituacion").value = "";
-  document.getElementById("labelExtra").innerText = "";
+  document.getElementById("labelExtra").innerHTML = "";
 
   decoraTablas();
 

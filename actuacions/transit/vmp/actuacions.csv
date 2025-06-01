@@ -1,19 +1,68 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
-Alcoholèmia admin;T101,A13;;;"Sancions administratives:
-> 0,0 mg/l i < 0,25 mg/l (0,29 mg/l)
-- Menor d'edat: 3393
+Normativa;;;;"<b>CONDICIONS:</b>
+<ul>
+<li>Conductor major de 16 anys.</li>
+<li>Casc.</li>
+<li>Si es de lloguer (activitat econòmica): assegurança i registre BSM.</li>
+<li>Només una persona.</li>
+<li>Pot portar seient si té sistema d’auto-equilibrat auxiliar.</li>
+<li>Velocitat màxima: 25 km/h.</li>
+<li>Longitud màxima: 2 m.</li>
+<li>Potència màxima: 1000 W si no té sistema d’auto-equilibrat, 2.500 W si en té.</li>
+</ul>
+<b>CIRCULAR:</b>
+<ul>
+<li>Vorera: PROHIBIT</li>
+<li>Carrers de més de 30: PROHIBIT.</li>
+<li>Sempre en el sentit de la circulació</li>
+<li>Carril bici en vorera: Respectar la prioritat dels vianants.</li>
+<li>Carril bici: Donant prioritat als vehicles sense motor.</li>
+<li>Carrers de prioritat invertida: Respectant la prioritat de vianants i bicicletes. Màxim 20km/h</li>
+<li>Parcs: Màxim 10km/h.</li>
+</ul>
 
-> 0,25 mg/l (0,29 mg/l)
-- Qualsevol conductor: 3283
+<b>INFRACCIONS:</b>
+<ul>
+<li>1642: No ajustar-se a les característiques tècniques</li>
+<li>1643: Potència superior a la permesa</li>
+<li>1853: No portar casc</li>
+<li>1724: Circular més d'una persona</li>
+<li>1633-35: Circular en sentit contrari</li>
+<li>1618: Circular utilitzant el mòbil</li>
+<li>1617: Circular amb auriculars</li>
+<li>1595: Circular per carril bici a velocitat inadequada</li>
+<li>1300: Circular de manera negligent</li>
+<li>1632: Circular de manera temeraria</li>
+<li>1647: Circular per vies prohibides</li>
+<li>1648: Circular per vorera</li>
+<li>1730: Conductor <16 anys</li>
+<li>1738: No baixar en aglomeració en calçada única</li>
+</ul>"
+Alcoholèmia admin;T101,A13;;;"<b>TAXES:</b>
+<ul>
+<li>Menor d'edat: 0,0 mg/l i < 0,25 mg/l (0,29 mg/l)</li>
+<li>Professional/novell: > 0,15 mg/l (0,19 mg/l)</li>
+<li>Qualsevol conductor: > 0,25 mg/l (0,29 mg/l)</li>
+</ul>
 
-> 0,50 mg/l (0,55 mg/l)
-- Qualsevol conductor: 3289"
+<b>INFRACCIONS:</b>
+<ul>
+<li>3393: Alcohol positiu menor d'edat</li>
+<li>3281: >0,15 professional/novell</li>
+<li>3283: >0,25 qualsevol conductor</li>
+<li>3289: >0,50 qualsevol conductor</li>
+</ul>"
 Negativa proves alcohol/drogues;A13;;;"S'han de fer les sancions administratives:
-
-Alcohol: 3294
-
-Drogues: 3301"
-VMP Activitat econòmica;A13;;;"Manca de registre: 1757
-Manca d’assegurança: 1758
-
-Qualsevol de les denúncies comporta l'ingrés."
+<br><br>
+<b>INFRACCIONS:</b>
+<ul>
+<li>3294: Negativa alcohol</li>
+<li>3301: Negativa drogues</li>
+</ul>"
+VMP Activitat econòmica;A13;;;"Qualsevol de les denúncies comporta l'ingrés.
+<br><br>
+<b>INFRACCIONS:</b>
+<ul>
+<li>1757: Manca de registre</li>
+<li>1758: Manca d’assegurança</li>
+</ul>"
