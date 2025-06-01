@@ -51,6 +51,13 @@ function clickTransports(){
     window.open("transports/index.html","_self")
 }
 
+function clickPlaques(){
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
+    window.open("plaques/index.html","_self")
+}
+
 function pageonload() {
     //document.getElementById("loadingBlack").style.display = "none";
     
