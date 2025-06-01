@@ -29,7 +29,7 @@ Plaques espanyoles (blanques);"<b>DIMENSIONS:</b>
 <li>3121: Circular amb el vehicle ressenyat sense una de les plaques.</li>
 <li>1685: Conductor no verifica bona lectura de matrícula.</li>
 </ul>"
-Plaques temporals (vermelles);"<b>CONDICIONS:</b>
+Plaques temporals d'empresa (vermelles);"<b>CONDICIONS:</b>
 <ul>
 <li>És un permís temporal per empreses.</li>
 <li>
@@ -69,4 +69,25 @@ La primera lletra pot ser:
 <li>3147: Portar càrrega útil</li>
 <li>3066: El VIN correspon a un vehicle matriculat a Espanya</li>
 <li>3094: Propietari particular amb plaques temporals d'empresa</li>
+</ul>"
+Plaques temporals particulars (verdes);"<b>CONDICIONS:</b>
+<ul>
+<li>És un permís temporal per particulars.</li>
+<li>Casuístiques:</li>
+<ul>
+<li>Vehicle pendent de tramitar matriculació definitiva - 60 dies:</li>
+<li>Adquirits a l'estranger sense matricular o amb matrícula no espanyola.</li>
+<li>Provinent de sentencia o subhasta sense matricular.</li>
+<li>Adquirit sense carrossar.</li>
+</ul>
+<li>Vehicle nou que s'hagi de matricular a Canaries, Ceuta o Melilla - 10 dies</li>
+<li>Per traslladar el vehicle fora d'Espanya (ha d'estar donat de baixa) - 60 dies</li>
+</ul>
+
+
+<b>INFRACCIONS:</b>
+
+<ul>
+<li>3067: Sense el PC corresponent</li>
+<li>3067: PC caducat</li>
 </ul>"
