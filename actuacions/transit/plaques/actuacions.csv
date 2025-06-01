@@ -24,6 +24,9 @@ Plaques espanyoles (blanques);"<b>DIMENSIONS:</b>
 
 <ul>
 <li>3129: No ajustar-se les plaques a les precripcions.</li>
+<li>1534: No portar il·luminada la placa de matrícula.</li>
+<li>3120: Circular amb el vehicle ressenyat sense les plaques de matrícula.</li>
+<li>3121: Circular amb el vehicle ressenyat sense una de les plaques.</li>
 </ul>"
 Plaques temporals (vermelles);"<b>CONDICIONS:</b>
 <ul>
@@ -58,7 +61,7 @@ La primera lletra pot ser:
 <b>INFRACCIONS:</b>
 
 <ul>
-<li>3068: PC caducat</li>
+<li>3068-71: PC caducat (S-V)</li>
 <li>3069: No portar butlletí o manca de complimentació</li>
 <li>3070: Conductor no autoritzat</li>
 <li>3147: Portar càrrega útil</li>
