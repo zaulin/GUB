@@ -1,5 +1,5 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
-Normativa;;;;"<b>CONDICIONS:</b>
+Normativa VMP;;;;"<b>CONDICIONS:</b>
 <ul>
 <li>Conductor major de 16 anys.</li>
 <li>Casc.</li>
@@ -37,6 +37,88 @@ Normativa;;;;"<b>CONDICIONS:</b>
 <li>1648: Circular per vorera</li>
 <li>1730: Conductor <16 anys</li>
 <li>1738: No baixar en aglomeració en calçada única</li>
+</ul>"
+Normativa Bicicleta;;;;"<b>CONDICIONS:</b>
+<ul>
+<li>Pedaleig assistit de fins a 25 km/h.</li>
+<li>Han de dur timbre, llums i reflectants.</li>
+</ul>
+<b>CIRCULAR:</b>
+<ul>
+<li>Prohibit circular a menys d'1m de façanes</li>
+<li>Vorera:</li>
+<ul>
+<li>Menors de 12 anys amb la persona que ostenti la seva guarda a un màxim de 10km/h.</li>
+<li>Quan no existeixi carril bici i la vorera sigui de >5m (4,75m de 22h a 7h) i deixant 3m d’espai lliure.</li>
+<li>Respectant la prioritat dels vianants</li>
+</ul>
+<li>Carril bici en vorera: Ha de respectar la prioritat dels vianants.</li>
+<li>Carril bici: Te prioritat sobre vehicles a motor.</li>
+<li>Carrers de prioritat invertida: En qualsevol sentit i respectant la prioritat de vianants.</li>
+<li>Circulació en calçada pel carril més proper a la vorera.</li>
+</ul>
+<b>ESTACIONAMENT:</b>
+<ul>
+<li>No es poden lligar a mobiliari urbà.</li>
+</ul>"
+Normativa Bicicleta elèctrica;;;;"<b>Pedaleig assistit:</b>
+<ul>
+<li>Si s'atura als 25 km/h i potència <250W: EPAC</li>
+<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
+<li>La resta: Ciclomotor (L1e-B)</li>
+</ul>
+<b>Disposa d'accelerador:</b>
+<ul>
+<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
+<li>La resta: Ciclomotor (L1e-B)</li>
+</ul>
+<b>EPAC:</b> Ha d'estar homologada<br>
+<b>Resta:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ...
+
+<br><br>
+<b>ACTUACIÓ:</b>
+<ul>
+<li><b>Cicle a motor (L1e-A):</b></li>
+<ul>
+<li><b>DENUNCIES:</b></li>
+<ul>
+<li>3051: No haver obtingut el corresponent permís de circulació.</li>
+<li>3052: No haver obtingut el certificat de característica tècnica.</li>
+<li>3231: No haver concertat el segur obligatori del vehicle.</li>
+<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
+</ul>
+
+<li><b>ACTES:</b></li>
+<ul>
+<li>A13PL: A disposició del titular.</li>
+<li>Informe annex.</li>
+<li>Reportatge fotogràfic.</li>
+</ul>
+</ul>
+<br>
+<li><b>Ciclomotor (L1e-B):</b></li>
+<ul>
+<li><b>DENUNCIES:</b></li>
+<ul>
+<li>3051: No haver obtingut el corresponent permís de circulació.</li>
+<li>3052: No haver obtingut el certificat de característica tècnica.</li>
+<li>3231/3232: No haver concertat el segur obligatori del vehicle.</li>
+<li>3152/3153: Falta permís de conduir.</li>
+<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
+</ul>
+
+<li><b>ACTES:</b></li>
+<ul>
+<li>A13PL: A disposició del titular.</li>
+<li>Informe annex.</li>
+<li>Reportatge fotogràfic.</li>
+</ul>
+
+<li><b>DELICTE:</b></li>
+<ul>
+<li>No haver obtingut mai el permís de conduir.</li>
+</ul>
+
 </ul>"
 Alcoholèmia admin;T101,A13;;;"<b>TAXES:</b>
 <ul>
