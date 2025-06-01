@@ -1,0 +1,67 @@
+﻿filtre;info
+Plaques espanyoles (blanques);"<b>DIMENSIONS:</b>
+<ul>
+<li>Cotxe:</li>
+<ul>
+<li>Placa llarga: 520x110</li>
+<li>Placa alta: 340x220</li>
+<li>Davantera llarga petita: 340x110</li>
+</ul>
+<li>Motocicletes:</li>
+<ul>
+<li>Placa llarga: 220x160</li>
+<li>Trial / enduro: 132x96</li>
+<li>Màxim 30 graus respecte vertical</li>
+</ul>
+<li>Ciclomotors:</li>
+<ul>
+<li>Placa llarga: 100x168</li>
+</ul>
+</ul>
+
+<b>INFRACCIONS:</b>
+<br>
+
+<ul>
+<li>3129: No ajustar-se les plaques a les precripcions.</li>
+</ul>"
+Plaques temporals (vermelles);"<b>CONDICIONS:</b>
+<ul>
+<li>És un permís temporal per empreses.</li>
+<li>
+La primera lletra pot ser:
+<br>
+&nbsp;&nbsp;&nbsp;S: Vehicle no matriculat a Espanya.
+<br>
+&nbsp;&nbsp;&nbsp;V: Vehicle ja matriculat a Espanya amb baixa temporal per transmissió.</li>
+<li>Serveix per a que vehicles no matriculats puguin circular, la placa no va associada a un vehicle.</li>
+</ul>
+
+<b>CIRCULACIÓ:</b>
+<ul>
+<li>Només el pot conduir un treballador de l'empresa o un client que vol adquirir el vehicle.</li>
+<li>Si el condueix el client el treballador ha d'anar al seient del copilot.</li>
+<li>No pot portar càrrega.</li>
+<li>Ha de portar el butlletí complimentat.</li>
+<li>Dades del butlletí:</li>
+<ul>
+<li>Dades del titular de les plaques.</li>
+<li>VIN del vehicle.</li>
+<li>Conductor.</li>
+<li>Inici i destí del trajecte.</li>
+<li>A l'empresa han de tenir còpia del butlletí.</li>
+<li>No cal que estigui segellat.</li>
+</ul>
+</ul>
+
+
+<b>INFRACCIONS:</b>
+
+<ul>
+<li>3068: PC caducat</li>
+<li>3069: No portar butlletí o manca de complimentació</li>
+<li>3070: Conductor no autoritzat</li>
+<li>3147: Portar càrrega útil</li>
+<li>3066: El VIN correspon a un vehicle matriculat a Espanya</li>
+<li>3069: No coincideix el VIN amb la placa del butlletí</li>
+</ul>"
