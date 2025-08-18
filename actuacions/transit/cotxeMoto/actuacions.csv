@@ -45,7 +45,13 @@ CME fa:
    - A13PL d'inmovilització.
 
 L'annex de denùncia (A121PL) té format butlleta i CME l'adjunta a la seva denúncia administrativa."
-Alcoholèmia penal;T101,A21,T102,T100,A13;;;"L'ordre de les hores de les actes és: T100PL, A21PL, T101PL, T102PL, A13PL
+Alcoholèmia penal;T101,A21,T102,T100,A13;;;"L'ordre de les hores de les actes és: 
+- T100PL: Hora dels fets
+- A21PL: Quan veiem símptomes
+- T101PL: Drets alcoholímetre
+- Tiquets
+- T102PL: Drets delicte
+- A13PL: Immobilitzar
 
 Es penal si:
 - la ingesta afecta a la conducció, implicat en accident i taxa > 0,40 mg/l (0,44 mg/l)
