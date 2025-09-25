@@ -35,8 +35,7 @@ function dropdownChange(iIndexSituacio) {
   botones = ""
   for (j = 0; j < arrayCabeceras.length; j++) {
     //Si esta en blanco no ponemos el boton
-    console.log(arrayCabeceras[j])
-    console.log(arraySituacion[iIndexSituacio][arrayCabeceras[j]]) 
+
     if (arraySituacion[iIndexSituacio][arrayCabeceras[j]] != '') {
       botones += '<button onclick="clickExtra(' + j + ', ' + iIndexSituacio + ')" class="tableBoton">'
       botones += arrayCabeceras[j]
@@ -48,7 +47,6 @@ function dropdownChange(iIndexSituacio) {
 
 }
 function clickExtra(i, iIndexSituacio) {
-  console.log(arraySituacion[iIndexSituacio])
   document.getElementById("labelExtraTitulo2").innerText = arrayCabeceras[i];
   document.getElementById("labelExtra2").innerHTML = arraySituacion[iIndexSituacio][arrayCabeceras[i]];
   document.getElementById("divExtraInfo2").style.display = "block";
