@@ -4,6 +4,7 @@ const arraySituacion = [];
 const csvData = [];
 const arrayCabeceras = [];
 const sTextFiltreIni = "Sel·lecciona un tipus d'establiment";
+const sTextFiltreApartat = "Sel·lecciona un apartat";
 
 function clickBack() {
   window.open('../index.html', "_self")
@@ -32,21 +33,34 @@ function dropdownChange(iIndexSituacio) {
   document.getElementById("labelExtra").innerHTML = arraySituacion[iIndexSituacio].info;
   document.getElementById("divExtraInfo").style.display = "block";
 
-  botones = ""
-  for (j = 0; j < arrayCabeceras.length; j++) {
-    //Si esta en blanco no ponemos el boton
 
-    if (arraySituacion[iIndexSituacio][arrayCabeceras[j]] != '') {
-      botones += '<button onclick="clickExtra(' + j + ', ' + iIndexSituacio + ')" class="tableBoton">'
-      botones += arrayCabeceras[j]
-      botones += '</button>'
-    }
+      $(function() {
+        var $select = $('#section-dropdownSituacion');
+        $select.empty();
+        iIndex = 0;
+        iVisible = 0;
+        $.each(arrayCabeceras, function() {
+          if (arraySituacion[iIndexSituacio][arrayCabeceras[iIndex]] != '')  {
+            $select.append('<a class="elementoLista" onclick="dropdownChangeSituacion(' + iIndex + ',' + iIndexSituacio + ')">' + this + '</a>');  
+            iVisible = iVisible + 1;
+          }
+          iIndex = iIndex + 1;
+        });
+
+      });
+
+  document.getElementById("selectorSituacion").innerText = sTextFiltreApartat;
+
+  if (iVisible > 0) {
+    document.getElementById("selectorSituacion").style.display = "initial";
+  } else {
+    document.getElementById("selectorSituacion").style.display = "none";
   }
-
-  document.getElementById("botonesExtra").innerHTML = botones;
-
 }
-function clickExtra(i, iIndexSituacio) {
+
+function dropdownChangeSituacion(i, iIndexSituacio) {
+  $("#selectorSituacion").click();
+
   document.getElementById("labelExtraTitulo2").innerText = arrayCabeceras[i];
   document.getElementById("labelExtra2").innerHTML = arraySituacion[iIndexSituacio][arrayCabeceras[i]];
   document.getElementById("divExtraInfo2").style.display = "block";
@@ -119,3 +133,5 @@ function loadSituaciones() {
 
 
 }
+
+
