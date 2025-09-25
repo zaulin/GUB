@@ -1,0 +1,20 @@
+
+#divTaules {
+  margin-bottom: 20px;
+}
+
+.tableBoton {
+  border: solid;
+  border-width: 3px;
+  border-color: #064a9d;
+  border-radius: 8px;
+  width: 150px;
+  height: 60px;
+}
+
+.ButtonText {
+  font-family:Arial;
+  font-size:14px;
+  font-weight: bold;
+  color: #064a9d;
+}
