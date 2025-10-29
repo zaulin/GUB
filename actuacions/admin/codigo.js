@@ -31,8 +31,8 @@ function dropdownChange(iIndexSituacio) {
 
   document.getElementById("labelExtraTitulo").innerText = arraySituacion[iIndexSituacio].filtre;
   document.getElementById("labelExtra").innerHTML = arraySituacion[iIndexSituacio].info;
-  document.getElementById("divExtraInfo").style.display = "block";
 
+  document.getElementById("divExtraInfo").style.display = "block";
 
       $(function() {
         var $select = $('#section-dropdownSituacion');
@@ -56,6 +56,8 @@ function dropdownChange(iIndexSituacio) {
   } else {
     document.getElementById("selectorSituacion").style.display = "none";
   }
+
+  document.getElementById("divExtraInfo2").style.display = "none";
 }
 
 function dropdownChangeSituacion(i, iIndexSituacio) {
