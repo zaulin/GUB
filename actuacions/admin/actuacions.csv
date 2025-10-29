@@ -26,7 +26,8 @@ determina la normativa específica sobre contaminación acústica.
 <li>Pot tenir barra</li>
 <li>No pot tenir pista de ball</li>
 <li>No pot tenir plantxa ni fogons</li>
-</ul><b>QUÈ S'HA DE DEMANAR:</b>
+</ul>
+<b>QUÈ S'HA DE DEMANAR:</b>
 <ul>
 <li>Datos del titular responsable</li>
 <li>Licencia actividad</li>
@@ -40,10 +41,16 @@ determina la normativa específica sobre contaminación acústica.
 <li>Horario de actividad</li> 
 <li>Certificado gas/reciclaje y evacuació de humos</li>
 <li>Certificado higiene y salubridad de los edificios y de los alimentos (consta en la licéncia)</li>
-
 </ul>
-
-";"Acreditar mitjançant rebut bancari el nom de la companyia, la pòlissa, la vigència i l’ import.
+<b>CHECKLIST:</b><br><br>
+<div style=""margin-left: 15px"">
+<input type=""checkbox"">
+  Seguretat<br>
+  <input type=""checkbox"">
+  Documentació<br>
+ <input type=""checkbox"">
+  Titular identificat<br>
+</div>";"Acreditar mitjançant rebut bancari el nom de la companyia, la pòlissa, la vigència i l’ import.
 <br><br>
 <b>RELACIÓ DE LAS QUANTÍES MÍNIMES DE COBERTURA DE L’ASSEGURANÇA DE RESP. CIVIL:</b>
 <ul>
