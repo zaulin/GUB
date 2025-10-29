@@ -17,8 +17,8 @@
   text-align: left;
   z-index: 200;
 }
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
+.dropdown:checked,
+.dropdown:not(:checked){
   position: absolute;
   left: -9999px;
   opacity: 0;
