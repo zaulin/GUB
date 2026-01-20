@@ -9,7 +9,7 @@ Documentació obligatòria;"<b>CONDICIONS:</b>
 <li>Permís de circulació</li>
 <li>Tarjeta inspecció tècnica</li>
 <li>TPV: Al rebut ha d'apareixer la llicència</li>
-<li>Adhesiu per cada una de les apps amb les que treballa a la finestra del copilot</li>
+<li>Distintiu, per cada una de les apps amb les que treballa, a la finestra del copilot</li>
 <li>Tarjeta visible per al client:</li>
 <ul>
 <li>Núm. llicència</li>
@@ -34,7 +34,7 @@ No implica ingrés:
 <li>3945: Vehicle sense llicencia</li>
 <li>3956: Permís de circulació caducat</li>
 <li>3960: App no autoritzada com mediadora</li>
-<li>3979: Tarjeta identificativa no visible</li>
+<li>3979: Distintius o tarjeta identificativa no visibles</li>
 <li>3980: Tarifes no visibles</li>
 </ul>"
 Revisió taximetre;"<b>CONDICIONS:</b>
