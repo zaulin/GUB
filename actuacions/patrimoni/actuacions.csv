@@ -35,17 +35,17 @@ Patrimoni;Ús de moneda falsa;N01,A108;;A17,I55;"Si el bitllet porta inscripció
 Patrimoni;Estafa;N09;N02,A18;A17;Import defraudat, relació entre les parts, medis emprats per la estafa
 Patrimoni;Estafa +400€;N01;N02,A18;A17 ;Import defraudat, relació entre les parts, medis emprats per la estafa
 Patrimoni;Estafa tajeta bancaria;N01;N02,A18;A17;
-Patrimoni;Receptació lleu;N09,A108;;A17;"La receptació es un delicte contra l'ordre socioeconòmic.
+Patrimoni;Receptació lleu;N09,A108;;A17;"La receptació és un delicte contra l'ordre socioeconòmic.
 
 Requereix l'existència d'un delicte previ contra el patrimoni o l'ordre socioeconòmic.
 
-Si el delicte precedent es lleu, la receptació serà lleu, en cas contrari la receptació es menys greu.
+Si el delicte precedent és lleu, la receptació serà lleu, en cas contrari la receptació és menys greu.
 
-Si la persona que comet la receptació, normalment comprador, no es coneixedor de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original."
-Patrimoni;Receptació menys greu;N01,A108;;A17;"La receptació es un delicte contra l'ordre socioeconòmic.
+Si la persona que comet la receptació, normalment comprador, no coneix de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original."
+Patrimoni;Receptació menys greu;N01,A108;;A17;"La receptació és un delicte contra l'ordre socioeconòmic.
 
 Requereix l'existència d'un delicte previ contra el patrimoni o l'ordre socioeconòmic.
 
-Si el delicte precedent es lleu, la receptació serà lleu, en cas contrari la receptació es menys greu.
+Si el delicte precedent és lleu, la receptació serà lleu, en cas contrari la receptació és menys greu.
 
-Si la persona que comet la receptació, normalment comprador, no es coneixedor de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original."
+Si la persona que comet la receptació, normalment comprador, no coneix de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original."
