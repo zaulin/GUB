@@ -1,7 +1,7 @@
 {
   "decisions" : [
     {
-      "answer" : "PÈRDUA DE VIGÈNCIA PER PÈRDUA TOTAL DE PUNTS (JPT)\n",
+      "answer" : "PÈRDUA DE VIGÈNCIA PER PÈRDUA TOTAL DE PUNTS",
       "decisions": [
         {
           "answer" : "PÈRDUA DE VIGÈNCIA EDICTAL",
@@ -35,7 +35,7 @@
       ]
     },  
     {
-      "answer" : "SUSPENSIÓ PER RESOLUCIÓ JUDICIAL\n",
+      "answer" : "SUSPENSIÓ PER RESOLUCIÓ JUDICIAL",
       "decisions" : [
             {
               "answer" : "CONDUEIX DINS DEL PERÍODE DE SUSPENSIÓ",
