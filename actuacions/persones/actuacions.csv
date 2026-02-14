@@ -1,6 +1,8 @@
 ﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
 Persones;Agresió sexual;N01,A108,N101.bPL;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
+Delicte semipúblic. Pot denunciar MF si la víctima es menor d'edat o vulnerable.
+
 S'ha d'especificar si ha d'existit violència o intimidació.
 
 Trucar a ORD abans de redactar la G30.
@@ -9,6 +11,15 @@ A108 per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
 
 Agreujant:
 Accès carnal"
+Persones;Upskirting;N01,A108,N101.bPL;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
+
+Delicte semipúblic. Pot denunciar MF si la víctima es menor d'edat o vulnerable.
+
+És públic si el comet una autoritat o funcionari públic prevanlent-se del seu càrrec.
+
+Trucar a ORD abans de redactar la G30.
+
+A108 per intervenir objectes que s'hagin fet servir"
 Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
 Requereix denúncia de la víctima.
