@@ -15,8 +15,10 @@ DOSIS SUPERIOR A CONSUM PROPI:
 - Èxtasi: 3g
 - Metamfetamina: 0,7g
 - Pastilles de síntesis: 20 unitats"
-SC;Vermell;N01,A55;;;"Fer copia del requeriment de detenció
-Omplir el llibre de detinguts"
+SC;Vermell;N01,A55;;;"- Fer copia del requeriment de detenció
+- Omplir el llibre de detinguts
+- A la N01 del vermell no s'ha de possar número de diligències
+- Si ha comés altres delicte s'ha de fer una N01 a part"
 SC;Violació domicil (p. física);N01,A108;N02,A18;A17;"Un cohabitant mai pot vulnerar la inviolabilitat del domicili (pot vulnerar el dret a la intimitat).
 
 Es considera domicili a on una persona exerceix la seva llibertat íntima sense estar subjecte als usos i convencions socials. 
@@ -45,3 +47,6 @@ Si l'autor es menor d'edat:
 
 S'ha d'introduir a Galileo i enviar a l'oficina de convivència la denúncia i la G124PL
 S'ha d'enviar còpia de la denúncia (o el número), de la G124PL i de les fotografies al USTO."
+SC;Trencament de condemna;N01,A108;;;"Si el trencament de condemna és d'una persona o lloc:
+- Confirmar que la persona viu al lloc
+- S'ha d'adjuntar captura de google maps calculant la distància en línia recta"
