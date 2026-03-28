@@ -1,5 +1,7 @@
 const version = "0.9";
 const fecha = "23/04/2022";
+const ciudades = ['Barcelona', "Burgos"]
+
 
 function clickBack() {
     window.open('../index.html', "_self")
@@ -86,5 +88,84 @@ function normalice(text){
 function pageonload() {
   //document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
   //esconde();
+  loadCiudades()
   document.getElementById("loading").style.display = "none";
+
+}
+
+function loadCiudades() {
+
+  iIndex = 0
+  var $select = $('#section-dropdown');
+  for (i=0; i<ciudades.length; i++)
+  {
+    ciudad = ciudades[i];
+    $select.append('<a class="elementoLista" onclick="dropdownChange(' + iIndex + ')">' + ciudad + '</a>');    
+    iIndex = iIndex + 1;          
+  }
+
+}
+
+function dropdownChange(iIndex) {
+
+  //plegar y poner el valor
+  $("#selector").click();
+
+  //document.getElementById("labelExtraTitulo").innerText = arraySituacion[iIndexSituacio].situacio;
+  //document.getElementById("labelExtra").innerText = "";
+  //document.getElementById("divExtraInfo").style.display = "none";
+
+  mostrar(iIndex);
+
+}
+
+function mostrar(iIndex) {
+
+  document.getElementById("labelAjuntament").innerText = "Llistat de tarjetes de PMR donades de baixa per: " + ciudades[iIndex];
+
+  // EN LA PRIMERA FILA ESTA LA FECHA!!!
+  document.getElementById("myBody").innerHTML = ""
+
+  ciudad = ciudades[iIndex];
+
+  csvData = [];
+  arrayNumeracion = [];
+  $.ajax({
+      type: "GET",
+      url: ciudad + ".csv",
+      dataType: "text",
+      success: function(res) {
+
+        var count = 0; // cache the running count
+        csvArray = Papa.parse(res).data;
+
+        //console.log(csvArray)
+        //TENEMOS UN ARRAY --> NECESITAMOS UN ARRAY DE OBJETOS!!
+        for (i = 1; i < csvArray.length; i++) {
+          csvData.push({});
+
+
+          for (j = 0; j < 1; j++) {
+            csvData[i - 1][csvArray[0][j]] = csvArray[i][j]
+          }
+
+        }
+
+        for (var i = 0; i < csvData.length; i++) {
+          arrayNumeracion.push(csvData[i][csvArray[0][0]])
+        }
+        
+        var $select = $('#myTable>tbody');
+        
+        //$select.empty();
+        iNum = 0;
+        $.each(arrayNumeracion, function() {
+            $select.append('<tr><td>' + arrayNumeracion[iNum] + '</td></tr>');     
+            iNum = iNum + 1;
+        });
+
+
+      }
+
+    });
 }
