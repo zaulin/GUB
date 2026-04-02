@@ -121,10 +121,14 @@ function dropdownChange(iIndex) {
 
 function mostrar(iIndex) {
 
-  document.getElementById("labelAjuntament").innerText = "Llistat de tarjetes de PMR donades de baixa per: " + ciudades[iIndex];
-
+  document.getElementById("labelIntro").innerText = "Llistat de tarjetes de PMR donades de baixa per: "
+  document.getElementById("labelAjuntament").innerText =  ciudades[iIndex].toUpperCase();
+   
+  
+  
   // EN LA PRIMERA FILA ESTA LA FECHA!!!
   document.getElementById("myBody").innerHTML = ""
+
 
   ciudad = ciudades[iIndex];
 
@@ -138,6 +142,16 @@ function mostrar(iIndex) {
 
         var count = 0; // cache the running count
         csvArray = Papa.parse(res).data;
+
+        //Obtenermos la fecha, si la tiene
+
+        dataAct = csvArray[0][1]
+        console.log(dataAct);
+        if ((dataAct) && (dataAct != "")) {
+          document.getElementById("labelActualitzat").innerHTML = "Actualitzat: <b>" + dataAct + "</b>"
+        } else {
+          document.getElementById("labelActualitzat").innerHTML = ""          
+        }
 
         //console.log(csvArray)
         //TENEMOS UN ARRAY --> NECESITAMOS UN ARRAY DE OBJETOS!!
