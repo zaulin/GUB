@@ -1,44 +1,59 @@
-ï»¿situacio;actes autor;actes perjudicat;actes resta;extra
-Normativa VMP;;;;"<b>CONDICIONS:</b>
+situacio	actes autor	actes perjudicat	actes resta	extra
+Normativa VMP				"<b>CONDICIONS:</b>
 <ul>
 <li>Conductor major de 16 anys.</li>
 <li>Casc.</li>
-<li>Si es de lloguer (activitat econÃ²mica): asseguranÃ§a i registre BSM.</li>
-<li>NomÃ©s una persona.</li>
-<li>Pot portar seient si tÃ© sistema dâ€™auto-equilibrat auxiliar.</li>
-<li>Velocitat mÃ xima: 25 km/h.</li>
-<li>Longitud mÃ xima: 2 m.</li>
-<li>PotÃ¨ncia mÃ xima: 1000 W si no tÃ© sistema dâ€™auto-equilibrat, 2.500 W si en tÃ©.</li>
+<li>Si es de lloguer (activitat econòmica): assegurança i registre BSM.</li>
+<li>Només una persona.</li>
+<li>Pot portar seient si té sistema d’auto-equilibrat auxiliar.</li>
+<li>Velocitat màxima: 25 km/h.</li>
+<li>Longitud màxima: 2 m.</li>
+<li>Potència màxima: 1000 W si no té sistema d’auto-equilibrat, 2.500 W si en té.</li>
 </ul>
 <b>CIRCULAR:</b>
 <ul>
 <li>Vorera: PROHIBIT</li>
-<li>Carrers de mÃ©s de 30: PROHIBIT.</li>
-<li>Sempre en el sentit de la circulaciÃ³</li>
+<li>Carrers de més de 30: PROHIBIT.</li>
+<li>Sempre en el sentit de la circulació</li>
 <li>Carril bici en vorera: Respectar la prioritat dels vianants.</li>
 <li>Carril bici: Donant prioritat als vehicles sense motor.</li>
-<li>Carrers de prioritat invertida: Respectant la prioritat de vianants i bicicletes. MÃ xim 20km/h</li>
-<li>Parcs: MÃ xim 10km/h.</li>
+<li>Carrers de prioritat invertida: Respectant la prioritat de vianants i bicicletes. Màxim 20km/h</li>
+<li>Parcs: Màxim 10km/h.</li>
 </ul>
 
 <b>INFRACCIONS:</b>
+<br><br>
+<b>Vehicle</b>
 <ul>
-<li>1642: No ajustar-se a les caracterÃ­stiques tÃ¨cniques</li>
-<li>1643: PotÃ¨ncia superior a la permesa</li>
-<li>1853: No portar casc</li>
-<li>1724: Circular mÃ©s d'una persona</li>
+<li>1642: No ajustar-se a les característiques tècniques</li>
+<li>1643: Potència superior a la permesa</li>
+<li>1740: Patinet sense il·luminació o acústic</li>
+<li>3113: No exhibir etiqueta identificadora o placa de marcatge</li>
+<li>3114: No inscriure el VMP al registre</li>
+<li>3236: Manca d'assegurança (lleuger)</li>
+<li>3239: Manca d'assegurança</li>
+</ul>
+<br>
+<b>Circulació</b>
+<ul>
 <li>1633-35: Circular en sentit contrari</li>
-<li>1618: Circular utilitzant el mÃ²bil</li>
-<li>1617: Circular amb auriculars</li>
 <li>1595: Circular per carril bici a velocitat inadequada</li>
 <li>1300: Circular de manera negligent</li>
 <li>1632: Circular de manera temeraria</li>
 <li>1647: Circular per vies prohibides</li>
 <li>1648: Circular per vorera</li>
+</ul>
+<br>
+<b>Ocupants</b>
+<ul>
+<li>1853: No portar casc</li>
+<li>1724: Circular més d'una persona</li>
+<li>1618: Circular utilitzant el mòbil</li>
+<li>1617: Circular amb auriculars</li>
 <li>1730: Conductor <16 anys</li>
-<li>1738: No baixar en aglomeraciÃ³ en calÃ§ada Ãºnica</li>
+<li>1738: No baixar en aglomeració en calçada única</li>
 </ul>"
-Normativa Bicicleta;;;;"<b>CONDICIONS:</b>
+Normativa Bicicleta				"<b>CONDICIONS:</b>
 <ul>
 <li>Pedaleig assistit de fins a 25 km/h.</li>
 <li>Han de dur timbre, llums i reflectants.</li>
@@ -46,55 +61,55 @@ Normativa Bicicleta;;;;"<b>CONDICIONS:</b>
 </ul>
 <b>CIRCULAR:</b>
 <ul>
-<li>Prohibit circular a menys d'1m de faÃ§anes</li>
+<li>Prohibit circular a menys d'1m de façanes</li>
 <li>Vorera:</li>
 <ul>
-<li>Menors de 12 anys amb la persona que ostenti la seva guarda a un mÃ xim de 10km/h.</li>
-<li>Quan no existeixi carril bici i la vorera sigui de >5m (4,75m de 22h a 7h) i deixant 3m dâ€™espai lliure.</li>
+<li>Menors de 12 anys amb la persona que ostenti la seva guarda a un màxim de 10km/h.</li>
+<li>Quan no existeixi carril bici i la vorera sigui de >5m (4,75m de 22h a 7h) i deixant 3m d’espai lliure.</li>
 <li>Respectant la prioritat dels vianants</li>
 </ul>
 <li>Carril bici en vorera: Ha de respectar la prioritat dels vianants.</li>
 <li>Carril bici: Te prioritat sobre vehicles a motor.</li>
 <li>Carrers de prioritat invertida: En qualsevol sentit i respectant la prioritat de vianants.</li>
-<li>CirculaciÃ³ en calÃ§ada pel carril mÃ©s proper a la vorera.</li>
+<li>Circulació en calçada pel carril més proper a la vorera.</li>
 </ul>
 <b>ESTACIONAMENT:</b>
 <ul>
-<li>No es poden lligar a mobiliari urbÃ .</li>
+<li>No es poden lligar a mobiliari urbà.</li>
 </ul>"
-Normativa Bicicleta elÃ¨ctrica;;;;"<b>Pedaleig assistit:</b>
+Normativa Bicicleta elèctrica				"<b>Pedaleig assistit:</b>
 <ul>
-<li>Si s'atura als 25 km/h i potÃ¨ncia <250W: EPAC</li>
-<li>Si sâ€™atura als 25 km/h i potÃ¨ncia >250W i <1.000W: Cicle a motor (L1e-A)</li>
+<li>Si s'atura als 25 km/h i potència <250W: EPAC</li>
+<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
 <li>La resta: Ciclomotor (L1e-B)</li>
-<li>EN 15194 2018: Es permet assistÃ¨ncia en l'arrancada (accelerador de fins a 6 Km/h)</li>
+<li>EN 15194 2018: Es permet assistència en l'arrancada (accelerador de fins a 6 Km/h)</li>
 </ul>
 <b>Disposa d'accelerador:</b>
 <ul>
-<li>Si sâ€™atura als 25 km/h i potÃ¨ncia >250W i <1.000W: Cicle a motor (L1e-A)</li>
+<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
 <li>La resta: Ciclomotor (L1e-B)</li>
 </ul>
 <b>EPAC:</b> Ha d'estar homologada<br>
-<b>Resta:</b> Ha de tenir PNC, PC, matrÃ­cula, circular amb casc, asseguranÃ§a, ...
+<b>Resta:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ...
 
 <br><br>
-<b>ACTUACIÃ“:</b>
+<b>ACTUACIÓ:</b>
 <ul>
 <li><b>Cicle a motor (L1e-A):</b></li>
 <ul>
 <li><b>DENUNCIES:</b></li>
 <ul>
-<li>3051: No haver obtingut el corresponent permÃ­s de circulaciÃ³.</li>
-<li>3052: No haver obtingut el certificat de caracterÃ­stica tÃ¨cnica.</li>
+<li>3051: No haver obtingut el corresponent permís de circulació.</li>
+<li>3052: No haver obtingut el certificat de característica tècnica.</li>
 <li>3231: No haver concertat el segur obligatori del vehicle.</li>
-<li>1402: No utilitzar el conductor casc de protecciÃ³ circulant.</li>
+<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
 </ul>
 
 <li><b>ACTES:</b></li>
 <ul>
-<li>A13PL: A disposiciÃ³ del titular.</li>
+<li>A13PL: A disposició del titular.</li>
 <li>Informe annex.</li>
-<li>Reportatge fotogrÃ fic.</li>
+<li>Reportatge fotogràfic.</li>
 </ul>
 </ul>
 <br>
@@ -102,27 +117,27 @@ Normativa Bicicleta elÃ¨ctrica;;;;"<b>Pedaleig assistit:</b>
 <ul>
 <li><b>DENUNCIES:</b></li>
 <ul>
-<li>3051: No haver obtingut el corresponent permÃ­s de circulaciÃ³.</li>
-<li>3052: No haver obtingut el certificat de caracterÃ­stica tÃ¨cnica.</li>
+<li>3051: No haver obtingut el corresponent permís de circulació.</li>
+<li>3052: No haver obtingut el certificat de característica tècnica.</li>
 <li>3231/3232: No haver concertat el segur obligatori del vehicle.</li>
-<li>3152/3153: Falta permÃ­s de conduir.</li>
-<li>1402: No utilitzar el conductor casc de protecciÃ³ circulant.</li>
+<li>3152/3153: Falta permís de conduir.</li>
+<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
 </ul>
 
 <li><b>ACTES:</b></li>
 <ul>
-<li>A13PL: A disposiciÃ³ del titular.</li>
+<li>A13PL: A disposició del titular.</li>
 <li>Informe annex.</li>
-<li>Reportatge fotogrÃ fic.</li>
+<li>Reportatge fotogràfic.</li>
 </ul>
 
 <li><b>DELICTE:</b></li>
 <ul>
-<li>No haver obtingut mai el permÃ­s de conduir.</li>
+<li>No haver obtingut mai el permís de conduir.</li>
 </ul>
 
 </ul>"
-AlcoholÃ¨mia admin;T101,A13;;;"<b>TAXES:</b>
+Alcoholèmia admin	T101,A13			"<b>TAXES:</b>
 <ul>
 <li>Menor d'edat: 0,0 mg/l</li>
 <li>Professional/novell: 0,15 mg/l (0,19 mg/l)</li>
@@ -136,17 +151,17 @@ AlcoholÃ¨mia admin;T101,A13;;;"<b>TAXES:</b>
 <li>3283: >0,25 qualsevol conductor</li>
 <li>3289: >0,50 qualsevol conductor</li>
 </ul>"
-Negativa proves alcohol/drogues;A13;;;"S'han de fer les sancions administratives:
+Negativa proves alcohol/drogues	A13			"S'han de fer les sancions administratives:
 <br><br>
 <b>INFRACCIONS:</b>
 <ul>
 <li>3294: Negativa alcohol</li>
 <li>3301: Negativa drogues</li>
 </ul>"
-VMP Activitat econÃ²mica;A13;;;"Qualsevol de les denÃºncies comporta l'ingrÃ©s.
+VMP Activitat econòmica	A13			"Qualsevol de les denúncies comporta l'ingrés.
 <br><br>
 <b>INFRACCIONS:</b>
 <ul>
 <li>1757: Manca de registre</li>
-<li>1758: Manca dâ€™asseguranÃ§a</li>
+<li>1758: Manca d’assegurança</li>
 </ul>"
