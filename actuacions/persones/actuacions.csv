@@ -24,7 +24,8 @@ Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"A la persona que se l
 
 Requereix denúncia de la víctima.
 
-Si són denúncies creuades també és JIDL i es recullen dues A18PL"
+Si són denúncies creuades també és JIDL i es recullen dues A18PL.
+Si són creuades amb lesions lleus també és JIDL."
 Persones;Amenaces lleus;N09,A108;N02,A18;A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
 Requereix denúncia de la víctima
@@ -42,6 +43,7 @@ Persones;Lesions;N01,A108;N02,A18;A17;"A108PL per intervenir objectes que s'hagi
 
 A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18."
 Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;"Si són creuades no es fa JIDL.
+Si són creuades amb maltractament d'obra és JIDL.
 
 A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
 
