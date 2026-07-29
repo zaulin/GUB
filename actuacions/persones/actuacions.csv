@@ -1,50 +1,147 @@
 ﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
-Persones;Agresió sexual;N01,A108,N101.bPL;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-Delicte semipúblic. Pot denunciar MF si la víctima es menor d'edat o vulnerable.
-
-S'ha d'especificar si ha d'existit violència o intimidació.
-
-Trucar a ORD abans de redactar la G30.
-
-A108 per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
-
-Agreujant:
-Accès carnal"
-Persones;Upskirting;N01,A108,N101.bPL;N02,A18;G30,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-Delicte semipúblic. Pot denunciar MF si la víctima es menor d'edat o vulnerable.
-
-És públic si el comet una autoritat o funcionari públic prevanlent-se del seu càrrec.
-
-Trucar a ORD abans de redactar la G30.
-
-A108 per intervenir objectes que s'hagin fet servir"
-Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-Requereix denúncia de la víctima.
-
-Si són denúncies creuades també és JIDL i es recullen dues A18PL.
-Si són creuades amb lesions lleus també és JIDL."
-Persones;Amenaces lleus;N09,A108;N02,A18;A17;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-Requereix denúncia de la víctima
-Amb o sense armes (si hi ha arma s'intervé amb A108PL)"
-Persones;Amenaces;N09,A108;N02,A18;A17,G30;"A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.
-
-En ViGe és amb o sense arma
-En ViDo és AMB arma (sense arma es delicte lleu)
-
-L'amenaça ha de ser directe i creïble
-La diferència amb el delicte lleu es la por que es produeix en la víctima"
-Persones;Lesions;N01,A108;N02,A18;A17;"A108PL per intervenir objectes que s'hagin fet servir a l'agresió.
-
-A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18."
-Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;"Si són creuades no es fa JIDL.
-Si són creuades amb maltractament d'obra és JIDL.
-
-A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.
-
-A108PL per intervenir objectes que s'hagin fet servir a l'agresió"
+Persones;Agresió sexual;N01,A108,N101.bPL;N02,A18;G30,A17;"<ul>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+<li>Delicte semipúblic. Pot denunciar MF si la víctima es menor d'edat o vulnerable.</li>
+<li>S'ha d'especificar si ha existit violència o intimidació.</li>
+<li>Trucar a ORD abans de redactar la G30.</li>
+<li>A108 per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.</li>
+<li>Agreujant: Accès carnal.</li>
+</ul>"
+Persones;Amenaces;N09,A108;N02,A18;A17,G30;"<ul>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+<li>A108PL per intervenir objectes que s'hagin fet servir a l'agresió/intimidació.</li>
+<li>En ViGe és amb o sense arma.</li>
+<li>En ViDo és AMB arma (sense arma es delicte lleu).</li>
+<li>L'amenaça ha de ser directe i creïble.</li>
+<li>La diferència amb el delicte lleu es la por que es produeix en la víctima.</li>
+</ul>"
+Persones;Amenaces lleus;N09,A108;N02,A18;A17;"<ul>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+<li>Requereix denúncia de la víctima.</li>
+<li>Amb o sense armes (si hi ha arma s'intervé amb A108PL).</li>
+</ul>
+És <b>JIDL</b> si:
+<ul>
+<li>Lesions lleus (quan són creuades es ordinari)</li>
+<li>Maltractament d’obra</li>
+<li>Furt lleu</li>
+</ul>
+<b>També és JIDL</b> si qualsevol dels anteriors es connex amb els de la pròpia llista o amb:
+<ul>
+<li>Danys lleus</li>
+<li>Coaccions lleus</li>
+<li>Amenaces lleus</li>
+</ul>
+<b>ATENCIÓ:</b> Amenaces o coaccions + furt NO és connex, el furt passaria a ser un robatori amb intimidació.
+<br><br>
+Furt lleu + apropació indeguda: es fan per separat.
+<br><br>
+<b>NO</b> es fa JIDL:
+<ul>
+<li>Si TOTS els autors són menors NO és JIDL</li>
+<li>Vermell per ingrès a prisió</li>
+<li>Si almenys una víctima es menor i té ús de raó per anar a judici</li>
+</ul>
+<b>SI</b> es fa JIDL:
+<ul>
+<li>Vermell per personació</li>
+<li>Si es d’una unitat centralitzada</li>
+<li>Si es deté per falta de filiació (seguir les indicacions d’URIA)</li>
+<li>Si els autors són majors i menors. En aquest cas:</li>
+<ul>
+<li>A les diligències al menor se li dona el rol d’identificat</li>
+<li>Al menor no se li fa N09PL ni N10PL</li>
+<li>S’envia còpia a Fiscalia de menors</li>
+</ul>
+</ul>"
+Persones;Lesions;N01,A108;N02,A18;A17;"<ul>
+<li>A108PL per intervenir objectes que s'hagin fet servir a l'agresió.</li>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+</ul>"
+Persones;Lesions lleus;N09,N10;N02,A18,N10;N10,A17;"<ul>
+<li>Si són creuades no es fa JIDL.</li>
+<li>Si són creuades amb maltractament d'obra és JIDL.</li>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+<li>A108PL per intervenir objectes que s'hagin fet servir a l'agresió.</li>
+</ul>
+És <b>JIDL</b> si:
+<ul>
+<li>Lesions lleus (quan són creuades es ordinari)</li>
+<li>Maltractament d’obra</li>
+<li>Furt lleu</li>
+</ul>
+<b>També és JIDL</b> si qualsevol dels anteriors es connex amb els de la pròpia llista o amb:
+<ul>
+<li>Danys lleus</li>
+<li>Coaccions lleus</li>
+<li>Amenaces lleus</li>
+</ul>
+<b>ATENCIÓ:</b> Amenaces o coaccions + furt NO és connex, el furt passaria a ser un robatori amb intimidació.
+<br><br>
+Furt lleu + apropació indeguda: es fan per separat.
+<br><br>
+<b>NO</b> es fa JIDL:
+<ul>
+<li>Si TOTS els autors són menors NO és JIDL</li>
+<li>Vermell per ingrès a prisió</li>
+<li>Si almenys una víctima es menor i té ús de raó per anar a judici</li>
+</ul>
+<b>SI</b> es fa JIDL:
+<ul>
+<li>Vermell per personació</li>
+<li>Si es d’una unitat centralitzada</li>
+<li>Si es deté per falta de filiació (seguir les indicacions d’URIA)</li>
+<li>Si els autors són majors i menors. En aquest cas:</li>
+<ul>
+<li>A les diligències al menor se li dona el rol d’identificat</li>
+<li>Al menor no se li fa N09PL ni N10PL</li>
+<li>S’envia còpia a Fiscalia de menors</li>
+</ul>
+</ul>"
+Persones;Maltractament d'obra;N09,N10;N02,A18,N10;N10,A17;"<ul>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+<li>Requereix denúncia de la víctima.</li>
+<li>Si són denúncies creuades també és JIDL i es recullen dues A18PL.</li>
+<li>Si són creuades amb lesions lleus també és JIDL.</li>
+</ul>
+És <b>JIDL</b> si:
+<ul>
+<li>Lesions lleus (quan són creuades es ordinari)</li>
+<li>Maltractament d’obra</li>
+<li>Furt lleu</li>
+</ul>
+<b>També és JIDL</b> si qualsevol dels anteriors es connex amb els de la pròpia llista o amb:
+<ul>
+<li>Danys lleus</li>
+<li>Coaccions lleus</li>
+<li>Amenaces lleus</li>
+</ul>
+<b>ATENCIÓ:</b> Amenaces o coaccions + furt NO és connex, el furt passaria a ser un robatori amb intimidació.
+<br><br>
+Furt lleu + apropació indeguda: es fan per separat.
+<br><br>
+<b>NO</b> es fa JIDL:
+<ul>
+<li>Si TOTS els autors són menors NO és JIDL</li>
+<li>Vermell per ingrès a prisió</li>
+<li>Si almenys una víctima es menor i té ús de raó per anar a judici</li>
+</ul>
+<b>SI</b> es fa JIDL:
+<ul>
+<li>Vermell per personació</li>
+<li>Si es d’una unitat centralitzada</li>
+<li>Si es deté per falta de filiació (seguir les indicacions d’URIA)</li>
+<li>Si els autors són majors i menors. En aquest cas:</li>
+<ul>
+<li>A les diligències al menor se li dona el rol d’identificat</li>
+<li>Al menor no se li fa N09PL ni N10PL</li>
+<li>S’envia còpia a Fiscalia de menors</li>
+</ul>
+</ul>"
+Persones;Upskirting;N01,A108,N101.bPL;N02,A18;G30,A17;"<ul>
+<li>A la persona que se li fa N01 o N08 no se li pot fer A17 ni A18.</li>
+<li>Delicte semipúblic. Pot denunciar MF si la víctima es menor d'edat o vulnerable.</li>
+<li>És públic si el comet una autoritat o funcionari públic prevanlent-se del seu càrrec.</li>
+<li>Trucar a ORD abans de redactar la G30.</li>
+<li>A108 per intervenir objectes que s'hagin fet servir.</li>
+</ul>"
