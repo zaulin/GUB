@@ -1,51 +1,124 @@
 ﻿grup;situacio;actes autor;actes perjudicat;actes resta;extra
-Patrimoni;Robatori amb força;N01,A108;N02,A56,A18;A31,A33,A17;Es considera també robatori amb força si la força s'exerceix per abandonar el lloc
-Patrimoni;Robatori amb violència;N01,A108;N02,A56,A18;A17;Es considera també robatori amb violència si la violència s'exerceix per abandonar el lloc
-Patrimoni;Usurpació (okupes);N09;N02,A18;G133,A31,A17;"Si es tracta d'un edifici públic: GUB - UI
-Si es tracta d'un edifici privat: CME"
-Patrimoni;Furt;N09,N10,A108;A18,N02,A56,N10;N10,A17;Si es a establiment: adjuntar el tiquet de caixa (A57PL)
-Patrimoni;Furt +400€;N01,A108;N02,A56,A18;A17;"Si es a establiment: adjuntar el tiquet de caixa (A57PL)
-
-Agreujants:
-
-- Furtar cables amb greu perjudici
-- Productes agraris amb greu perjudici
-- Valor artístic/històric
-- Objectes de 1ª necesitat (desabastiment)
-- Desamparament de la víctima
-- Aprofitant-se d'un accident
-- Fer servir menors"
-Patrimoni;Furt a establiment;N09,N10,A108;A18,N02,A56,A57,N10;N10,D24,A17,G31,D24;"- Adjuntar el tiquet de caixa a l'A57PL.
-- Si es fa G31PL no cal fer A18PL i la G31PL substitueix la minuta.
-- Només fer la D24PL si l'autor ha estat aturat per un vigilant o ciutadà i la patrulla només fa les actes.
-- Si el vigilant signa la D24PL no cal A17PL signada pel mateix.
-- Els empleats de la tenda són testimonis: A17PL."
-Patrimoni;Furt a transport públic;N09,N10,A108;A18,N02,A56,N10;N10,A17,D30;
 Patrimoni;Apropiació indeguda;N09,A108;N02,A56;;"Si l'autor s'ha trobat l'objecte sempre serà un delicte lleu independentment del valor de l'objecte.
-
+<br><br>
 L'apropiació indeguda d'un vehicle la comet el que signa el contracte, no el conductor."
 Patrimoni;Apropiació indeguda +400€;N01,A108;N02,A56;;"Si l'autor s'ha trobat l'objecte sempre serà un delicte lleu independentment del valor de l'objecte.
-
+<br><br>
 L'apropiació indeguda d'un vehicle la comet el que signa el contracte, no el conductor."
-Patrimoni;Robatori/furt ús de vehícle;N08,A108;N02,A18;A33;Ingresar el vehícle a disposició judicial.
+Patrimoni;Danys;N09,A108;N02,A18;A17,A33,A31;"S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
+<br><br>
+És <b>JIDL</b> si:
+<ul>
+<li>Lesions lleus (quan són creuades es ordinari)</li>
+<li>Maltractament d’obra</li>
+<li>Furt lleu</li>
+</ul>
+<b>També és JIDL</b> si qualsevol dels anteriors es connex amb els de la pròpia llista o amb:
+<ul>
+<li>Danys lleus</li>
+<li>Coaccions lleus</li>
+<li>Amenaces lleus</li>
+</ul>
+<b>ATENCIÓ:</b> Amenaces o coaccions + furt NO és connex, el furt passaria a ser un robatori amb intimidació.
+<br><br>
+Furt lleu + apropació indeguda: es fan per separat.
+<br><br>
+<b>NO</b> es fa JIDL:
+<ul>
+<li>Si TOTS els autors són menors NO és JIDL</li>
+<li>Vermell per ingrès a prisió</li>
+<li>Si almenys una víctima es menor i té ús de raó per anar a judici</li>
+</ul>
+<b>SI</b> es fa JIDL:
+<ul>
+<li>Vermell per personació</li>
+<li>Si es d’una unitat centralitzada</li>
+<li>Si es deté per falta de filiació (seguir les indicacions d’URIA)</li>
+<li>Si els autors són majors i menors. En aquest cas:</li>
+<ul>
+<li>A les diligències al menor se li dona el rol d’identificat</li>
+<li>Al menor no se li fa N09PL ni N10PL</li>
+<li>S’envia còpia a Fiscalia de menors</li>
+</ul>
+</ul>"
 Patrimoni;Danys +400€;N01,A108;N02,A18;A17,A33,A31;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
-Patrimoni;Danys;N09,A108;N02,A18;A17,A33,A31;S'ha de fer reportatge fotogràfic, és un requisit dir el valor dels danys, fer totes les gestions possibles per trobar a la víctima.
-Patrimoni;Ús de moneda falsa +400€;N09,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
-Patrimoni;Ús de moneda falsa;N01,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
 Patrimoni;Estafa;N09;N02,A18;A17;Import defraudat, relació entre les parts, medis emprats per la estafa
 Patrimoni;Estafa +400€;N01;N02,A18;A17 ;Import defraudat, relació entre les parts, medis emprats per la estafa
 Patrimoni;Estafa tajeta bancaria;N01;N02,A18;A17;
-Patrimoni;Receptació lleu;N09,A108;;A17;"La receptació és un delicte contra l'ordre socioeconòmic.
-
-Requereix l'existència d'un delicte previ contra el patrimoni o l'ordre socioeconòmic.
-
-Si el delicte precedent és lleu, la receptació serà lleu, en cas contrari la receptació és menys greu.
-
-Si la persona que comet la receptació, normalment comprador, no coneix de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original."
-Patrimoni;Receptació menys greu;N01,A108;;A17;"La receptació és un delicte contra l'ordre socioeconòmic.
-
-Requereix l'existència d'un delicte previ contra el patrimoni o l'ordre socioeconòmic.
-
-Si el delicte precedent és lleu, la receptació serà lleu, en cas contrari la receptació és menys greu.
-
-Si la persona que comet la receptació, normalment comprador, no coneix de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original."
+Patrimoni;Furt;N09,N10,A108;A18,N02,A56,N10;N10,A17;"Si es a establiment: adjuntar el tiquet de caixa (A57PL)<br><br>
+És <b>JIDL</b> si:
+<ul>
+<li>Lesions lleus (quan són creuades es ordinari)</li>
+<li>Maltractament d’obra</li>
+<li>Furt lleu</li>
+</ul>
+<b>També és JIDL</b> si qualsevol dels anteriors es connex amb els de la pròpia llista o amb:
+<ul>
+<li>Danys lleus</li>
+<li>Coaccions lleus</li>
+<li>Amenaces lleus</li>
+</ul>
+<b>ATENCIÓ:</b> Amenaces o coaccions + furt NO és connex, el furt passaria a ser un robatori amb intimidació.
+<br><br>
+Furt lleu + apropació indeguda: es fan per separat.
+<br><br>
+<b>NO</b> es fa JIDL:
+<ul>
+<li>Si TOTS els autors són menors NO és JIDL</li>
+<li>Vermell per ingrès a prisió</li>
+<li>Si almenys una víctima es menor i té ús de raó per anar a judici</li>
+</ul>
+<b>SI</b> es fa JIDL:
+<ul>
+<li>Vermell per personació</li>
+<li>Si es d’una unitat centralitzada</li>
+<li>Si es deté per falta de filiació (seguir les indicacions d’URIA)</li>
+<li>Si els autors són majors i menors. En aquest cas:</li>
+<ul>
+<li>A les diligències al menor se li dona el rol d’identificat</li>
+<li>Al menor no se li fa N09PL ni N10PL</li>
+<li>S’envia còpia a Fiscalia de menors</li>
+</ul>
+</ul>"
+Patrimoni;Furt +400€;N01,A108;N02,A56,A18;A17;"Si es a establiment: adjuntar el tiquet de caixa (A57PL)
+<br><br>
+Agreujants:
+<ul>
+<li>Dispositius electrònics amb informació personal</li>
+<li>Furtar cables amb greu perjudici</li>
+<li>Productes agraris amb greu perjudici</li>
+<li>Valor artístic/històric</li>
+<li>Objectes de 1ª necesitat (desabastiment)</li>
+<li>Desamparament de la víctima</li>
+<li>Aprofitant-se d'un accident</li>
+<li>Fer servir menors</li>
+</ul>"
+Patrimoni;Furt a establiment;N09,N10,A108;A18,N02,A56,A57,N10;N10,D24,A17,G31,D24;"<ul>
+<li>Adjuntar el tiquet de caixa a l'A57PL.</li>
+<li>Si es fa G31PL no cal fer A18PL i la G31PL substitueix la minuta.</li>
+<li>Només fer la D24PL si l'autor ha estat aturat per un vigilant o ciutadà i la patrulla només fa les actes.</li>
+<li>Si el vigilant signa la D24PL no cal A17PL signada pel mateix.</li>
+<li>Els empleats de la tenda són testimonis: A17PL.</li>
+</ul>"
+Patrimoni;Furt a transport públic;N09,N10,A108;A18,N02,A56,N10;N10,A17,D30;
+Patrimoni;Receptació lleu;N09,A108;;A17;"<ul>
+<li>La receptació és un delicte contra l'ordre socioeconòmic.</li>
+<li>Requereix l'existència d'un delicte previ contra el patrimoni o l'ordre socioeconòmic.</li>
+<li>Si el delicte precedent és lleu, la receptació serà lleu, en cas contrari la receptació és menys greu.</li>
+<li>Si la persona que comet la receptació, normalment comprador, no coneix de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original.</li>
+</ul>"
+Patrimoni;Receptació menys greu;N01,A108;;A17;"<ul>
+<li>La receptació és un delicte contra l'ordre socioeconòmic.</li>
+<li>Requereix l'existència d'un delicte previ contra el patrimoni o l'ordre socioeconòmic.</li>
+<li>Si el delicte precedent és lleu, la receptació serà lleu, en cas contrari la receptació és menys greu.</li>
+<li>Si la persona que comet la receptació, normalment comprador, no coneix de la possible procedència il·licta de l'objecte no se li pot imputar un delicte (""sin dolo no hay delito""). En aquest cas s'intervé l'objecte amb A10 i es fan diligències vinculades al delicte original.</li>
+</ul>"
+Patrimoni;Robatori amb força;N01,A108;N02,A56,A18;A31,A33,A17;Es considera també robatori amb força si la força s'exerceix per abandonar el lloc
+Patrimoni;Robatori amb violència;N01,A108;N02,A56,A18;A17;Es considera també robatori amb violència si la violència s'exerceix per abandonar el lloc
+Patrimoni;Robatori/furt ús de vehícle;N08,A108;N02,A18;A33;Ingresar el vehícle a disposició judicial.
+Patrimoni;Ús de moneda falsa;N01,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
+Patrimoni;Ús de moneda falsa +400€;N09,A108;;A17,I55;"Si el bitllet porta inscripció: ""Specimen"",""facsímil"" o similar valorar tipificar delicte d'estafa."
+Patrimoni;Usurpació (okupes);N09;N02,A18;G133,A31,A17;"<ul>
+<li>Si es tracta d'un edifici públic: GUB - UI</li>
+<li>Si es tracta d'un edifici privat: CME</li>
+</ul>"
