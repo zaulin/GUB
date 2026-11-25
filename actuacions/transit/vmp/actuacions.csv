@@ -1,21 +1,48 @@
 ﻿situacio;actes autor;actes perjudicat;actes resta;extra
-Normativa VMP;;;;"<b>CONDICIONS:</b>
+Documentació;;;;"<b>DEFINICIONS:</b>
 <ul>
-<li>Conductor major de 16 anys</li>
-<li>Casc</li>
-<li>Assegurança</li>
-<li>Inscrit al registre</li>
-<li>Etiqueta identificadora (matrícula)</li>
-<li>Certificat característiques tècniques (posteriors 22/1/24)</li>
-<li>Etiqueta de marcatge (posteriors 22/1/24)</li>
-<li>Si es de lloguer (activitat econòmica): Registre BSM</li>
-<li>Només una persona</li>
-<li>Pot portar seient si té sistema d'auto-equilibrat auxiliar</li>
-<li>Velocitat màxima: 25 km/h</li>
-<li>Longitud màxima: 2 m</li>
-<li>PotËncia màxima: 1000 W si no té sistema d'auto-equilibrat, 2.500 W si en té</li>
+<li>VMP: >25 kg i <=25 km/h</li>
+<li>VPL: <=25 kg i <=25 km/h o >25 kg i <=14 km/h</li>
+<li>El pes és en buit (sense bateria)</li>
+<li>La majoria dels VMP són VLP (important per la prelació de denúncies)</li>
 </ul>
-<b>CIRCULAR:</b>
+<b>DOCUMENTACIÓ:</b>
+<ul>
+<li>Certificat tècnic (posteriors al 22/1/2024)</li>
+<li>Inscripció al registre</li>
+<li>Etiqueta identificativa (matrícula)</li>
+<li>Assegurança</li>
+<li>Placa de fabricant (posteriors al 22/1/2024)</li>
+</ul>
+<b>DENÚNCIES:</b>
+<ul>
+<li>Encara no disponible: No tenir el certificat tècnic</li>
+<li>3114: No inscriure el VMP al registre</li>
+<li>3113: No exhibir matrícula o placa de fabricant</li>
+<li>3236: Manca d'assegurança VPL</li>
+<li>3239: Manca d'assegurança VMP</li>
+</ul>
+<b>PRELACIÓ VPL (només una, per ordre):</b>
+<ul>
+<li>1. No tenir el certificat tècnic (posteriors a 22/1/2024)</li>
+<li>2. No inscriure el VMP al registre</li>
+<li>3. No exhibir matrícula</li>
+<li>4. No tenir assegurança</li>
+</ul>
+
+<b>PRELACIÓ VMP (només una, per ordre):</b>
+<ul>
+<li>1. No tenir el certificat tècnic (posteriors a 22/1/2024)</li>
+<li>2. No inscriure el VMP al registre</li>
+<li>3. No exhibir matrícula</li>
+</ul>
+
+<b>Es denuncia sempre:</b>
+<ul>
+<li>No tenir placa de fabricant (posteriors a 22/1/2024)</li>
+<li>VMP (>25kg) sense assegurança</li>
+</ul>"
+Normativa;;;;"<b>CIRCULAR:</b>
 <ul>
 <li>Vorera: PROHIBIT</li>
 <li>Carrers de més de 30: PROHIBIT</li>
@@ -25,21 +52,11 @@ Normativa VMP;;;;"<b>CONDICIONS:</b>
 <li>Carrers de prioritat invertida: Respectant la prioritat de vianants i bicicletes. Màxim 20km/h</li>
 <li>Parcs: Màxim 10km/h</li>
 </ul>
-
 <b>INFRACCIONS:</b>
 <br><br>
-<b>Vehicle</b>
-<ul>
-<li>1642: No ajustar-se a les característiques tècniques</li>
-<li>1643: Potència superior a la permesa</li>
-<li>1740: Patinet sense il·luminació o acústic</li>
-<li>3113: No exhibir etiqueta identificadora (matrícula) o placa de marcatge</li>
-<li>3114: No inscriure el VMP al registre</li>
-<li>3236: Manca d'assegurança (lleuger)</li>
-<li>3239: Manca d'assegurança</li>
-</ul>
 <b>Circulació</b>
 <ul>
+<li>1632: Circular de manera manifestament temerària</li>
 <li>1633-35: Circular en sentit contrari</li>
 <li>1595: Circular per carril bici a velocitat inadequada</li>
 <li>1300: Circular de manera negligent</li>
@@ -49,96 +66,12 @@ Normativa VMP;;;;"<b>CONDICIONS:</b>
 </ul>
 <b>Ocupants</b>
 <ul>
-<li>1853: No portar casc</li>
+<li>1855: No portar casc homologat</li>
 <li>1724: Circular més d'una persona</li>
 <li>1618: Circular utilitzant el mòbil</li>
 <li>1617: Circular amb auriculars</li>
-<li>1730: Conductor <16 anys</li>
+<li>1799: Conductor <15 anys</li>
 <li>1738: No baixar en aglomeració en calçada única</li>
-</ul>"
-Normativa Bicicleta;;;;"<b>CONDICIONS:</b>
-<ul>
-<li>Pedaleig assistit de fins a 25 km/h.</li>
-<li>Han de dur timbre, llums i reflectants.</li>
-<li>Menors de 16 anys han de dur casc.</li>
-</ul>
-<b>CIRCULAR:</b>
-<ul>
-<li>Prohibit circular a menys d'1m de façanes</li>
-<li>Vorera:</li>
-<ul>
-<li>Menors de 12 anys amb la persona que ostenti la seva guarda a un màxim de 10km/h.</li>
-<li>Quan no existeixi carril bici i la vorera sigui de >5m (4,75m de 22h a 7h) i deixant 3m d’espai lliure.</li>
-<li>Respectant la prioritat dels vianants</li>
-</ul>
-<li>Carril bici en vorera: Ha de respectar la prioritat dels vianants.</li>
-<li>Carril bici: Te prioritat sobre vehicles a motor.</li>
-<li>Carrers de prioritat invertida: En qualsevol sentit i respectant la prioritat de vianants.</li>
-<li>Circulació en calçada pel carril més proper a la vorera.</li>
-</ul>
-<b>ESTACIONAMENT:</b>
-<ul>
-<li>No es poden lligar a mobiliari urbà.</li>
-</ul>"
-Normativa Bicicleta elèctrica;;;;"<b>Pedaleig assistit:</b>
-<ul>
-<li>Si s'atura als 25 km/h i potència <250W: EPAC</li>
-<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
-<li>La resta: Ciclomotor (L1e-B)</li>
-<li>EN 15194 2018: Es permet assistència en l'arrancada (accelerador de fins a 6 Km/h)</li>
-</ul>
-<b>Disposa d'accelerador:</b>
-<ul>
-<li>Si s’atura als 25 km/h i potència >250W i <1.000W: Cicle a motor (L1e-A)</li>
-<li>La resta: Ciclomotor (L1e-B)</li>
-</ul>
-<b>EPAC:</b> Ha d'estar homologada<br>
-<b>Resta:</b> Ha de tenir PNC, PC, matrícula, circular amb casc, assegurança, ...
-
-<br><br>
-<b>ACTUACIÓ:</b>
-<ul>
-<li><b>Cicle a motor (L1e-A):</b></li>
-<ul>
-<li><b>DENUNCIES:</b></li>
-<ul>
-<li>3051: No haver obtingut el corresponent permís de circulació.</li>
-<li>3052: No haver obtingut el certificat de característica tècnica.</li>
-<li>3231: No haver concertat el segur obligatori del vehicle.</li>
-<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
-</ul>
-
-<li><b>ACTES:</b></li>
-<ul>
-<li>A13PL: A disposició del titular.</li>
-<li>Informe annex.</li>
-<li>Reportatge fotogràfic.</li>
-</ul>
-</ul>
-<br>
-<li><b>Ciclomotor (L1e-B):</b></li>
-<ul>
-<li><b>DENUNCIES:</b></li>
-<ul>
-<li>3051: No haver obtingut el corresponent permís de circulació.</li>
-<li>3052: No haver obtingut el certificat de característica tècnica.</li>
-<li>3231/3232: No haver concertat el segur obligatori del vehicle.</li>
-<li>3152/3153: Falta permís de conduir.</li>
-<li>1402: No utilitzar el conductor casc de protecció circulant.</li>
-</ul>
-
-<li><b>ACTES:</b></li>
-<ul>
-<li>A13PL: A disposició del titular.</li>
-<li>Informe annex.</li>
-<li>Reportatge fotogràfic.</li>
-</ul>
-
-<li><b>DELICTE:</b></li>
-<ul>
-<li>No haver obtingut mai el permís de conduir.</li>
-</ul>
-
 </ul>"
 Alcoholèmia admin;T101,A13;;;"<b>TAXES:</b>
 <ul>
