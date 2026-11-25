@@ -65,6 +65,13 @@ function clickIngres(){
     window.open("ingres/index.html","_self")
 }
 
+function clickBici(){
+    if (getMobileOperatingSystem() != "Android") {
+        document.getElementById("loadingBlack").style.display = "block";
+    }
+    window.open("bici/index.html","_self")
+}
+
 function pageonload() {
     //document.getElementById("loadingBlack").style.display = "none";
     
