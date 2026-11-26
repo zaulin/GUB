@@ -81,12 +81,21 @@ Característiques tècniques;;;;"<b>CONDICIONS:</b>
 	<li>Alçada màxima: 1.400 mm</li>
 	<li>Amplada màxima: 750 mm</li>
 </ul>
-<li>Llums obligatòries: blanc davanter, vermell posterior i fre diferenciat</li>
-<li>Obligatori: cavallet, timbre</li>
+<li>Llums obligatòries: </li>
+<ul>
+<li>Blanc davanter</li>
+<li>Vermell posterior i fre diferenciat</li>
+</ul>
+<li>Catadiòptrics: </li>
+<ul>
+<li>Davanter: blanc</li>
+<li>Lateral: blanc o groc</li>
+<li>Posterior: vermell</li>
+</ul>
+<li>Obligatori: cavallet, timbre i velocímetre</li>
 <li>Un fre a cada roda (independents)</li>
 <li>Velocitat màxima: 25km/h</li>
 <li>Només pot portar seient si té sistema d'autoequilibrat</li>
-
 <li>Potencia nominal màxima:</li>
 <ul>
 	<li>Fins a 1.000W sense sistema autoequilibrat</li>
