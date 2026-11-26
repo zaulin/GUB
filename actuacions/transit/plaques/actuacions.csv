@@ -48,6 +48,13 @@ La primera lletra pot ser:
 <li>No pot portar càrrega.</li>
 <li>Ha de portar el butlletí complimentat.</li>
 <li>A l'empresa han de tenir còpia del butlletí.</li>
+<li>Només pot ser ocupat per:</li>
+<ul>
+<li>Persones compradores.</li>
+<li>Tècnics o mecànics del constructor/venedor.</li>
+<li>Màxim el conductor i 3 persones més.</li>
+<li>S'ha d'especificar al butlletí.</li>
+</ul>
 <li>Dades del butlletí:</li>
 <ul>
 <li>Dades del titular de les plaques.</li>
@@ -66,6 +73,7 @@ La primera lletra pot ser:
 <li>3069: No portar butlletí o manca de complimentació</li>
 <li>3069: No coincideix el VIN amb la placa del butlletí</li>
 <li>3070: Conductor no autoritzat</li>
+<li>3070: Passatgers no autoritzats (mateix codi que conductor)</li>
 <li>3147: Portar càrrega útil</li>
 <li>3066: El VIN correspon a un vehicle matriculat a Espanya</li>
 <li>3094: Propietari particular amb plaques temporals d'empresa</li>
