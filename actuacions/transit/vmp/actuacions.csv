@@ -75,11 +75,23 @@ Normativa;;;;"<b>CIRCULAR:</b>
 </ul>"
 Característiques tècniques;;;;"<b>CONDICIONS:</b>
 <ul>
-<li>Llargaria màxima 2 metres</li>
+<li>Dimensions:</li>
+<ul>
+	<li>Llargaria màxima 2.000 mm</li>
+	<li>Alçada màxima: 1.400 mm</li>
+	<li>Amplada màxima: 750 mm</li>
+</ul>
 <li>Llums obligatòries: blanc davanter, vermell posterior i fre diferenciat</li>
 <li>Obligatori: cavallet, timbre</li>
 <li>Un fre a cada roda (independents)</li>
 <li>Velocitat màxima: 25km/h</li>
+<li>Només pot portar seient si té sistema d'autoequilibrat</li>
+
+<li>Potencia nominal màxima:</li>
+<ul>
+	<li>Fins a 1.000W sense sistema autoequilibrat</li>
+	<li>Fins a 2.500W amb sistema autoequilibrat</li>
+</ul>
 </ul>
 <b>INFRACCIONS:</b>
 <ul>
@@ -87,6 +99,7 @@ Característiques tècniques;;;;"<b>CONDICIONS:</b>
 <li>3123: Infracció greu requisits tècnics (enllumenat, rodes, ...)</li>
 <li>3124: Infracció molt greu requisits tècnics (modificació estructural, manipulació velocitat, ...)</li>
 <li>1857: Sense enllumenat, catadiòptrics o timbre</li>
+<li>3080: No ajustar-se el vehicle a les característiques tècniques</li>
 </ul>"
 Alcoholèmia admin;T101,A13;;;"<b>TAXES:</b>
 <ul>
